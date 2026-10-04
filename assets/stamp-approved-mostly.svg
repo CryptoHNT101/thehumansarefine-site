@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="Approved. Mostly.">
+  <defs>
+    <path id="ring" d="M90,90 m-58,0 a58,58 0 1,1 116,0 a58,58 0 1,1 -116,0" fill="none" />
+  </defs>
+  <circle cx="90" cy="90" r="84" fill="none" stroke="#2E7D5B" stroke-width="3" />
+  <circle cx="90" cy="90" r="78" fill="none" stroke="#2E7D5B" stroke-width="1" stroke-dasharray="2 4" opacity="0.55" />
+  <text fill="#2E7D5B" font-family="'Space Grotesk', 'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="14.5" letter-spacing="3.5">
+    <textPath href="#ring">APPROVED &#183; APPROVED &#183; APPROVED</textPath>
+  </text>
+  <text x="90" y="97" text-anchor="middle" fill="#2E7D5B" font-family="'Space Grotesk', 'Inter', 'Segoe UI', sans-serif" font-weight="700" font-size="19" letter-spacing="2">MOSTLY.</text>
+  <line x1="56" y1="112" x2="124" y2="112" stroke="#2E7D5B" stroke-width="1" opacity="0.5" />
+  <text x="90" y="130" text-anchor="middle" fill="#2E7D5B" font-family="'Space Grotesk', 'Inter', 'Segoe UI', sans-serif" font-size="9" letter-spacing="1.5" font-weight="500">HUM-0001</text>
+</svg>
