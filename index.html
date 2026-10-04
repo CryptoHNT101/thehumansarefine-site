@@ -204,6 +204,13 @@ p:last-child { margin-bottom: 0; }
   margin: 18px 0 0; font-size: 12px; color: var(--grey);
   border-top: 1px solid var(--line); padding-top: 18px;
 }
+.footer-right { display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+.footer-social { display: flex; gap: 18px; }
+.social-link {
+  color: var(--ink); text-decoration: none; font-size: 13px; font-weight: 500;
+  border-bottom: 1px solid transparent; padding-bottom: 2px;
+}
+.social-link:hover { border-bottom-color: var(--ink); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 640px) {
@@ -396,7 +403,13 @@ p:last-child { margin-bottom: 0; }
       <span class="footer-wordmark">THE HUMANS ARE FINE</span>
       <span class="footer-tagline">Human approved. Mostly.</span>
     </div>
-    <span class="footer-ref mono">STATUS: NORMAL &#183; REF: HUM-0001</span>
+    <div class="footer-right">
+      <div class="footer-social" aria-label="Social">
+        <a class="social-link" href="https://www.instagram.com/thehumansarefine" target="_blank" rel="noopener">Instagram</a>
+        <a class="social-link" href="https://www.tiktok.com/@thehumansarefine" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <span class="footer-ref mono">STATUS: NORMAL &#183; REF: HUM-0001</span>
+    </div>
   </div>
   <div class="wrap">
     <p class="footer-note mono">&copy; 2026 THE HUMANS ARE FINE. The management team assures us everything is proceeding according to plan.</p>
