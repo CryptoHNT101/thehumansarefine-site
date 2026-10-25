@@ -22,13 +22,22 @@
       window.gtag('event', link.dataset.thafEvent, { comic_volume: link.dataset.comicVolume || undefined, comic_chapter: link.dataset.comicChapter || undefined, link_destination: link.href, page_location: window.location.href });
     });
   };
+  const setConsent = function (value) {
+    window.localStorage.setItem(consentKey, value);
+    const banner = document.getElementById('analytics-consent');
+    if (banner) banner.hidden = true;
+    if (value === 'granted') load();
+  };
   if (window.localStorage.getItem(consentKey) === 'granted') load();
   document.addEventListener('DOMContentLoaded', function () {
     const banner = document.getElementById('analytics-consent');
     if (!banner) return;
-    if (window.localStorage.getItem(consentKey) === 'granted') { banner.hidden = true; load(); return; }
+    if (window.localStorage.getItem(consentKey)) { banner.hidden = true; if (window.localStorage.getItem(consentKey) === 'granted') load(); return; }
     banner.hidden = false;
     const accept = document.getElementById('analytics-accept');
-    if (accept) accept.addEventListener('click', function () { window.localStorage.setItem(consentKey, 'granted'); banner.hidden = true; load(); });
+    if (accept) accept.addEventListener('click', function () { setConsent('granted'); });
+    const decline = document.getElementById('analytics-decline');
+    if (decline) decline.addEventListener('click', function () { setConsent('denied'); });
+    document.querySelectorAll('[data-thaf-settings]').forEach(function (link) { link.addEventListener('click', function (event) { event.preventDefault(); window.localStorage.removeItem(consentKey); banner.hidden = false; banner.focus(); }); });
   });
 })();
