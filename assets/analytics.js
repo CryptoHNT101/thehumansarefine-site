@@ -32,12 +32,13 @@
   document.addEventListener('DOMContentLoaded', function () {
     const banner = document.getElementById('analytics-consent');
     if (!banner) return;
-    if (window.localStorage.getItem(consentKey)) { banner.hidden = true; if (window.localStorage.getItem(consentKey) === 'granted') load(); return; }
-    banner.hidden = false;
     const accept = document.getElementById('analytics-accept');
     if (accept) accept.addEventListener('click', function () { setConsent('granted'); });
     const decline = document.getElementById('analytics-decline');
     if (decline) decline.addEventListener('click', function () { setConsent('denied'); });
     document.querySelectorAll('[data-thaf-settings]').forEach(function (link) { link.addEventListener('click', function (event) { event.preventDefault(); window.localStorage.removeItem(consentKey); banner.hidden = false; banner.focus(); }); });
+    const saved = window.localStorage.getItem(consentKey);
+    if (saved) { banner.hidden = true; if (saved === 'granted') load(); return; }
+    banner.hidden = false;
   });
 })();
