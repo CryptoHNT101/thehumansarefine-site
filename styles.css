@@ -1,4 +1,5 @@
 /* Optional analytics consent notice */
+.consent[hidden] { display: none !important; }
 .consent { position: fixed; z-index: 20; inset: auto 1rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; color: #eef2ed; background: #171d20; border: 1px solid #60756b; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
 .consent p { margin: .35rem 0 0; max-width: 42rem; color: #b9c6be; }
 .consent button { flex: 0 0 auto; padding: .7rem 1rem; color: #101614; background: #a4c49b; border: 0; font: inherit; font-weight: 700; cursor: pointer; }
