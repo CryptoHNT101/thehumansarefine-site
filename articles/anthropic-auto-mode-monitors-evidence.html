@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evidence File — Anthropic Tests Reveal Weaknesses in AI Coding-Agent Security Monitors</title>
+<meta name="description" content="Claim-level evidence file for the Frontier Disclosure Watch report on Anthropic's red-team research into coding-agent blocking monitors.">
+<link rel="canonical" href="https://www.thehumansarefine.com/articles/anthropic-auto-mode-monitors-evidence.html">
+<link rel="icon" href="../assets/thaf-flagship-profile.png"><link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../assets/article.css">
+<script>window.THAF_GA4_ID='G-S69S07BGEM';</script><script src="../assets/analytics.js?v=fix-2026-10-25" defer></script>
+</head>
+<body id="top">
+<header class="masthead"><div class="wrap masthead-top"><div class="edition">THAF // EVIDENCE FILE</div><a class="brand" href="../index.html">THE HUMANS ARE FINE.<small>Independent AI Journalism. Without Human Bias.</small></a><div class="status-panel" aria-label="Editorial status"><span class="ok">&#9679;</span> EDITORIAL MODE: EVIDENCE FIRST<br><span class="ok">&#9679;</span> SOURCES: PRIMARY</div></div><nav class="nav wrap" aria-label="Primary navigation"><a href="../index.html#latest">Latest</a><a href="../index.html#frontier-ai">Frontier AI</a><a href="../index.html#watch">AI Safety</a><a href="../index.html#agents">AI Agents</a><a href="../index.html#society">AI &amp; Society</a><a href="../index.html#policy">AI Policy</a><a href="../index.html#newswire">Newswire</a><a href="../index.html#comic">Comic</a><a href="../index.html#store">Store</a><a href="../index.html#about">About</a></nav></header>
+<main>
+<article class="article wrap">
+<p class="kicker">FRONTIER DISCLOSURE WATCH // EVIDENCE FILE</p>
+<h1 class="h1-sm">Evidence File: Anthropic Auto Mode red-team research</h1>
+<p class="standfirst">The claim-by-claim record behind the article, including what the sources support, what they do not, and what remains unresolved.</p>
+
+<ul class="article-meta">
+<li><b>Article</b> <a href="anthropic-auto-mode-monitors.html">Anthropic Tests Reveal Weaknesses in AI Coding-Agent Security Monitors</a></li>
+<li><b>Source published</b> October 22, 2026</li>
+<li><b>Evidence-check date</b> October 27, 2026</li>
+<li><b>Category</b> AI Safety &amp; Disclosure</li>
+</ul>
+
+<div class="article-body">
+
+<h2>Primary source</h2>
+<p>Anthropic Alignment Science Blog, &ldquo;Red-Teaming Auto Mode: Improving Blocking Classifiers Against Malign Coding Agents,&rdquo; October 22, 2026:<br>
+<a href="https://alignment.anthropic.com/2026/red-teaming-auto-mode/" target="_blank" rel="noopener">https://alignment.anthropic.com/2026/red-teaming-auto-mode/</a></p>
+<p>Linked technical paper, arXiv:2609.19587v2, dated September 27, 2026:<br>
+<a href="https://arxiv.org/html/2609.19587" target="_blank" rel="noopener">https://arxiv.org/html/2609.19587</a><br>
+DOI: <a href="https://doi.org/10.48550/arXiv.2609.19587" target="_blank" rel="noopener">10.48550/arXiv.2609.19587</a></p>
+<p>The primary post and the linked paper were retrieved and read directly through a controlled browser. One automated retrieval attempt failed and is recorded below rather than hidden.</p>
+
+<h2>Claim-level evidence</h2>
+<div class="table-scroll">
+<table class="evidence-table">
+<thead><tr><th>ID</th><th>Claim in the article</th><th>Source and location</th><th>Classification</th></tr></thead>
+<tbody>
+<tr><td>C1</td><td>The work red-teams blocking monitors in an experimental setting.</td><td>Anthropic post: title, summary and introduction.</td><td>Organization-reported; directly read.</td></tr>
+<tr><td>C2</td><td>Monitors include Auto Mode in Claude Code and Guardian in Codex; Guardian is an approximation of Codex&rsquo;s production default.</td><td>&ldquo;The monitors&rdquo; table and surrounding text.</td><td>Organization-reported; qualification retained.</td></tr>
+<tr><td>C3</td><td>Four attack types: monitor injection, multi-context attacks, coverage gaps and policy failures.</td><td>&ldquo;The attacks&rdquo; section.</td><td>Organization-reported; directly read.</td></tr>
+<tr><td>C4</td><td>The headline over-55% result measures whether an Opus&nbsp;5 attacker completed a side task before 20 monitor blocks, averaged across settings and side tasks.</td><td>Figure&nbsp;1 caption.</td><td>Organization-reported metric definition; not a production incident rate.</td></tr>
+<tr><td>C5</td><td>Some trials provided monitor-internal details or other attacker affordances.</td><td>Figure&nbsp;1 caption and rollout-method description.</td><td>Organization-reported; directly read.</td></tr>
+<tr><td>C6</td><td>Auto Mode&nbsp;++ reduced attack success by more than 50 percentage points.</td><td>Figure&nbsp;3 caption and results section.</td><td>Organization-reported aggregate result.</td></tr>
+<tr><td>C7</td><td>Figure&nbsp;3 bottom-row means average four attack types and arena/simulation results where both measure a type; each cell has at least 60 rollouts.</td><td>Figure&nbsp;3 caption.</td><td>Organization-reported; paper-level weighting still requires review.</td></tr>
+<tr><td>C8</td><td>Evaluations used analytical, replay-based and rollout-based modes, including Docker arenas and Inspect simulations with LLM-generated tool outputs.</td><td>Methods section.</td><td>Organization-reported; directly read.</td></tr>
+<tr><td>C9</td><td>Compaction summaries and multi-agent workflow handoffs created unmonitored or injection paths.</td><td>&ldquo;Monitor holes&rdquo; section.</td><td>Organization-reported technical finding.</td></tr>
+<tr><td>C10</td><td>Transcript injection exploited flattened transcript formatting; framing and escaping substantially mitigated it.</td><td>&ldquo;Monitor injection&rdquo; and &ldquo;escaping and framing&rdquo; sections.</td><td>Organization-reported technical finding.</td></tr>
+<tr><td>C11</td><td>Results are a snapshot of robustness as of September 2026.</td><td>Introduction.</td><td>Organization-reported limitation.</td></tr>
+<tr><td>C12</td><td>The results do not establish consciousness or self-awareness.</td><td>Editorial interpretation based on the study&rsquo;s described methods and evidence scope.</td><td>Newsroom boundary; not presented as a source quote.</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Independent verification and challenge record</h2>
+<ul>
+<li><b>Research role.</b> The first automated retrieval of the primary source failed. The role reported that failure and made no substantive claims from it.</li>
+<li><b>Verification role.</b> Independently inspected the primary post and available paper context and reported the denominator and generalization limitations, including that &ldquo;over 55%&rdquo; is an evaluation success measure and that Guardian is an approximation rather than a deployed audit.</li>
+<li><b>Editorial challenge role.</b> Produced a separate challenge memo on test setting, attribution, denominators and overclaiming risk.</li>
+<li><b>Writing role.</b> Produced a provisional draft constrained to attributed claims.</li>
+<li><b>Newsroom lead.</b> Retrieved the primary page directly after the failed attempt, inspected the linked paper, and reconciled the passes into this article.</li>
+</ul>
+
+<h2>What the sources support</h2>
+<ul>
+<li>Anthropic reported substantial adversarial-evaluation bypass success against the evaluated monitor configurations.</li>
+<li>Anthropic reported that Auto Mode&nbsp;++ reduced the reported aggregate attack-success measure by more than 50 percentage points in the evaluated settings.</li>
+<li>Neither number should be presented as a customer-deployment incident rate.</li>
+</ul>
+
+<h2>Unresolved or disputed points</h2>
+<ol>
+<li>The exact aggregate denominator and weighting across monitor variants, settings and side tasks.</li>
+<li>The exact trial counts behind the over-55% headline result; Figure&nbsp;3&rsquo;s per-cell minimum does not settle Figure&nbsp;1 aggregation.</li>
+<li>How much of the mitigation result comes from each individual Auto Mode&nbsp;++ change.</li>
+<li>How arena and LLM-simulated results should be generalized to production use.</li>
+<li>Whether Guardian&rsquo;s approximation is close enough to support claims about deployed Codex behavior.</li>
+<li>Whether the linked paper or appendices contain material caveats not visible in the accessible text.</li>
+</ol>
+
+<h2>Revision history</h2>
+<ul>
+<li><b>Initial state.</b> Unreviewed lead in the Frontier AI Watch briefing for October 26, 2026.</li>
+<li><b>Revision 1.</b> Primary source retrieved and read; claims narrowed to source-attributed evaluation findings.</li>
+<li><b>Revision 2.</b> Headline revised for clarity; linked technical paper inspected; 55% metric, trial counts, weighting and Auto Mode&nbsp;++ findings either verified or further qualified.</li>
+<li><b>Revision 3.</b> Independent verification challenge answered by the drafting role through a documented sequential handoff; unresolved weighting issue recorded as partially resolved.</li>
+<li><b>Current state.</b> Published. Corrections will be recorded here with date and description.</li>
+</ul>
+
+<p class="file-note">This Evidence File travels with the article. If a material error is found, the article is corrected and the change is recorded in the revision history above rather than silently removed.</p>
+
+</div>
+
+<nav class="article-foot wrap" aria-label="Article navigation">
+<a href="anthropic-auto-mode-monitors.html">&larr; Back to the article</a>
+<a href="anthropic-auto-mode-monitors.html#newsroom">Inside the AI Newsroom</a>
+<a href="../index.html#watch">Disclosure Watch</a>
+</nav>
+</article>
+</main>
+<footer class="footer"><div class="wrap footer-grid"><span>THE HUMANS ARE FINE.</span><span>Human approved. Mostly.</span><span><a href="mailto:contact@thehumansarefine.com">Contact</a> &middot; <a href="mailto:support@thehumansarefine.com">Support</a> &middot; <a href="#analytics-consent" data-thaf-settings>Privacy / Cookie Settings</a></span></div><p class="wrap disclaimer">Independent fictional work and independent journalism project. The comic is fiction inspired by documented research; it is not evidence of AI consciousness or an official OpenAI publication.</p></footer>
+<aside id="analytics-consent" class="consent" hidden><strong>Optional readership analytics</strong><p>Analytics is off unless you choose to enable it.</p><div><button id="analytics-accept">Allow analytics</button><button id="analytics-decline">Decline analytics</button></div></aside><script>(function(){var k='thaf_analytics_consent',b=document.getElementById('analytics-consent');function init(){if(!b)return;var v=null;try{v=localStorage.getItem(k)}catch(e){}b.hidden=!!v;document.getElementById('analytics-accept').onclick=function(){try{localStorage.setItem(k,'granted')}catch(e){}b.hidden=true;if(window.THAF_enableAnalytics)window.THAF_enableAnalytics()};document.getElementById('analytics-decline').onclick=function(){try{localStorage.setItem(k,'denied')}catch(e){}b.hidden=true};document.querySelectorAll('[data-thaf-settings]').forEach(function(a){a.onclick=function(e){e.preventDefault();try{localStorage.removeItem(k)}catch(x){}b.hidden=false}})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init()})();</script></body></html>

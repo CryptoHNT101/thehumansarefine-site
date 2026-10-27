@@ -1,0 +1,75 @@
+/* THE HUMANS ARE FINE — article + evidence file styles.
+   Loaded only by pages under /articles/. Does not alter existing homepage rules. */
+
+.article{padding:34px 0 56px;max-width:820px}
+.article h1{margin:0 0 16px;font:400 clamp(34px,5vw,58px)/1.04 var(--sans);letter-spacing:-.04em;overflow-wrap:break-word}
+.article h1.h1-sm{font-size:clamp(30px,4.2vw,46px)}
+.article .standfirst{max-width:760px;margin:0 0 18px;color:var(--muted);font:20px/1.45 var(--serif)}
+.article-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;margin:22px 0 0;padding:16px 0;list-style:none;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:11px/1.5 var(--mono);color:var(--muted);letter-spacing:.03em}
+.article-meta b{display:block;color:var(--green);font-weight:400;text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px}
+.article-meta a{color:var(--ink)}
+.article-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:24px 0 8px}
+.article-body{margin-top:30px}
+.article-body h2{margin:38px 0 12px;font:400 clamp(22px,3vw,30px)/1.15 var(--sans);letter-spacing:-.02em}
+.article-body h2:first-child{margin-top:0}
+.article-body p{margin:0 0 16px;color:#e2e2da;font:17px/1.65 var(--serif)}
+.article-body ul,.article-body ol{margin:0 0 18px;padding-left:22px;color:#e2e2da;font:17px/1.6 var(--serif)}
+.article-body li{margin-bottom:9px}
+.article-body a,.sources a{color:var(--green);text-decoration:underline;text-underline-offset:2px;overflow-wrap:break-word}
+.article-body a:hover{color:#d7f0dc}
+.sources{padding-left:20px;font:16px/1.55 var(--serif)}
+.sources li{margin-bottom:10px}
+.file-note{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font:12px/1.6 var(--mono)!important}
+
+/* Inside the AI Newsroom */
+.newsroom{margin:46px 0 10px;padding:26px;border:1px solid var(--line);background:var(--panel2)}
+.newsroom h2{margin:0 0 8px;font:400 clamp(24px,3.4vw,34px)/1.1 var(--sans);letter-spacing:-.03em}
+.newsroom-note{margin:0 0 20px;color:var(--muted);font:13px/1.6 var(--sans)}
+.newsroom details{border-top:1px solid var(--line);padding:0}
+.newsroom details+details{margin-top:0}
+.newsroom summary{cursor:pointer;padding:15px 0;font:11px var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--green);list-style:none}
+.newsroom summary::-webkit-details-marker{display:none}
+.newsroom summary::before{content:"+ ";color:var(--amber)}
+.newsroom details[open] summary::before{content:"\2212 "}
+.newsroom summary:hover{color:#d7f0dc}
+.ns-body{padding:2px 0 18px}
+.ns-body p{margin:0 0 14px;color:#dfe3e0;font:15.5px/1.65 var(--serif)}
+.ns-body b{color:var(--ink)}
+.disposition{color:var(--amber)!important;font:11px var(--mono)!important;letter-spacing:.05em;text-transform:uppercase}
+.ns-table{width:100%;border-collapse:collapse;font:13px/1.5 var(--sans)}
+.ns-table th,.ns-table td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
+.ns-table th{color:var(--green);font:10px var(--mono);letter-spacing:.06em;text-transform:uppercase;font-weight:400}
+.ns-table td{color:#dfe3e0}
+.ns-table td:first-child{color:var(--muted);white-space:nowrap}
+
+/* Evidence file table */
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 8px}
+.evidence-table{width:100%;min-width:620px;border-collapse:collapse;font:13px/1.55 var(--sans)}
+.evidence-table th,.evidence-table td{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid var(--line)}
+.evidence-table th{color:var(--green);font:10px var(--mono);letter-spacing:.06em;text-transform:uppercase;font-weight:400}
+.evidence-table td{color:#dfe3e0}
+.evidence-table td:first-child{font-family:var(--mono);font-size:11px;color:var(--amber);white-space:nowrap}
+.evidence-table tr:last-child td{border-bottom:0}
+
+/* Article footer nav */
+.article-foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:34px;padding-top:16px;border-top:1px solid var(--line)}
+.article-foot a{color:var(--green);font:10px var(--mono);letter-spacing:.05em;text-transform:uppercase;text-decoration:none}
+.article-foot a:hover{color:#d7f0dc}
+
+@media(max-width:800px){
+  .article{padding:26px 0 44px;max-width:100%}
+  .article-meta{grid-template-columns:1fr}
+  .article-body p,.article-body ul,.article-body ol{font-size:16.5px;line-height:1.62}
+  .newsroom{padding:18px 16px}
+  .article-body h2{margin-top:30px}
+}
+@media(max-width:420px){
+  .article h1{font-size:30px;letter-spacing:-.03em}
+  .article h1.h1-sm{font-size:26px}
+  .article .standfirst{font-size:18px}
+  .article-actions{display:block}
+  .article-actions .button{margin-bottom:12px}
+  .newsroom{padding:16px 13px}
+  .ns-table{min-width:520px}
+  .ns-body p{font-size:15.5px}
+}
