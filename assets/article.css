@@ -73,3 +73,110 @@
   .ns-table{min-width:520px}
   .ns-body p{font-size:15.5px}
 }
+
+/* ============================================================
+   FOR HUMAN CONSUMPTION
+   Permanent editorial feature. Every article ends with it.
+   Contract: see site/docs/editorial-fhc-standard.md
+   ------------------------------------------------------------
+   Markup (inside .article-body, before the final supporting
+   editorial block — Related reading / Context / Sources):
+
+   <section class="hfc" aria-labelledby="hfc-title">
+     <h2 class="hfc-title" id="hfc-title">For Human Consumption</h2>
+     <div class="hfc-body">
+       <p>... 75-125 words ...</p>
+       <p class="hfc-sig">THE HUMANS ARE FINE.</p>
+     </div>
+   </section>
+
+   Selectors are intentionally two-class deep. The host page's
+   `.article-body h2` and `.article-body p` rules would otherwise
+   win on specificity and strip this component's identity.
+   ============================================================ */
+
+.hfc{
+  position:relative;
+  margin:46px 0 12px;
+  padding:26px 28px 24px;
+  border:1px solid var(--line);
+  border-top:2px solid var(--green);
+  background:var(--panel2);
+  overflow-wrap:break-word;
+}
+.hfc .hfc-title{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:0 0 16px;
+  font:400 11px/1.4 var(--mono);
+  letter-spacing:.2em;
+  text-transform:uppercase;
+  color:var(--green);
+  white-space:nowrap;
+}
+.hfc .hfc-title::after{
+  content:"";
+  flex:1 1 auto;
+  height:1px;
+  background:var(--line);
+}
+.hfc .hfc-body p{
+  margin:0 0 14px;
+  color:#e2e2da;
+  font:17px/1.65 var(--serif);
+}
+.hfc .hfc-body p:last-child{margin-bottom:0}
+.hfc .hfc-body .hfc-sig{
+  margin:16px 0 0;
+  color:var(--green);
+  font:400 11px/1.4 var(--mono);
+  letter-spacing:.18em;
+  text-transform:uppercase;
+}
+.hfc .hfc-body .hfc-sig::before{
+  content:"";
+  display:block;
+  width:34px;
+  height:1px;
+  margin:0 0 12px;
+  background:var(--amber);
+}
+
+@media(max-width:800px){
+  .hfc{padding:22px 18px 20px;margin-top:38px}
+  .hfc .hfc-body p{font-size:16.5px;line-height:1.62}
+  .hfc .hfc-title{letter-spacing:.16em}
+}
+@media(max-width:420px){
+  .hfc{padding:20px 14px 18px;margin-top:32px}
+  .hfc .hfc-title{font-size:10px;letter-spacing:.12em;gap:10px;white-space:normal}
+  .hfc .hfc-body p{font-size:16px;line-height:1.6}
+  .hfc .hfc-body .hfc-sig{font-size:10px;letter-spacing:.14em}
+}
+
+/* Long machine tokens (URLs, hashes, identifiers) must not widen the page.
+   Added during Batch 001 validation: a <code> span in the Story B Evidence File
+   pushed the 390px document to 433px. Wrap-only; no visual change on desktop. */
+.article-body code,
+.evidence-table code,
+.hfc code {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* Plain-text long tokens get the same treatment. Batch 001 final gate: the
+   Story B Evidence File prints bare DOI/arXiv URLs as paragraph text, not as
+   <code> or <a>, so the rule above never applied to them. One such URL held
+   the 375px document at 377px (2px). break-word wraps only tokens that would
+   otherwise overflow, so ordinary prose is unaffected. */
+.article-body p,
+.article-body li,
+.article-body dd {
+  overflow-wrap: break-word;
+}
+
+.clarification{margin:40px 0 0;padding:20px 22px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--amber)}
+.clarification .clarification-title{margin:0 0 10px;color:var(--amber);font:600 11px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase}
+.clarification p{margin:0;color:var(--muted);font:15.5px/1.65 var(--sans)}
+@media (max-width:800px){.clarification{padding:18px 16px}.clarification p{font-size:15px}}
