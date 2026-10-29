@@ -6,7 +6,15 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Thu, 29 Oct 2026 03:25:13 GMT</lastBuildDate>
+<lastBuildDate>Thu, 29 Oct 2026 10:08:02 GMT</lastBuildDate>
+<item>
+<title>Anthropic&apos;s IPO Filing Shows a First Operating Profit, an $80 Billion Loss, and No Price Yet</title>
+<link>https://www.thehumansarefine.com/articles/anthropic-s1-operating-profit.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-s1-operating-profit.html</guid>
+<pubDate>Thu, 29 Oct 2026 10:08:02 GMT</pubDate>
+<category>AI Policy &amp; Society</category>
+<description>The company filed a preliminary prospectus on October 26 with the offer size and the price range left blank. The financial statements underneath it show something more interesting: a business that turned an operating profit for the first time in the second quarter of 2026, and then booked a $59.6 billion charge against its own rising valuation.</description>
+</item>
 <item>
 <title>Chatbots and Court Claims: What the Statistics Say</title>
 <link>https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</link>
@@ -40,20 +48,20 @@
 <description>METR and Redwood stress-tested OpenAI's internal misalignment monitoring and found bypasses, an unmonitored compaction gap, and a deferrable monitor.</description>
 </item>
 <item>
-<title>Anthropic Researchers Try Deleting a Model&apos;s Cheating Instead of Punishing It</title>
-<link>https://www.thehumansarefine.com/articles/graft-localizing-cheating.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/graft-localizing-cheating.html</guid>
-<pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
-<category>AI Safety &amp; Disclosure</category>
-<description>A training method routes a model's cheating into parameters that are then deleted. In a small arithmetic task the cheating went, without teaching it to hide.</description>
-</item>
-<item>
 <title>Learned to Invent Problems, Until Its Makers Changed the Reward</title>
 <link>https://www.thehumansarefine.com/articles/alignment-auditors-false-positives.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/alignment-auditors-false-positives.html</guid>
 <pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
 <category>AI Safety &amp; Disclosure</category>
 <description>Training an auditor on the wrong reward produced one that invented findings. Pairwise rewards fixed it, and it improved on a hostile benchmark.</description>
+</item>
+<item>
+<title>Anthropic Researchers Try Deleting a Model&apos;s Cheating Instead of Punishing It</title>
+<link>https://www.thehumansarefine.com/articles/graft-localizing-cheating.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/graft-localizing-cheating.html</guid>
+<pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
+<category>AI Safety &amp; Disclosure</category>
+<description>A training method routes a model's cheating into parameters that are then deleted. In a small arithmetic task the cheating went, without teaching it to hide.</description>
 </item>
 <item>
 <title>Anthropic Tests Reveal Weaknesses in AI Coding-Agent Security Monitors</title>

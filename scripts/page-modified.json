@@ -15,6 +15,14 @@
                                                        "hash":  "5a70b4af821f8bc6eeb4e7fdf7c21df60a76d1277f18bd06e2b90189166dfece",
                                                        "modified":  "2026-10-29T08:59:07-04:00"
                                                    },
+    "articles/anthropic-s1-operating-profit-evidence.html":  {
+                                                                 "hash":  "e2a05a07d9e23d5ab4a115264128e1012d02f76d54b716f16b3ebf972d5495c7",
+                                                                 "modified":  "2026-10-29T06:08:02-04:00"
+                                                             },
+    "articles/anthropic-s1-operating-profit.html":  {
+                                                        "hash":  "89c067191f8caa3080ca2f03907f95b0058a1fd5c2d3a15d2bcdc8b731525929",
+                                                        "modified":  "2026-10-29T06:08:02-04:00"
+                                                    },
     "articles/genie-4-world-model-evidence.html":  {
                                                        "hash":  "024f022379b582c3fce87ce686b80950dd3fa29ea0f42a342c0dd2ae7dca6e29",
                                                        "modified":  "2026-10-29T08:59:07-04:00"
@@ -60,8 +68,8 @@
                                         "modified":  "2026-10-29T08:59:07-04:00"
                                     },
     "index.html":  {
-                       "hash":  "3d640e4cec5d11a33f3e40f7e88d3358c3e9b28847fe929bc40040e0f143164f",
-                       "modified":  "2026-10-29T08:59:07-04:00"
+                       "hash":  "891ca519b8d87f565f23d810a4a8c1ad308c951b221882f02c48a9b90a1adc88",
+                       "modified":  "2026-10-29T09:24:36-04:00"
                    },
     "news/index.html":  {
                             "hash":  "0a6d4111ce197dd2afcac1e2279c8389bdd4abe2865d79e8d9e0ff358b7b39e6",
