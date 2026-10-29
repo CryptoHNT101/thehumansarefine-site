@@ -128,6 +128,15 @@ try {
         if ([string]::IsNullOrWhiteSpace($n.description)) { throw "empty description on $($n.link)" }
         if ([string]::IsNullOrWhiteSpace($n.pubDate)) { throw "missing pubDate on $($n.link)" }
     }
+
+    # A page marked noindex is not for the public; it must not be syndicated.
+    foreach ($n in $nodes) {
+        $r = $n.link.Substring($origin.Length).TrimStart('/')
+        if (Test-Path $r) {
+            $t = Get-Content $r -Raw -Encoding UTF8
+            if ($t -match '<meta name="robots" content="noindex') { throw "feed links a noindex page: $($n.link)" }
+        }
+    }
     Write-Output ("Verified: feed parses, {0} items, every link tracked, every item dated and described." -f $nodes.Count)
 }
 finally { Pop-Location }

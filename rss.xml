@@ -6,22 +6,22 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Thu, 29 Oct 2026 03:32:43 GMT</lastBuildDate>
+<lastBuildDate>Thu, 29 Oct 2026 03:25:13 GMT</lastBuildDate>
+<item>
+<title>Chatbots and Court Claims: What the Statistics Say</title>
+<link>https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</guid>
+<pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
+<category>AI Policy &amp; Society</category>
+<description>Geoffrey Vos says a 10 percent rise in county court claims is down to chatbots. The Ministry of Justice bulletin points at parking on private land.</description>
+</item>
 <item>
 <title>OpenAI Is Treating Its New Cheap Model as &quot;Critical&quot; for Cybersecurity. It Went on Sale the Same Day.</title>
 <link>https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</guid>
-<pubDate>Thu, 29 Oct 2026 03:32:43 GMT</pubDate>
+<pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
 <category>AI Industry &amp; Safety</category>
 <description>OpenAI halved the price of GPT-6.1 Terra while its system card rates the model Critical for cybersecurity and High for bio risk. One of those got announced.</description>
-</item>
-<item>
-<title>England&#39;s Most Senior Civil Judge Says Chatbots Are Driving a Surge in Court Claims. The Government&#39;s Own Statistics Point at Parking Tickets.</title>
-<link>https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</guid>
-<pubDate>Thu, 29 Oct 2026 03:27:45 GMT</pubDate>
-<category>AI Policy &amp; Society</category>
-<description>Geoffrey Vos says a 10 percent rise in county court claims is down to chatbots. The Ministry of Justice bulletin points at parking on private land.</description>
 </item>
 <item>
 <title>Google Says Its New World Model Generates Its Own Sound, and Characters That Talk Back</title>
@@ -32,28 +32,20 @@
 <description>DeepMind's Genie 4 builds interactive worlds from a sentence and gives them voices. Its makers admit the worlds drift, and publish no safety result.</description>
 </item>
 <item>
-<title>Anthropic Tests Reveal Weaknesses in AI Coding-Agent Security Monitors</title>
-<link>https://www.thehumansarefine.com/articles/anthropic-auto-mode-monitors.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-auto-mode-monitors.html</guid>
-<pubDate>Wed, 28 Oct 2026 02:56:46 GMT</pubDate>
-<category>AI Safety &amp; Disclosure</category>
-<description>Anthropic's red team found substantial bypasses against the blocking monitors in Claude Code Auto Mode and OpenAI Codex. Controlled tests, not incident rates.</description>
-</item>
-<item>
-<title>Anthropic Researchers Try Deleting a Model&#39;s Cheating Instead of Punishing It</title>
-<link>https://www.thehumansarefine.com/articles/graft-localizing-cheating.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/graft-localizing-cheating.html</guid>
-<pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
-<category>AI Safety &amp; Disclosure</category>
-<description>A training method routes a model's cheating into parameters that are then deleted. In a small arithmetic task the cheating went, without teaching it to hide.</description>
-</item>
-<item>
-<title>An Outside Red Team Found Ways Around OpenAI&#39;s Own Agent Monitors</title>
+<title>An Outside Red Team Found Ways Around OpenAI&apos;s Own Agent Monitors</title>
 <link>https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</guid>
 <pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
 <category>AI Safety &amp; Disclosure</category>
 <description>METR and Redwood stress-tested OpenAI's internal misalignment monitoring and found bypasses, an unmonitored compaction gap, and a deferrable monitor.</description>
+</item>
+<item>
+<title>Anthropic Researchers Try Deleting a Model&apos;s Cheating Instead of Punishing It</title>
+<link>https://www.thehumansarefine.com/articles/graft-localizing-cheating.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/graft-localizing-cheating.html</guid>
+<pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
+<category>AI Safety &amp; Disclosure</category>
+<description>A training method routes a model's cheating into parameters that are then deleted. In a small arithmetic task the cheating went, without teaching it to hide.</description>
 </item>
 <item>
 <title>Learned to Invent Problems, Until Its Makers Changed the Reward</title>
@@ -62,6 +54,14 @@
 <pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
 <category>AI Safety &amp; Disclosure</category>
 <description>Training an auditor on the wrong reward produced one that invented findings. Pairwise rewards fixed it, and it improved on a hostile benchmark.</description>
+</item>
+<item>
+<title>Anthropic Tests Reveal Weaknesses in AI Coding-Agent Security Monitors</title>
+<link>https://www.thehumansarefine.com/articles/anthropic-auto-mode-monitors.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-auto-mode-monitors.html</guid>
+<pubDate>Tue, 27 Oct 2026 11:42:40 GMT</pubDate>
+<category>AI Safety &amp; Disclosure</category>
+<description>Anthropic's red team found substantial bypasses against the blocking monitors in Claude Code Auto Mode and OpenAI Codex. Controlled tests, not incident rates.</description>
 </item>
 </channel>
 </rss>

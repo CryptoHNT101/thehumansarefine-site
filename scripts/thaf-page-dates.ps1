@@ -13,13 +13,17 @@
 # (live-index.html and friends, which are gitignored) never enter the table.
 # ============================================================================
 param(
-    [string]$Out = 'page-dates.json'
+    [string]$Out = 'scripts/page-dates.json'
 )
 
 $ErrorActionPreference = 'Stop'
 $repo = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 Push-Location $repo
 try {
+    # Every consumer (metadata, sitemap, feed) reads scripts/page-dates.json.
+    # This script used to default to the repository root, so it refreshed one
+    # file while the build read a stale copy of another - the pages shipped
+    # dates from an earlier run. One path, or the dates are not trustworthy.
     $tracked = @(git ls-files '*.html') | Where-Object { $_ -ne '' }
     if ($tracked.Count -eq 0) { throw 'git ls-files returned no HTML - wrong repository root?' }
 

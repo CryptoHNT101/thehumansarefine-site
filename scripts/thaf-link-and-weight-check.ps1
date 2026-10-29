@@ -15,6 +15,12 @@ try {
     $pages = @($tracked | Where-Object { $_ -like '*.html' })
     $fail = 0; $warn = 0; $checks = 0
 
+    # Publication dates: markup, feed and visible page must all say one thing.
+    $datesPath = Join-Path $repo 'scripts/page-dates.json'
+    if (-not (Test-Path $datesPath)) { throw ("Missing dates file: " + $datesPath) }
+    $pageDates = @{}
+    foreach ($r in (Get-Content $datesPath -Raw -Encoding UTF8 | ConvertFrom-Json)) { $pageDates[$r.path] = $r }
+
     function Fail($m) { $script:fail++; Write-Output "FAIL  $m" }
     function Warn($m) { $script:warn++; Write-Output "WARN  $m" }
     function Pass($m) { }
@@ -72,8 +78,36 @@ try {
             $c = ([regex]::Matches($html, '(?i)<meta\s+property="' + [regex]::Escape($prop) + '"')).Count
             if ($c -ne 1) { Fail "$rel : $c declarations of $prop (expected 1)" }
         }
-        $ld = ([regex]::Matches($html, '(?i)<script\s+type="application/ld\+json">')).Count
-        if ($ld -ne 1) { Fail "$rel : $ld JSON-LD blocks (expected 1)" }
+        # A page carries one structured-data block, plus a second BreadcrumbList
+        # block when it displays a breadcrumb trail. Anything beyond that is
+        # duplication, and every block has to be valid JSON with an @type.
+        $blocks = [regex]::Matches($html, '(?is)<script\s+type="application/ld\+json">(.*?)</script>')
+        if ($blocks.Count -lt 1 -or $blocks.Count -gt 2) { Fail "$rel : $($blocks.Count) JSON-LD blocks (expected 1, or 2 with a breadcrumb list)" }
+        $types = @()
+        foreach ($b in $blocks) {
+            try { $obj = $b.Groups[1].Value | ConvertFrom-Json } catch { Fail "$rel : JSON-LD block does not parse - $($_.Exception.Message)"; continue }
+            if (-not $obj.'@type' -and -not $obj.'@graph') { Fail "$rel : JSON-LD block has neither @type nor @graph" }
+            $types += $obj.'@type'
+            if ($obj.'@type' -eq 'NewsArticle' -or $obj.'@type' -eq 'Article') {
+                $checks++
+                if (-not $pageDates.ContainsKey($rel)) { Fail "$rel : structured data has dates but the page has no git date on record" }
+                else {
+                    $want = [datetimeoffset]::Parse($pageDates[$rel].published, [Globalization.CultureInfo]::InvariantCulture)
+                    $got = $null
+                    try { $got = [datetimeoffset]::Parse([string]$obj.datePublished, [Globalization.CultureInfo]::InvariantCulture) } catch { Fail "$rel : datePublished is not a parsable date" }
+                    if ($got -and $got.UtcDateTime.ToString('yyyy-MM-ddTHH:mm:ss') -ne $want.UtcDateTime.ToString('yyyy-MM-ddTHH:mm:ss')) {
+                        Fail "$rel : datePublished $($obj.datePublished) does not match git publication $($pageDates[$rel].published)"
+                    }
+                    if ($got) {
+                        $label = $got.ToString('MMMM d, yyyy', [Globalization.CultureInfo]::InvariantCulture)
+                        if ($html -notmatch ("<li><b>Published</b> " + [regex]::Escape($label))) {
+                            Fail "$rel : reader cannot see the publication date ($label) that the markup claims"
+                        }
+                    }
+                }
+            }
+        }
+        if ($blocks.Count -eq 2 -and $types -notcontains 'BreadcrumbList') { Fail "$rel : two JSON-LD blocks and neither is a BreadcrumbList" }
     }
 
     # ---- every tracked asset is referenced somewhere -----------------------

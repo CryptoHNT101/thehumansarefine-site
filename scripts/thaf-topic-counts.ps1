@@ -55,7 +55,10 @@ try {
         $mm = [regex]::Match($html, '(?is)<meta name="description" content="(.*?)">')
         if (-not $mm.Success) { throw "no meta description in $rel" }
         $old = $mm.Groups[1].Value
-        if ($old -ne $desc) {
+        # Compare against the escaped form we would write, or an "&" in a topic
+        # name looks like a change on every run and never settles.
+        $escaped = [System.Security.SecurityElement]::Escape($desc)
+        if ($old -ne $escaped) {
             $html = $html.Remove($mm.Groups[1].Index, $mm.Groups[1].Length).Insert($mm.Groups[1].Index, [System.Security.SecurityElement]::Escape($desc))
             Write-Output ("  {0}: {1} card(s)" -f $rel, $n)
             Write-Output ("     was: $old")
