@@ -180,3 +180,30 @@
 .clarification .clarification-title{margin:0 0 10px;color:var(--amber);font:600 11px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase}
 .clarification p{margin:0;color:var(--muted);font:15.5px/1.65 var(--sans)}
 @media (max-width:800px){.clarification{padding:18px 16px}.clarification p{font-size:15px}}
+
+/* --- breadcrumb trail (added Release 2 / audience build) -------------------
+   A reader landing from a search result should be able to see where they are
+   and step up to the topic archive in one tap. Matching BreadcrumbList markup
+   is emitted by scripts/thaf-apply-metadata.ps1 from this same visible trail. */
+.crumbs{
+  font:600 12px/1.5 var(--thaf-mono, ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace);
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:#6b6b6b;
+  margin:18px 0 6px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.5em;
+}
+.crumbs a{color:#6b6b6b;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px}
+.crumbs a:hover,.crumbs a:focus-visible{color:#111;border-bottom-color:currentColor}
+.crumbs [aria-current="page"]{color:#111;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:min(100%,34ch)}
+@media (max-width:560px){
+  .crumbs{font-size:11px;letter-spacing:.04em}
+  .crumbs [aria-current="page"]{max-width:100%;white-space:normal}
+}
+@media (prefers-color-scheme:dark){
+  .crumbs,.crumbs a{color:#9a9a9a}
+  .crumbs a:hover,.crumbs a:focus-visible,.crumbs [aria-current="page"]{color:#fff}
+}
