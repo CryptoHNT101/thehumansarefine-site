@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /reports/
+Disallow: /newsroom/fdw/
+Disallow: /tmp/
+Sitemap: https://www.thehumansarefine.com/sitemap.xml
