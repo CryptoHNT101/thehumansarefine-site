@@ -1,4 +1,4 @@
-# ============================================================================
+﻿# ============================================================================
 # THE HUMANS ARE FINE - search and social metadata injector
 #
 # Adds, to every tracked page, the metadata the Release 2 rebuild dropped:
@@ -16,7 +16,7 @@
 #     re-run, so the script can be executed repeatedly without duplication.
 # ============================================================================
 param(
-    [string]$DatesFile = 'page-dates.json',
+    [string]$DatesFile = 'scripts/page-dates.json',
     [switch]$WhatIf
 )
 

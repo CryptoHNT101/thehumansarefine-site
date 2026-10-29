@@ -1,4 +1,4 @@
-# ============================================================================
+﻿# ============================================================================
 # THE HUMANS ARE FINE - build sitemap.xml
 #
 # Every <loc> is a page that is actually tracked and will actually be live.
@@ -8,7 +8,7 @@
 # Run scripts/thaf-page-dates.ps1 first.
 # ============================================================================
 param(
-    [string]$DatesFile = 'page-dates.json',
+    [string]$DatesFile = 'scripts/page-dates.json',
     [string]$Out = 'sitemap.xml'
 )
 $ErrorActionPreference = 'Stop'
