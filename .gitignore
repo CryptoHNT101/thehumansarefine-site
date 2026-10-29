@@ -1,0 +1,66 @@
+# ============================================================================
+# THE HUMANS ARE FINE — production repository guard
+#
+# This repository is deployed verbatim by GitHub Pages. Anything committed here
+# is publicly readable. Collector code, credentials, fixtures, editorial
+# standards and internal reports must never be staged.
+#
+# Collector infrastructure lives at <workspace>/newsroom/fdw — outside this
+# repository entirely. The rules below are the second line of defence for
+# anything that gets copied in by accident.
+# ============================================================================
+
+# --- Internal working material (never published) ----------------------------
+content/
+docs/
+fdw/
+reports/
+tests/
+fixtures/
+tmp/
+
+# The collector lives outside this repository; this rule is the second line of
+# defence if it is ever copied in. It must stay narrow: /newsroom/ is a PUBLIC
+# page (Inside the AI Newsroom). A bare "newsroom/" rule silently excluded that
+# page from the repository, so it could never have deployed. 2026-10-29.
+newsroom/fdw/
+
+# --- Credentials and environment -------------------------------------------
+.env
+.env.*
+*.key
+*.pem
+*.pfx
+secrets*
+credentials*
+
+# --- Local scratch captures and probe output --------------------------------
+# Root-level dumps produced while inspecting the live site. The deployed pages
+# are the tracked *.html files; none of these belong in the archive.
+/*.txt
+/*.png
+/*.json
+/*.pdf
+/*.csv
+/*.log
+/*.zip
+/live-*
+/raw-*
+/gh-index.html
+/ghheaders.txt
+/index
+/landing.html
+/page.html
+/page3.html
+
+# --- Shell/PowerShell mishap artefacts --------------------------------------
+# Names that appear when a broken expansion is redirected to a file.
+/$null
+/System.Collections.Hashtable
+/'
+
+# --- Editor and OS noise ----------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*~
