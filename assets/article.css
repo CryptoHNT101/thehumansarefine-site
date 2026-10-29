@@ -176,6 +176,21 @@
   overflow-wrap: break-word;
 }
 
+/* Verbatim machine output (one block, in the Vos Evidence File). A default <pre>
+   keeps white-space:pre, so its longest line set a 404px min-content width and the
+   320px and 375px documents scrolled sideways by 84px and 29px. Wrapped rather
+   than scrolled: the lines are short command output, so nothing is lost, and the
+   block still scrolls internally if a line ever exceeds the column. */
+.code-block{
+  margin:0 0 18px;padding:14px 16px;background:var(--panel);
+  border:1px solid var(--line);border-left:3px solid var(--green);
+  overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere;
+}
+.code-block code{
+  font:12px/1.6 var(--mono);color:var(--muted);
+  background:none;border:0;padding:0;
+}
+
 .clarification{margin:40px 0 0;padding:20px 22px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--amber)}
 .clarification .clarification-title{margin:0 0 10px;color:var(--amber);font:600 11px/1.4 var(--mono);letter-spacing:.16em;text-transform:uppercase}
 .clarification p{margin:0;color:var(--muted);font:15.5px/1.65 var(--sans)}
