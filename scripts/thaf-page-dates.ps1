@@ -65,6 +65,7 @@ try {
     }
 
     $rows = @()
+    $counts = @{}
     $stamp = (Get-Date).ToString('yyyy-MM-ddTHH:mm:sszzz')
     $bumped = 0
     foreach ($p in $tracked) {
@@ -88,11 +89,14 @@ try {
             # only evidence we have, and it is real history, not a guess.
             $modified = $last[0].Trim()
         }
+        # The commit count is printed but deliberately NOT written to the JSON:
+        # every commit adds one, so storing it would dirty this file on every
+        # single commit for a number no consumer reads.
+        $counts[$p] = @(git log --format=%H -- $p).Count
         $rows += [pscustomobject][ordered]@{
             path      = $p
             published = $first[0].Trim()
             modified  = $modified
-            commits   = @(git log --format=%H -- $p).Count
         }
     }
 
@@ -112,7 +116,7 @@ try {
 
     Write-Output ("tracked-html={0} written={1} manifest={2} content-changed={3}" -f $rows.Count, $Out, $Manifest, $bumped)
     foreach ($r in $rows) {
-        Write-Output ("  {0,-58} published={1}  modified={2}  commits={3}" -f $r.path, $r.published, $r.modified, $r.commits)
+        Write-Output ("  {0,-58} published={1}  modified={2}  commits={3}" -f $r.path, $r.published, $r.modified, $counts[$r.path])
     }
 }
 finally {
