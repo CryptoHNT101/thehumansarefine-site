@@ -108,6 +108,57 @@ try {
             }
         }
         if ($blocks.Count -eq 2 -and $types -notcontains 'BreadcrumbList') { Fail "$rel : two JSON-LD blocks and neither is a BreadcrumbList" }
+
+        # A breadcrumb list is a promise to a search engine about the page's place
+        # in the site. It has to be walkable: positions counted from 1 with no
+        # gaps, absolute URLs, and a last crumb that IS this page. Anything else is
+        # markup a crawler will discard, so it is checked rather than assumed.
+        $canonMatch = [regex]::Match($html, '(?is)<link\s+rel="canonical"\s+href="([^"]+)"')
+        $canon = ''
+        if ($canonMatch.Success) { $canon = $canonMatch.Groups[1].Value }
+        if ($canon -eq '') { Fail "$rel : no canonical URL" }
+        foreach ($b in $blocks) {
+            if ($b.Groups[1].Value -notmatch '"BreadcrumbList"') { continue }
+            $checks++
+            try { $bc = $b.Groups[1].Value | ConvertFrom-Json } catch { continue }
+            $items = @($bc.itemListElement)
+            if ($items.Count -lt 2) { Fail "$rel : breadcrumb list has $($items.Count) item(s)" }
+            for ($i = 0; $i -lt $items.Count; $i++) {
+                if ([int]$items[$i].position -ne ($i + 1)) { Fail "$rel : breadcrumb position $($items[$i].position) where $($i + 1) was due" }
+                $itemUrl = [string]$items[$i].item
+                if ($itemUrl -notmatch '^https://www\.thehumansarefine\.com/') { Fail "$rel : breadcrumb item '$itemUrl' is not an absolute on-site URL" }
+            }
+            if ($canon -ne '' -and [string]$items[$items.Count - 1].item -ne $canon) {
+                Fail "$rel : last breadcrumb does not point at the canonical URL"
+            }
+        }
+
+        # Social card numbers have to match the file that is actually served, or a
+        # crawler reserves the wrong box and crops the card.
+        $checks++
+        $ogW = [regex]::Match($html, '(?i)<meta\s+property="og:image:width"\s+content="(\d+)"')
+        $ogH = [regex]::Match($html, '(?i)<meta\s+property="og:image:height"\s+content="(\d+)"')
+        $ogU = [regex]::Match($html, '(?i)<meta\s+property="og:image"\s+content="([^"]+)"')
+        $twCard = [regex]::Match($html, '(?i)<meta\s+name="twitter:card"\s+content="([^"]+)"')
+        if (-not $ogW.Success -or -not $ogH.Success) { Fail "$rel : og:image declares no width/height" }
+        if (-not $twCard.Success -or $twCard.Groups[1].Value -ne 'summary_large_image') { Fail "$rel : twitter:card is not summary_large_image" }
+        if ($ogU.Success) {
+            $imgRel = 'assets/' + (Split-Path $ogU.Groups[1].Value -Leaf)
+            $imgPath = Join-Path $repo $imgRel
+            if (-not (Test-Path $imgPath)) { Fail "$rel : og:image file $imgRel does not exist" }
+            elseif ($ogW.Success -and $ogH.Success) {
+                # PNG only: the IHDR chunk carries width and height at bytes 16..23.
+                $bytes = [IO.File]::ReadAllBytes($imgPath)
+                if ($bytes.Length -gt 24 -and $bytes[1] -eq 0x50 -and $bytes[2] -eq 0x4E -and $bytes[3] -eq 0x47) {
+                    $realW = ([int]$bytes[16] -shl 24) + ([int]$bytes[17] -shl 16) + ([int]$bytes[18] -shl 8) + [int]$bytes[19]
+                    $realH = ([int]$bytes[20] -shl 24) + ([int]$bytes[21] -shl 16) + ([int]$bytes[22] -shl 8) + [int]$bytes[23]
+                    if ($realW -ne [int]$ogW.Groups[1].Value -or $realH -ne [int]$ogH.Groups[1].Value) {
+                        Fail "$rel : og:image says $($ogW.Groups[1].Value)x$($ogH.Groups[1].Value) but $imgRel is ${realW}x${realH}"
+                    }
+                }
+                else { Warn "$rel : og:image $imgRel is not a PNG this check can measure" }
+            }
+        }
     }
 
     # ---- every tracked asset is referenced somewhere -----------------------
