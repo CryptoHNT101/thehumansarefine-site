@@ -132,6 +132,23 @@ try {
         Ok ("sitemap.xml parses with {0} URLs" -f @($sx.urlset.url).Count)
     } catch { Bad "sitemap.xml no longer parses: $($_.Exception.Message)" }
 
+    # --- markup sanity: no stray '>' runs after an attribute ------------------
+    # Added after a real escape: eight article pages shipped with '">>>' appended
+    # to their og:image and twitter:image tags. Every other assertion in this file
+    # passed, because each of them reads a value out of a regex that tolerates the
+    # trailing junk. The malformed markup was invisible to the gate.
+    $gtBad = @()
+    foreach ($rel in @($tracked | Where-Object { $_ -like '*.html' })) {
+        $p = Join-Path $repo ($rel -replace '/', '\')
+        if (-not (Test-Path $p)) { continue }
+        $h = [System.IO.File]::ReadAllText($p)
+        $n = [regex]::Matches($h, 'content="[^"]*">>').Count
+        $m = [regex]::Matches($h, '>\s*>>').Count
+        if ($n -gt 0 -or $m -gt 0) { $gtBad += "$rel ($n attribute, $m tag)" }
+    }
+    if ($gtBad.Count -eq 0) { Ok 'no stray > runs after attributes in any page' }
+    else { Bad ("stray > runs in markup: " + ($gtBad -join '; ')) }
+
     Write-Output ''
     Write-Output ("DISCOVERY VERIFY: PASS={0} FAIL={1}" -f $pass, $fail)
     if ($fail -gt 0) { exit 1 }
