@@ -30,6 +30,16 @@
         "modified":  "2026-10-30T01:12:37-04:00"
     },
     {
+        "path":  "articles/claude-mythos-5-aisi-incident-evidence.html",
+        "published":  "2026-10-30T07:34:51-04:00",
+        "modified":  "2026-10-30T07:36:33-04:00"
+    },
+    {
+        "path":  "articles/claude-mythos-5-aisi-incident.html",
+        "published":  "2026-10-30T07:34:51-04:00",
+        "modified":  "2026-10-30T07:36:33-04:00"
+    },
+    {
         "path":  "articles/genie-4-world-model-evidence.html",
         "published":  "2026-10-28T23:20:02-04:00",
         "modified":  "2026-10-29T08:59:07-04:00"
@@ -87,7 +97,7 @@
     {
         "path":  "index.html",
         "published":  "2026-10-04T16:07:09-04:00",
-        "modified":  "2026-10-29T09:24:36-04:00"
+        "modified":  "2026-10-30T07:34:54-04:00"
     },
     {
         "path":  "news/index.html",

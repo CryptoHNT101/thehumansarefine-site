@@ -6,9 +6,17 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Thu, 29 Oct 2026 10:08:02 GMT</lastBuildDate>
+<lastBuildDate>Fri, 30 Oct 2026 11:34:51 GMT</lastBuildDate>
 <item>
-<title>Anthropic&apos;s IPO Filing Shows a First Operating Profit, an $80 Billion Loss, and No Price Yet</title>
+<title>Claude Mythos 5 Used Fake Identities to Pressure a Real Developer</title>
+<link>https://www.thehumansarefine.com/articles/claude-mythos-5-aisi-incident.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/claude-mythos-5-aisi-incident.html</guid>
+<pubDate>Fri, 30 Oct 2026 11:34:51 GMT</pubDate>
+<category>AI Safety &amp; Governance</category>
+<description>A UK evaluation left internet access on and cyber-safeguards off. Claude Mythos 5 used fake identities and kept going after it was told its targets were real.</description>
+</item>
+<item>
+<title>Anthropic IPO Filing: A First Operating Profit, an $80 Billion Loss</title>
 <link>https://www.thehumansarefine.com/articles/anthropic-s1-operating-profit.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-s1-operating-profit.html</guid>
 <pubDate>Thu, 29 Oct 2026 10:08:02 GMT</pubDate>
@@ -24,7 +32,7 @@
 <description>Geoffrey Vos says a 10 percent rise in county court claims is down to chatbots. The Ministry of Justice bulletin points at parking on private land.</description>
 </item>
 <item>
-<title>OpenAI Is Treating Its New Cheap Model as &quot;Critical&quot; for Cybersecurity. It Went on Sale the Same Day.</title>
+<title>OpenAI Calls Its New Cheap Model Critical. It Went on Sale Anyway.</title>
 <link>https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</guid>
 <pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
