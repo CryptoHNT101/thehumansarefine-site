@@ -289,3 +289,14 @@
   .crumbs,.crumbs a{color:#93a0a7}
   .crumbs a:hover,.crumbs a:focus-visible,.crumbs [aria-current="page"]{color:var(--ink)}
 }
+
+/* Day Shift 8: what the FOR HUMAN CONSUMPTION block is, and is not. */
+.hfc .hfc-note{
+  margin:0 0 1rem;
+  font-size:.82rem;
+  letter-spacing:.02em;
+  text-transform:none;
+  color:var(--muted, #6b6b6b);
+  border-left:3px solid var(--amber, #d99a2b);
+  padding-left:.7rem;
+}
