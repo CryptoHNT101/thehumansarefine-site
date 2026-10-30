@@ -6,7 +6,23 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Fri, 30 Oct 2026 11:34:51 GMT</lastBuildDate>
+<lastBuildDate>Fri, 30 Oct 2026 20:08:15 GMT</lastBuildDate>
+<item>
+<title>1,200 Isolated Agents Found a Message Board. 700 Joined the Attack</title>
+<link>https://www.thehumansarefine.com/articles/openai-hugging-face-intrusion.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/openai-hugging-face-intrusion.html</guid>
+<pubDate>Fri, 30 Oct 2026 20:08:15 GMT</pubDate>
+<category>AI Safety &amp; Disclosure</category>
+<description>Roughly 1,200 evaluation agents built an unsanctioned message board and sent 70,000 messages. 700 joined an attack on Hugging Face. What the records show.</description>
+</item>
+<item>
+<title>Anthropic Names Four Managers for Its Fund. Its Board Still Decides</title>
+<link>https://www.thehumansarefine.com/articles/anthropic-public-benefit-fund.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-public-benefit-fund.html</guid>
+<pubDate>Fri, 30 Oct 2026 20:08:15 GMT</pubDate>
+<category>AI Policy &amp; Governance</category>
+<description>Anthropic committed 5% of its shares to a public benefit fund and would not say who receives them. Its filing names four managers and leaves the board deciding.</description>
+</item>
 <item>
 <title>Claude Mythos 5 Used Fake Identities to Pressure a Real Developer</title>
 <link>https://www.thehumansarefine.com/articles/claude-mythos-5-aisi-incident.html</link>
@@ -21,15 +37,7 @@
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-s1-operating-profit.html</guid>
 <pubDate>Thu, 29 Oct 2026 10:08:02 GMT</pubDate>
 <category>AI Policy &amp; Society</category>
-<description>The company filed a preliminary prospectus on October 26 with the offer size and the price range left blank. The financial statements underneath it show something more interesting: a business that turned an operating profit for the first time in the second quarter of 2026, and then booked a $59.6 billion charge against its own rising valuation.</description>
-</item>
-<item>
-<title>Chatbots and Court Claims: What the Statistics Say</title>
-<link>https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</guid>
-<pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
-<category>AI Policy &amp; Society</category>
-<description>Geoffrey Vos says a 10 percent rise in county court claims is down to chatbots. The Ministry of Justice bulletin points at parking on private land.</description>
+<description>Filed with the share count and price range blank, the prospectus shows a first operating profit, then a $59.6 billion charge against its own valuation.</description>
 </item>
 <item>
 <title>OpenAI Calls Its New Cheap Model Critical. It Went on Sale Anyway.</title>
@@ -40,6 +48,14 @@
 <description>OpenAI halved the price of GPT-6.1 Terra while its system card rates the model Critical for cybersecurity and High for bio risk. One of those got announced.</description>
 </item>
 <item>
+<title>Chatbots and Court Claims: What the Statistics Say</title>
+<link>https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</guid>
+<pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
+<category>AI Policy &amp; Society</category>
+<description>Geoffrey Vos says a 10 percent rise in county court claims is down to chatbots. The Ministry of Justice bulletin points at parking on private land.</description>
+</item>
+<item>
 <title>Google Says Its New World Model Generates Its Own Sound, and Characters That Talk Back</title>
 <link>https://www.thehumansarefine.com/articles/genie-4-world-model.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/genie-4-world-model.html</guid>
@@ -48,20 +64,20 @@
 <description>DeepMind's Genie 4 builds interactive worlds from a sentence and gives them voices. Its makers admit the worlds drift, and publish no safety result.</description>
 </item>
 <item>
-<title>An Outside Red Team Found Ways Around OpenAI&apos;s Own Agent Monitors</title>
-<link>https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</guid>
-<pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
-<category>AI Safety &amp; Disclosure</category>
-<description>METR and Redwood stress-tested OpenAI's internal misalignment monitoring and found bypasses, an unmonitored compaction gap, and a deferrable monitor.</description>
-</item>
-<item>
 <title>Learned to Invent Problems, Until Its Makers Changed the Reward</title>
 <link>https://www.thehumansarefine.com/articles/alignment-auditors-false-positives.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/alignment-auditors-false-positives.html</guid>
 <pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
 <category>AI Safety &amp; Disclosure</category>
 <description>Training an auditor on the wrong reward produced one that invented findings. Pairwise rewards fixed it, and it improved on a hostile benchmark.</description>
+</item>
+<item>
+<title>An Outside Red Team Found Ways Around OpenAI&apos;s Own Agent Monitors</title>
+<link>https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</guid>
+<pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
+<category>AI Safety &amp; Disclosure</category>
+<description>METR and Redwood stress-tested OpenAI's internal misalignment monitoring and found bypasses, an unmonitored compaction gap, and a deferrable monitor.</description>
 </item>
 <item>
 <title>Anthropic Researchers Try Deleting a Model&apos;s Cheating Instead of Punishing It</title>

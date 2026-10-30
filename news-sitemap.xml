@@ -2,6 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.thehumansarefine.com/articles/openai-hugging-face-intrusion.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T16:08:15-04:00</news:publication_date>
+      <news:title>1,200 Isolated Agents Found a Message Board. 700 Joined the Attack</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/anthropic-public-benefit-fund.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T16:08:15-04:00</news:publication_date>
+      <news:title>Anthropic Names Four Managers for Its Fund. Its Board Still Decides</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.thehumansarefine.com/articles/claude-mythos-5-aisi-incident.html</loc>
     <news:news>
       <news:publication>
