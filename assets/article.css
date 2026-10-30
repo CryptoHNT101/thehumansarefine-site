@@ -242,3 +242,50 @@
 @media (max-width:560px){
   .ai-disclosure{padding:.85rem .9rem;font-size:.92rem;margin-top:1.5rem}
 }
+
+/* ============================================================
+   READER EXPERIENCE (Day Shift 6)
+   A single responsive headline treatment, applied by length tier
+   rather than per-article correction. scripts/thaf-reader-experience.ps1
+   sets .h1-lg (13-19 words) or .h1-xl (20+ words) on the article <h1></h1>
+   from the headline's own word count, so a new article inherits the
+   treatment without anyone editing this file again.
+
+   Tiers, in the order a reader sees them:
+     default (1-12 words)  58px desktop / 30px phone
+     .h1-lg  (13-19 words) 52px desktop / 27px phone
+     .h1-xl  (20+ words)   46px desktop / 25px phone
+   Long headlines give up size and gain line spacing, so they stop
+   filling the viewport while staying typographically calm.
+   ============================================================ */
+.article h1{line-height:1.06;text-wrap:pretty}
+.article h1.h1-lg{font-size:clamp(32px,4.4vw,52px);line-height:1.08;letter-spacing:-.035em}
+.article h1.h1-xl{font-size:clamp(30px,4vw,46px);line-height:1.1;letter-spacing:-.03em}
+@media(max-width:420px){
+  .article h1.h1-lg{font-size:27px;line-height:1.1}
+  .article h1.h1-xl{font-size:25px;line-height:1.12}
+}
+
+/* Related coverage sits between the newsroom block and the footer nav.
+   It had no styling, so the h2 fell back to the browser default (22.5px bold)
+   and read as a different publication from the rest of the page. */
+.related-title{margin:44px 0 12px;font:400 clamp(22px,3vw,30px)/1.15 var(--sans);letter-spacing:-.02em}
+
+/* Share row: plain outbound links, no scripts, no tracking pixels. */
+.share-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin:30px 0 0;padding-top:14px;border-top:1px solid var(--line)}
+.share-label{color:var(--muted);font:10px var(--mono);letter-spacing:.08em}
+.share-row a{display:inline-flex;align-items:center;min-height:26px;color:var(--green);font:10px var(--mono);letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px}
+.share-row a:hover,.share-row a:focus-visible{color:#d7f0dc;border-bottom-color:currentColor}
+
+/* Breadcrumb contrast. #6b6b6b on #0b1014 measured 3.59:1 — below the 4.5:1
+   AA floor for 11-12px text. Worse, [aria-current="page"] was #111, which on
+   this background measured about 1.05:1: the current page name was invisible
+   for every reader whose OS was not in dark mode. Both are fixed here, and the
+   dark-mode block is reconciled so the two modes agree instead of diverging. */
+.crumbs,.crumbs a{color:#93a0a7}
+.crumbs a:hover,.crumbs a:focus-visible{color:var(--ink);border-bottom-color:currentColor}
+.crumbs [aria-current="page"]{color:var(--ink)}
+@media (prefers-color-scheme:dark){
+  .crumbs,.crumbs a{color:#93a0a7}
+  .crumbs a:hover,.crumbs a:focus-visible,.crumbs [aria-current="page"]{color:var(--ink)}
+}

@@ -9,3 +9,32 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,[
 .footer-topics a:hover,.footer-topics a:focus-visible{text-decoration:underline}
 .kicker a{color:inherit;text-decoration:none}
 .kicker a:hover,.kicker a:focus-visible{text-decoration:underline}
+
+/* ============================================================
+   READER EXPERIENCE (Day Shift 6) — mobile masthead
+   On a 390px phone the stacking rules from the 800px breakpoint spent
+   392px of a 844px screen before the headline began: edition line,
+   31px brand, subtitle, a 44px grid gap, then the status panel with its
+   own border and 1.9 line-height. Measured masthead height was 277px.
+   These rules keep every element and the same left-aligned order, and
+   only tighten their type and spacing, to give the story back the screen.
+   ============================================================ */
+@media(max-width:560px){
+  .masthead-top{padding:12px 0 13px;gap:9px}
+  .edition,.edition span{font-size:9px;letter-spacing:.05em}
+  .brand{font-size:28px;line-height:1;letter-spacing:-.03em}
+  .brand small{margin-top:5px;font-size:11px}
+  .status-panel{border-top:0;padding:0;font-size:9px;line-height:1.55;letter-spacing:.04em}
+  .nav{padding:10px 0;gap:9px 14px}
+  .nav a{font-size:9px;letter-spacing:.04em}
+}
+
+/* Homepage lead headline, same length tiers as the article h1 so one
+   treatment covers the whole publication. .front h2.lead-headline keeps
+   the homepage's larger scale; long leads step down proportionally. */
+.front h2.lead-headline.h1-lg{font-size:clamp(38px,5vw,64px);line-height:1.05}
+.front h2.lead-headline.h1-xl{font-size:clamp(34px,4.4vw,54px);line-height:1.07}
+@media(max-width:420px){
+  .front h2.lead-headline.h1-lg{font-size:36px}
+  .front h2.lead-headline.h1-xl{font-size:33px}
+}
