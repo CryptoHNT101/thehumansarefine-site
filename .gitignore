@@ -25,6 +25,13 @@ tmp/
 # page from the repository, so it could never have deployed. 2026-10-29.
 newsroom/fdw/
 
+# newsroom/ holds one public page and nothing else. Allow-list it rather than
+# deny-list the collector subfolder: the isolation test proved that a new file at
+# newsroom/probe-collector.ps1 was still stageable, i.e. any script dropped there
+# would have been published by the next `git add -A`. 2026-10-30.
+newsroom/*
+!newsroom/index.html
+
 # --- Credentials and environment -------------------------------------------
 .env
 .env.*
