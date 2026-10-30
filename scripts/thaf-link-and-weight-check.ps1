@@ -143,7 +143,11 @@ try {
         if (-not $ogW.Success -or -not $ogH.Success) { Fail "$rel : og:image declares no width/height" }
         if (-not $twCard.Success -or $twCard.Groups[1].Value -ne 'summary_large_image') { Fail "$rel : twitter:card is not summary_large_image" }
         if ($ogU.Success) {
-            $imgRel = 'assets/' + (Split-Path $ogU.Groups[1].Value -Leaf)
+            # Resolve the URL as written to a path inside the deploy tree. The old version
+            # did 'assets/' + basename, which silently discarded the subdirectory:
+            # cards moved to assets/social/ were reported missing though present.
+            $imgUrl = $ogU.Groups[1].Value
+            $imgRel = ($imgUrl -replace '^https?://[^/]+/', '' -replace '^/', '')
             $imgPath = Join-Path $repo $imgRel
             if (-not (Test-Path $imgPath)) { Fail "$rel : og:image file $imgRel does not exist" }
             elseif ($ogW.Success -and $ogH.Success) {

@@ -222,3 +222,23 @@
   .crumbs,.crumbs a{color:#9a9a9a}
   .crumbs a:hover,.crumbs a:focus-visible,.crumbs [aria-current="page"]{color:#fff}
 }
+
+/* thaf:ai-disclosure - body-level authorship disclosure.
+   Palette falls back to the site :root values so the block stays on-brand
+   whether or not the custom properties are in scope on this stylesheet. */
+.ai-disclosure{
+  margin:2rem 0 0;
+  padding:1rem 1.15rem;
+  border:1px solid var(--line,#46535a);
+  border-left:3px solid var(--amber,#e8be7a);
+  background:var(--panel,#121a20);
+  font-size:.95rem;
+  line-height:1.6;
+}
+.ai-disclosure p{margin:0}
+.ai-disclosure strong{color:var(--ink,#f5f3ea)}
+.ai-disclosure a{color:inherit;text-decoration:underline}
+.ai-disclosure a:hover,.ai-disclosure a:focus-visible{text-decoration-thickness:2px}
+@media (max-width:560px){
+  .ai-disclosure{padding:.85rem .9rem;font-size:.92rem;margin-top:1.5rem}
+}

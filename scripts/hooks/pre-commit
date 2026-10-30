@@ -1,0 +1,32 @@
+#!/bin/sh
+# THE HUMANS ARE FINE - pre-commit discovery refresh.
+#
+# Installed by scripts/thaf-install-publish-hook.ps1 into .git/hooks/pre-commit.
+# This copy is tracked so the rule is reviewable and survives a fresh clone.
+#
+# It regenerates the discovery artifacts (share cards, news sitemap, sitemap)
+# and refuses the commit if they do not agree with the pages being committed.
+# A stale news sitemap is worse than no news sitemap: Google reads it as the
+# current list of recent articles.
+
+set -e
+
+# Only worth doing if something that feeds discovery changed.
+staged=$(git diff --cached --name-only --diff-filter=ACMR)
+if ! echo "$staged" | grep -qE '^(articles/|index\.html|scripts/page-dates\.json)'; then
+  exit 0
+fi
+
+echo "thaf: refreshing discovery artifacts for staged article changes"
+
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/thaf-build-discovery.ps1 > .git/thaf-discovery.log 2>&1 || {
+  echo "thaf: discovery build FAILED - see .git/thaf-discovery.log"
+  tail -n 30 .git/thaf-discovery.log
+  echo "thaf: commit refused. Fix the failure, or commit with --no-verify if you know why it is safe."
+  exit 1
+}
+
+git add news-sitemap.xml sitemap.xml assets/social scripts/page-dates.json 2>/dev/null || true
+
+echo "thaf: discovery artifacts up to date"
+exit 0
