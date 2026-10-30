@@ -160,7 +160,6 @@
 
   const init = function () {
     const banner = document.getElementById('analytics-consent');
-    if (!banner) return;
     const accept = document.getElementById('analytics-accept');
     if (accept) accept.addEventListener('click', function () { setConsent('granted'); });
     const decline = document.getElementById('analytics-decline');
@@ -172,8 +171,18 @@
       });
     });
     const saved = safeGet();
-    if (saved) { banner.hidden = true; if (saved === 'granted') load(); return; }
-    banner.hidden = false;
+    // Stored consent is checked before the banner is looked for. A page that
+    // carries no consent banner still has to honour a choice the reader already
+    // made on another page, or every bannerless page silently drops a reader
+    // who did consent.
+    if (saved) {
+      if (banner) banner.hidden = true;
+      if (saved === 'granted') load();
+      return;
+    }
+    // No stored decision. Only a page carrying a banner can ask, so only a page
+    // carrying a banner measures. The consent model is unchanged.
+    if (banner) banner.hidden = false;
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
