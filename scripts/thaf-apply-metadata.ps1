@@ -156,6 +156,29 @@ try {
 
         $original = $html
 
+        # ---- a page keeps its own social card -------------------------------
+        # assets/social/<slug>.png is rendered per story by
+        # scripts/thaf-build-social-cards.ps1. An earlier version of this script
+        # pointed every page at the generic banner, which on 30 October 2026
+        # silently replaced nine published articles' own cards with the house
+        # image. A page now keeps a card if one exists: either the file named
+        # after the page, or the card the page already advertises. Otherwise it
+        # gets the banner.
+        $pageImgUrl = $imgUrl; $pageImgW = $imgW; $pageImgH = $imgH
+        $prevImg = [regex]::Match($html, '(?is)<meta\s+property="og:image"\s+content="([^"]+)"')
+        $cardCandidates = @()
+        if ($prevImg.Success) { $cardCandidates += $prevImg.Groups[1].Value }
+        $cardCandidates += ("$origin/assets/social/" + [System.IO.Path]::GetFileNameWithoutExtension($rel) + '.png')
+        foreach ($cand in $cardCandidates) {
+            if ($cand -notmatch '/assets/social/[A-Za-z0-9._-]+\.png$') { continue }
+            $cardPath = Join-Path $repo $cand.Substring("$origin/".Length)
+            if (-not (Test-Path $cardPath)) { continue }
+            $card = Png-Size $cardPath
+            if ($card.W -le $card.H) { continue }
+            $pageImgUrl = $cand; $pageImgW = $card.W; $pageImgH = $card.H
+            break
+        }
+
         # ---- strip any previous fenced block so re-runs replace, not append --
         # The surrounding newlines are consumed too, so the rebuild below lands
         # the block in exactly the same bytes every time. An earlier version
@@ -188,6 +211,9 @@ try {
         $trail = Read-Trail $html
         $sectionName = if ($trail) { $trail.TopicName } else { Page-Section $rel }
         $ogAlt = Decode-Basic $rawTitle
+        # live convention: an article's alt names it as a share card; any other
+        # page uses its own title
+        $pageAlt = if ($type -eq 'article') { "Share card for The Humans Are Fine report: $ogAlt" } else { $ogAlt }
         if (-not (& $have 'rel="canonical"')) {
             $head.Add('<link rel="canonical" href="' + (Esc $url) + '">')
         }
@@ -208,11 +234,11 @@ try {
             $head.Add('<meta property="og:url" content="' + (Esc $url) + '">')
         }
         if (-not (& $have 'property="og:image"')) {
-            $head.Add('<meta property="og:image" content="' + $imgUrl + '">')
+            $head.Add('<meta property="og:image" content="' + $pageImgUrl + '">')
             $head.Add('<meta property="og:image:type" content="image/png">')
-            $head.Add('<meta property="og:image:width" content="' + $imgW + '">')
-            $head.Add('<meta property="og:image:height" content="' + $imgH + '">')
-            $head.Add('<meta property="og:image:alt" content="' + (Esc $ogAlt) + '">')
+            $head.Add('<meta property="og:image:width" content="' + $pageImgW + '">')
+            $head.Add('<meta property="og:image:height" content="' + $pageImgH + '">')
+            $head.Add('<meta property="og:image:alt" content="' + (Esc $pageAlt) + '">')
         }
         if (($type -eq 'article' -or $type -eq 'evidence') -and -not (& $have 'property="article:published_time"')) {
             $head.Add('<meta property="article:published_time" content="' + $pub + '">')
@@ -223,8 +249,8 @@ try {
             $head.Add('<meta name="twitter:card" content="summary_large_image">')
             $head.Add('<meta name="twitter:title" content="' + (Esc $rawTitle) + '">')
             $head.Add('<meta name="twitter:description" content="' + (Esc $desc) + '">')
-            $head.Add('<meta name="twitter:image" content="' + $imgUrl + '">')
-            $head.Add('<meta name="twitter:image:alt" content="' + (Esc $ogAlt) + '">')
+            $head.Add('<meta name="twitter:image" content="' + $pageImgUrl + '">')
+            $head.Add('<meta name="twitter:image:alt" content="' + (Esc $pageAlt) + '">')
         }
 
         # ---- JSON-LD ---------------------------------------------------------
@@ -238,10 +264,10 @@ try {
         # a share/lead image node, reused wherever schema.org wants one
         $imgNode = [ordered]@{
             '@type'  = 'ImageObject'
-            url      = $imgUrl
-            width    = $imgW
-            height   = $imgH
-            caption  = $ogAlt
+            url      = $pageImgUrl
+            width    = $pageImgW
+            height   = $pageImgH
+            caption  = $pageAlt
         }
         $ld = $null
         switch ($type) {
