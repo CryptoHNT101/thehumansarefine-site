@@ -6,7 +6,23 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Fri, 30 Oct 2026 20:08:15 GMT</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 14:09:57 GMT</lastBuildDate>
+<item>
+<title>OpenAI and Wikimedia Both File on Fair Use, From Opposite Sides</title>
+<link>https://www.thehumansarefine.com/articles/openai-wikimedia-fair-use.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/openai-wikimedia-fair-use.html</guid>
+<pubDate>Sat, 31 Oct 2026 14:09:57 GMT</pubDate>
+<category>Technology &amp; Law</category>
+<description>On the day amicus briefs were due in the OpenAI copyright litigation, OpenAI compiled excerpts defending fair use and Wikimedia filed a brief that splits training from retrieval.</description>
+</item>
+<item>
+<title>OpenAI and Google Backed One robots.txt Opt-Out. The Draft Says It Stops No Crawl</title>
+<link>https://www.thehumansarefine.com/articles/robots-txt-ai-training-signal.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/robots-txt-ai-training-signal.html</guid>
+<pubDate>Sat, 31 Oct 2026 14:09:57 GMT</pubDate>
+<category>AI Policy &amp; Governance</category>
+<description>OpenAI and Google endorsed a shared robots.txt token for AI training preferences. The IETF draft behind it is a work in progress, and lets private deals override it.</description>
+</item>
 <item>
 <title>1,200 Isolated Agents Found a Message Board. 700 Joined the Attack</title>
 <link>https://www.thehumansarefine.com/articles/openai-hugging-face-intrusion.html</link>
@@ -40,20 +56,20 @@
 <description>Filed with the share count and price range blank, the prospectus shows a first operating profit, then a $59.6 billion charge against its own valuation.</description>
 </item>
 <item>
-<title>OpenAI Calls Its New Cheap Model Critical. It Went on Sale Anyway.</title>
-<link>https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</guid>
-<pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
-<category>AI Industry &amp; Safety</category>
-<description>OpenAI halved the price of GPT-6.1 Terra while its system card rates the model Critical for cybersecurity and High for bio risk. One of those got announced.</description>
-</item>
-<item>
 <title>Chatbots and Court Claims: What the Statistics Say</title>
 <link>https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</guid>
 <pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
 <category>AI Policy &amp; Society</category>
 <description>Geoffrey Vos says a 10 percent rise in county court claims is down to chatbots. The Ministry of Justice bulletin points at parking on private land.</description>
+</item>
+<item>
+<title>OpenAI Calls Its New Cheap Model Critical. It Went on Sale Anyway.</title>
+<link>https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</guid>
+<pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
+<category>AI Industry &amp; Safety</category>
+<description>OpenAI halved the price of GPT-6.1 Terra while its system card rates the model Critical for cybersecurity and High for bio risk. One of those got announced.</description>
 </item>
 <item>
 <title>Google Says Its New World Model Generates Its Own Sound, and Characters That Talk Back</title>

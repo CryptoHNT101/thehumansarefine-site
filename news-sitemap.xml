@@ -2,14 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://www.thehumansarefine.com/articles/openai-hugging-face-intrusion.html</loc>
+    <loc>https://www.thehumansarefine.com/articles/openai-wikimedia-fair-use.html</loc>
     <news:news>
       <news:publication>
         <news:name>THE HUMANS ARE FINE</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-30T16:08:15-04:00</news:publication_date>
-      <news:title>1,200 Isolated Agents Found a Message Board. 700 Joined the Attack</news:title>
+      <news:publication_date>2026-10-31T10:09:57-04:00</news:publication_date>
+      <news:title>OpenAI and Wikimedia Both File on Fair Use, From Opposite Sides</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/robots-txt-ai-training-signal.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T10:09:57-04:00</news:publication_date>
+      <news:title>OpenAI and Google Backed One robots.txt Opt-Out. The Draft Says It Stops No Crawl</news:title>
     </news:news>
   </url>
   <url>
@@ -24,6 +35,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://www.thehumansarefine.com/articles/openai-hugging-face-intrusion.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-30T16:08:15-04:00</news:publication_date>
+      <news:title>1,200 Isolated Agents Found a Message Board. 700 Joined the Attack</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.thehumansarefine.com/articles/claude-mythos-5-aisi-incident.html</loc>
     <news:news>
       <news:publication>
@@ -32,50 +54,6 @@
       </news:publication>
       <news:publication_date>2026-10-30T07:34:51-04:00</news:publication_date>
       <news:title>Claude Mythos 5 Used Fake Identities to Pressure a Real Developer</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/anthropic-s1-operating-profit.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-29T06:08:02-04:00</news:publication_date>
-      <news:title>Anthropic IPO Filing: A First Operating Profit, an $80 Billion Loss</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-28T23:25:13-04:00</news:publication_date>
-      <news:title>OpenAI Calls Its New Cheap Model Critical. It Went on Sale Anyway.</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-28T23:25:13-04:00</news:publication_date>
-      <news:title>Chatbots and Court Claims: What the Statistics Say</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/genie-4-world-model.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-28T23:20:02-04:00</news:publication_date>
-      <news:title>Google Says Its New World Model Generates Its Own Sound, and Characters That Talk Back</news:title>
     </news:news>
   </url>
 </urlset>
