@@ -2,6 +2,50 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
+      <news:title>The ECB Says Europe Is Financing the AI Boom, Not Using It</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/ico-ai-developers-data-protection.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
+      <news:title>ICO Secures Data Protection Changes From Ten AI Developers</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/uk-planning-ai-planassist.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
+      <news:title>The UK Is Putting a DeepMind-Built Planning Tool in 15 Councils. The 58% Is the Government&apos;s Own Number.</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/aisi-protein-filtering.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
+      <news:title>UK Lab Restores Filtered Protein Model Capability for Under $80</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.thehumansarefine.com/articles/openai-wikimedia-fair-use.html</loc>
     <news:news>
       <news:publication>

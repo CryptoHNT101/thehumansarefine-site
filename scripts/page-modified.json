@@ -1,4 +1,12 @@
 ﻿{
+    "articles/aisi-protein-filtering-evidence.html":  {
+                                                          "hash":  "d4a270c373802fb7889cc4662f1d20aafe80821e27b2f93accc39b06e1233d59",
+                                                          "modified":  "2026-10-31T14:52:38-04:00"
+                                                      },
+    "articles/aisi-protein-filtering.html":  {
+                                                 "hash":  "1b782709e64ee386d9580bdb6e7c61ca928478649f773c14c70a3c3c8473f87e",
+                                                 "modified":  "2026-10-31T14:53:15-04:00"
+                                             },
     "articles/alignment-auditors-false-positives-evidence.html":  {
                                                                       "hash":  "055f1b30cce4bb1b6cc4d3115e3e8c33a018523f8ad58de50edc6769eb31a637",
                                                                       "modified":  "2026-10-31T10:21:49-04:00"
@@ -39,6 +47,14 @@
                                                         "hash":  "2a523313a6beb1f5e0cd11de58c3b41b6a2388d8096528f1545998e116ef5ae8",
                                                         "modified":  "2026-10-31T10:21:49-04:00"
                                                     },
+    "articles/ecb-ai-adoption-europe-evidence.html":  {
+                                                          "hash":  "28567a6a995822f7e12bef3604a2c88378e75cfa2998031f1b71abfe6f15b569",
+                                                          "modified":  "2026-10-31T14:52:38-04:00"
+                                                      },
+    "articles/ecb-ai-adoption-europe.html":  {
+                                                 "hash":  "31fa8e949b6508479aa6c2d73493b18489fbacedaf47fc60fc7fe8a2628b01ce",
+                                                 "modified":  "2026-10-31T14:53:15-04:00"
+                                             },
     "articles/genie-4-world-model-evidence.html":  {
                                                        "hash":  "06665a25e364f79fbb8832782c434d787a68c95e55fad203eb4cda5dfc6b5fbf",
                                                        "modified":  "2026-10-31T10:21:49-04:00"
@@ -63,6 +79,14 @@
                                                     "hash":  "60878179c5ffe2c9caf5078f8d9e6333d1a93f95d54e977aac685e4dd2bc082c",
                                                     "modified":  "2026-10-31T10:21:49-04:00"
                                                 },
+    "articles/ico-ai-developers-data-protection-evidence.html":  {
+                                                                     "hash":  "427d7d1172a929b0140b8efd3f40074994e1f55a4e728da490e807291694e6cb",
+                                                                     "modified":  "2026-10-31T14:52:38-04:00"
+                                                                 },
+    "articles/ico-ai-developers-data-protection.html":  {
+                                                            "hash":  "cd3a60269da5bb27147bdf863f808ac2b8b70db76576f024426d296a9656fa43",
+                                                            "modified":  "2026-10-31T14:53:15-04:00"
+                                                        },
     "articles/metr-openai-agent-monitoring-evidence.html":  {
                                                                 "hash":  "e0e782ae9c05103925b58d31ed2c5b3acc685d1be23387f0b82d04e240cc5c28",
                                                                 "modified":  "2026-10-31T10:21:49-04:00"
@@ -95,6 +119,14 @@
                                                         "hash":  "d4e81d139725ebcd6e8caeb4efe53b09c65043a8f753b7cc9dd7a5b4aa024501",
                                                         "modified":  "2026-10-31T10:21:49-04:00"
                                                     },
+    "articles/uk-planning-ai-planassist-evidence.html":  {
+                                                             "hash":  "718d916f1f3aa471d9dd9e54a85b4736755a85ad789dfbb146e47ef1514e0a8c",
+                                                             "modified":  "2026-10-31T14:52:38-04:00"
+                                                         },
+    "articles/uk-planning-ai-planassist.html":  {
+                                                    "hash":  "606e08b4dd7de8d2f2fb4e0269268e692b064b9fa217f3079c11059959470de3",
+                                                    "modified":  "2026-10-31T14:53:15-04:00"
+                                                },
     "articles/vos-chatbots-court-claims-evidence.html":  {
                                                              "hash":  "cd8bdc5c33caf2212758f1b706617dc7c0492db12d8e1b6cc99ca7897542de83",
                                                              "modified":  "2026-10-31T10:21:49-04:00"

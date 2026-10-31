@@ -1,5 +1,15 @@
 ﻿[
     {
+        "path":  "articles/aisi-protein-filtering-evidence.html",
+        "published":  "2026-10-31T14:50:45-04:00",
+        "modified":  "2026-10-31T14:52:38-04:00"
+    },
+    {
+        "path":  "articles/aisi-protein-filtering.html",
+        "published":  "2026-10-31T14:50:45-04:00",
+        "modified":  "2026-10-31T14:53:15-04:00"
+    },
+    {
         "path":  "articles/alignment-auditors-false-positives-evidence.html",
         "published":  "2026-10-27T22:53:47-04:00",
         "modified":  "2026-10-31T10:21:49-04:00"
@@ -50,6 +60,16 @@
         "modified":  "2026-10-31T10:21:49-04:00"
     },
     {
+        "path":  "articles/ecb-ai-adoption-europe-evidence.html",
+        "published":  "2026-10-31T14:50:45-04:00",
+        "modified":  "2026-10-31T14:52:38-04:00"
+    },
+    {
+        "path":  "articles/ecb-ai-adoption-europe.html",
+        "published":  "2026-10-31T14:50:45-04:00",
+        "modified":  "2026-10-31T14:53:15-04:00"
+    },
+    {
         "path":  "articles/genie-4-world-model-evidence.html",
         "published":  "2026-10-28T23:20:02-04:00",
         "modified":  "2026-10-31T10:21:49-04:00"
@@ -78,6 +98,16 @@
         "path":  "articles/graft-localizing-cheating.html",
         "published":  "2026-10-27T22:53:47-04:00",
         "modified":  "2026-10-31T10:21:49-04:00"
+    },
+    {
+        "path":  "articles/ico-ai-developers-data-protection-evidence.html",
+        "published":  "2026-10-31T14:50:45-04:00",
+        "modified":  "2026-10-31T14:52:38-04:00"
+    },
+    {
+        "path":  "articles/ico-ai-developers-data-protection.html",
+        "published":  "2026-10-31T14:50:45-04:00",
+        "modified":  "2026-10-31T14:53:15-04:00"
     },
     {
         "path":  "articles/metr-openai-agent-monitoring-evidence.html",
@@ -118,6 +148,16 @@
         "path":  "articles/robots-txt-ai-training-signal.html",
         "published":  "2026-10-31T10:09:57-04:00",
         "modified":  "2026-10-31T10:21:49-04:00"
+    },
+    {
+        "path":  "articles/uk-planning-ai-planassist-evidence.html",
+        "published":  "2026-10-31T14:50:45-04:00",
+        "modified":  "2026-10-31T14:52:38-04:00"
+    },
+    {
+        "path":  "articles/uk-planning-ai-planassist.html",
+        "published":  "2026-10-31T14:50:45-04:00",
+        "modified":  "2026-10-31T14:53:15-04:00"
     },
     {
         "path":  "articles/vos-chatbots-court-claims-evidence.html",
