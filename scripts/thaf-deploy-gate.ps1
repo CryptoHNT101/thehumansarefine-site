@@ -129,6 +129,66 @@ try {
     if ($mismatch -eq 0) { Ok "every canonical matches the URL the file is served at" }
 
     Write-Output ''
+    # ---------- Navigation coverage ----------
+    # A report can be published, in the sitemap and in RSS, and still be
+    # invisible to readers, because the two listing pages are hand-maintained.
+    # That happened once: four approved reports shipped while the homepage and
+    # /news/ still said 13. This check makes the listing pages part of the
+    # release rather than an afterthought.
+    Write-Output ''
+    Write-Output '--- Navigation coverage ---'
+    $articleFiles = @($tracked | Where-Object { $_ -match '^articles/[^/]+\.html$' -and $_ -notmatch '-evidence\.html$' })
+    $homeHtml = [IO.File]::ReadAllText((Join-Path $repo 'index.html'))
+    $newsHtml = [IO.File]::ReadAllText((Join-Path $repo 'news\index.html'))
+
+    $missingHome = @(); $missingNews = @(); $noEvidence = @()
+    foreach ($rel in $articleFiles) {
+        $slug = [IO.Path]::GetFileNameWithoutExtension($rel)
+        if (-not $homeHtml.Contains('href="articles/' + $slug + '.html"')) { $missingHome += $slug }
+        if (-not $newsHtml.Contains('href="../articles/' + $slug + '.html"')) { $missingNews += $slug }
+        $ev = ('articles/{0}-evidence.html' -f $slug)
+        if (-not ($tracked -contains $ev)) { $noEvidence += $slug }
+    }
+
+    Write-Output ("  published articles tracked: " + $articleFiles.Count)
+    if ($articleFiles.Count -eq 0) {
+        Bad 'no published articles found under articles/ - coverage cannot be proven'
+    }
+    if ($missingHome.Count -eq 0) {
+        Ok ("every published article is linked from the homepage (" + $articleFiles.Count + "/" + $articleFiles.Count + ")")
+    } else {
+        Bad ("homepage is missing " + $missingHome.Count + " published article(s): " + ($missingHome -join ', '))
+    }
+    if ($missingNews.Count -eq 0) {
+        Ok ("every published article is linked from /news/ (" + $articleFiles.Count + "/" + $articleFiles.Count + ")")
+    } else {
+        Bad ("news archive is missing " + $missingNews.Count + " published article(s): " + ($missingNews -join ', '))
+    }
+    if ($noEvidence.Count -eq 0) {
+        Ok 'every published article has an evidence file tracked'
+    } else {
+        Bad ("articles with no tracked evidence file: " + ($noEvidence -join ', '))
+    }
+
+    # Figures printed to readers must equal the real inventory.
+    $homeCounts = @([regex]::Matches($homeHtml, '(\d+) REPORTS PUBLISHED') | ForEach-Object { [int]$_.Groups[1].Value })
+    if ($homeCounts.Count -eq 0) {
+        Bad 'homepage prints no "N REPORTS PUBLISHED" figure'
+    } elseif (($homeCounts | Where-Object { $_ -ne $articleFiles.Count }).Count -gt 0) {
+        Bad ("homepage report count " + ($homeCounts -join '/') + " does not match the " + $articleFiles.Count + " published articles")
+    } else {
+        Ok ("homepage report count matches the inventory (" + $articleFiles.Count + ")")
+    }
+
+    $glance = [regex]::Match($newsHtml, '(\d+) published stories<br>(\d+) Evidence Files')
+    if (-not $glance.Success) {
+        Bad 'news archive has no AT A GLANCE count line'
+    } else {
+        $ns = [int]$glance.Groups[1].Value
+        $ne = [int]$glance.Groups[2].Value
+        if ($ns -ne $articleFiles.Count) { Bad ("news AT A GLANCE says " + $ns + " published stories, inventory has " + $articleFiles.Count) } else { Ok ("news story count matches the inventory (" + $ns + ")") }
+        if ($ne -ne $articleFiles.Count) { Bad ("news AT A GLANCE says " + $ne + " evidence files, inventory has " + $articleFiles.Count) } else { Ok ("news evidence count matches the inventory (" + $ne + ")") }
+    }
     Write-Output ("DEPLOY GATE: PASS={0} FAIL={1} WARN={2}" -f $pass, $fail, $warn)
     if ($fail -gt 0) { exit 1 }
 }
