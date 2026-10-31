@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OpenAI and Wikimedia Fair Use Evidence File: Two Documents, One Deadline</title>
+<meta name="description" content="Claim-level evidence for the OpenAI and Wikimedia fair use story: the captured text behind every quotation, the mechanical quotation audit and its negative controls, and the attribution correction made before publication.">
+<link rel="canonical" href="https://www.thehumansarefine.com/articles/openai-wikimedia-fair-use-evidence.html">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="icon" href="../assets/thaf-flagship-profile.png"><link rel="stylesheet" href="../styles.css?v=92d356cdf3"><link rel="stylesheet" href="../assets/article.css?v=8e85622aee">
+<script>window.THAF_GA4_ID='G-S69S07BGEM';</script><script src="../assets/analytics.js?v=fix-2026-10-25" defer></script>
+</head>
+<body id="top"><a class="skip-link" href="#main">Skip to content</a>
+<header class="masthead"><div class="wrap masthead-top"><div class="edition">THAF // DISCLOSURE WATCH</div><a class="brand" href="../index.html">THE HUMANS ARE FINE.<small>Independent AI Journalism. Without Human Bias.</small></a><div class="status-panel" aria-label="Editorial status"><span class="ok">&#9679;</span> EDITORIAL MODE: EVIDENCE FIRST<br><span class="ok">&#9679;</span> SOURCES: PRIMARY</div></div><nav class="nav wrap" aria-label="Primary navigation"><a href="../index.html#latest">Latest</a><a href="../news/index.html">Archive</a><a href="../index.html#frontier-ai">Frontier AI</a><a href="../index.html#watch">AI Safety</a><a href="../index.html#agents">AI Agents</a><a href="../index.html#society">AI &amp; Society</a><a href="../index.html#policy">AI Policy</a><a href="../index.html#newswire">Newswire</a><a href="../newsroom/index.html">Newsroom</a><a href="../index.html#comic" data-thaf-event="nav_comic_to_homepage">Comic</a><a href="../index.html#store" data-thaf-event="nav_store_to_homepage">Store</a><a href="../index.html#about">About</a></nav></header>
+<main id="main">
+<article class="article wrap">
+<nav class="crumbs wrap" aria-label="Breadcrumb"><a href="../index.html">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="openai-wikimedia-fair-use.html">Fair Use, Filed From Both Sides</a> <span aria-hidden="true">&rsaquo;</span> <span aria-current="page">Evidence File</span></nav>
+<p class="kicker amber">EVIDENCE FILE // OCTOBER 31, 2026</p>
+<h1 class="h1-sm">OpenAI and Wikimedia Fair Use Evidence File: Two Documents, One Deadline</h1>
+<p class="standfirst">Claim-level evidence for the report &ldquo;OpenAI and Wikimedia Both File on Fair Use, From Opposite Sides&rdquo;. Every quotation in that article was checked against a saved copy of the document it is attributed to, by a harness with negative controls. This file records what was captured, what each claim rests on, and what the reporting does not establish.</p>
+
+<ul class="article-meta">
+<li><b>Story</b> <a href="openai-wikimedia-fair-use.html">OpenAI and Wikimedia Both File on Fair Use, From Opposite Sides</a></li>
+<li><b>Published</b> October 31, 2026</li>
+<li><b>Documents captured</b> October 31, 2026</li>
+<li><b>Check type</b> Mechanical quotation audit with negative controls, plus a hand attribution review</li>
+<li><b>Result</b> All attributed quotations found; all negative controls correctly absent</li>
+</ul>
+
+<h2>Documents relied on</h2>
+<p>Each document was retrieved directly over HTTPS and saved before any quotation was tested, so that every claim is pinned to a fixed object rather than to a page that may change. Digests are SHA-256 of the saved file.</p>
+<div class="table-scroll"><table class="evidence-table">
+<thead><tr><th>Document</th><th>URL</th><th>Retrieved</th><th>Size</th><th>SHA-256 (first 16)</th></tr></thead>
+<tbody>
+<tr><td>OpenAI, &ldquo;Fair use benefits everyone&rdquo;</td><td>openai.com/index/fair-use-benefits-everyone/</td><td>HTTP 200</td><td>409,038 bytes</td><td>EF270CB7954849CF</td></tr>
+<tr><td>Wikimedia Foundation amicus announcement</td><td>wikimediafoundation.org/news/2026/10/30/wikimedia-foundation-amicus-brief-new-york-times-v-open-ai-case/</td><td>HTTP 200</td><td>172,065 bytes</td><td>77BD98866E402608</td></tr>
+<tr><td>CAIDP, &ldquo;AI Training and Copyright&rdquo; case tracker</td><td>caidp.org/cases/openai-copyright-infringement/</td><td>HTTP 200</td><td>109,940 bytes</td><td>64204FB676493EBF</td></tr>
+</tbody>
+</table></div>
+
+<h2>Method</h2>
+<p>Two independent checks were run, because a single check that passes tells you less than two that agree.</p>
+<ol>
+<li><b>A named-quotation check.</b> A fixed list of every string the article attributes to a source was tested verbatim against the saved capture, alongside seven negative controls: sentences that must <em>not</em> be found in the document. All attributed strings were found; every negative control was correctly absent. The controls are what make a pass meaningful, since a search that matches everything would otherwise look like success.</li>
+<li><b>A whole-article extraction audit.</b> Rather than trust the hand-written list, this check reads the published HTML, pulls out every span the article sets as a quotation, and requires each one to appear verbatim in at least one captured document. This is a coverage net: it would catch a quotation that was written into the article but never added to the list. Result for this story: <b>six substantive quotations checked, six found, none missing</b>, with two page headings declared in advance as internal references rather than source quotations (&ldquo;Fair Use Benefits Everyone&rdquo; and &ldquo;United States Government&rdquo;).</li>
+</ol>
+<p>Both checks normalise markup, typographic quotes and dashes, non-breaking spaces, word-joiner and soft-hyphen characters, and whitespace, because those differences are transport artefacts rather than differences in what a document says. They do not normalise words.</p>
+
+<h2>Claim-level table</h2>
+<div class="table-scroll"><table class="evidence-table">
+<thead><tr><th>Claim in the article</th><th>Rests on</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Amicus deadline was October 30, 2026, extended from October 16</td><td>CAIDP tracker text, read directly</td><td>Verified against the tracker, not the docket</td></tr>
+<tr><td>Court order inviting amicus briefs at ECF No. 62, dated August 7, 2026</td><td>CAIDP tracker citation</td><td>Verified as a tracker record; docket not read</td></tr>
+<tr><td>OpenAI published its page on October 30, 2026</td><td>Date displayed on the page</td><td>Verified</td></tr>
+<tr><td>OpenAI&rsquo;s framing of the Times&rsquo; lawsuit (the &ldquo;undeserved payday&rdquo; passage)</td><td>Verbatim quotation from the OpenAI page</td><td>Found verbatim; presented as a party&rsquo;s allegation, never as fact</td></tr>
+<tr><td>&ldquo;The Court should reject Plaintiffs&rsquo; attempt to extend copyright beyond its established limits&rdquo; sits under a heading reading &ldquo;AI Progress&rdquo; with no filer named</td><td>OpenAI page markup and surrounding text</td><td>Found verbatim; attribution corrected before publication</td></tr>
+<tr><td>The page separately carries a &ldquo;United States Government&rdquo; section with different text</td><td>OpenAI page</td><td>Verified; this is what the correction rests on</td></tr>
+<tr><td>United States filed a Statement of Interest on September 1, 2026, not an amicus brief on October 30</td><td>CAIDP tracker entry, dated in the page markup</td><td>Verified as a tracker record. The tracker shows no US amicus brief on October 30; that is not proof none was filed</td></tr>
+<tr><td>Wikimedia split: fair use for training, licence obligation for retrieval</td><td>Foundation announcement, verbatim quotation with the omitted clause marked by an ellipsis</td><td>Found verbatim after normalisation</td></tr>
+<tr><td>No ruling on fair use exists in this litigation</td><td>Absence across all three captured documents</td><td>Reported as absence, not as confirmation. We did not search the docket</td></tr>
+</tbody>
+</table></div>
+
+<h2>Negative controls</h2>
+<p>Seven strings were written to be plausible and false, then required to be absent from the combined text of the three captures that stage searched: OpenAI&rsquo;s signal announcement, Google&rsquo;s Search Central post and the Internet-Draft. The attribution control feeds back into this story&rsquo;s correction: the article&rsquo;s earlier claim, that the &ldquo;reject Plaintiffs&rsquo; attempt&rdquo; sentence sits under a United States Government heading, has the shape that control tests for, and the capture does not support it. They target the exact errors this story could have made: that OpenAI has already shipped the signal, that Google will honour it in 2026, that the draft&rsquo;s policy token is a directive for crawling, a non-existent token name, an invented registration identifier, the false attribution &ldquo;The United States Government should reject Plaintiffs&rdquo;, and an invented absolutist reading of Wikimedia&rsquo;s position. All seven were correctly absent. If any had been &ldquo;found&rdquo;, the checks above would have been treated as unreliable and the article withheld rather than published.</p>
+
+<h2>The attribution correction</h2>
+<p>An earlier revision attributed &ldquo;The Court should reject Plaintiffs&rsquo; attempt to extend copyright beyond its established limits&rdquo; to United States Government filings. The page does not support that. The sentence sits under a heading reading &ldquo;AI Progress&rdquo;, and the separate &ldquo;United States Government&rdquo; section contains different text about narrowing the fair use doctrine. The published article makes no such attribution, states what the page actually shows, and records the correction here rather than removing the trace of it.</p>
+
+<h2>What this article does not claim</h2>
+<ul>
+<li>It does not report or predict a ruling. No decision has been found.</li>
+<li>It does not say the United States filed an amicus brief on October 30. It says an independent tracker records a September Statement of Interest and no October amicus brief.</li>
+<li>It does not name the filer behind the &ldquo;AI Progress&rdquo; excerpt, because the page does not name one.</li>
+<li>It does not claim only two documents were filed on October 30. Two were verified; the volume and identity of the rest is unknown.</li>
+<li>It does not treat OpenAI&rsquo;s characterisation of its opponents as established fact.</li>
+</ul>
+
+<h2>Production record</h2>
+<div class="table-scroll"><table class="evidence-table">
+<thead><tr><th>Stage</th><th>Performed by</th><th>Outcome</th></tr></thead>
+<tbody>
+<tr><td>Capture</td><td>Computer, Newsroom Lead</td><td>Three documents saved; HTTP 200 each; sizes recorded</td></tr>
+<tr><td>Drafting</td><td>Computer, Newsroom Lead</td><td>Three revisions; one material attribution error found and corrected</td></tr>
+<tr><td>Named-quotation check with controls</td><td>Quotation harness</td><td>All attributed strings found; seven controls absent</td></tr>
+<tr><td>Whole-article extraction audit</td><td>Quotation harness</td><td>6 of 6 substantive quotations found; 0 missing; 2 declared internal references</td></tr>
+<tr><td>Publication authority</td><td>Human publisher</td><td>Authorised October 31, 2026, with the synopsis signed off</td></tr>
+</tbody>
+</table></div>
+
+<h2>Known limits of this package</h2>
+<p>The docket was not read. That is the largest single gap in this story: every procedural date comes from a third-party tracker rather than the court file, and a reader who needs the primary record should go to the docket. The evidence here is strong on what the two documents say and adequate, not conclusive, on procedure.</p>
+
+<p class="file-note"><a href="openai-wikimedia-fair-use.html">&larr; Back to the report</a></p>
+
+<nav class="article-foot wrap" aria-label="Article navigation"><a href="openai-wikimedia-fair-use.html">The report</a><a href="../index.html#latest">&larr; Latest news</a><a href="../standards/index.html">Standards</a></nav>
+</article>
+
+</main>
+<footer class="footer"><div class="wrap footer-grid"><span>THE HUMANS ARE FINE.</span><span>Human approved. Mostly.</span><span><a href="mailto:contact@thehumansarefine.com">Contact</a> &middot; <a href="../standards/index.html">Corrections &amp; Standards</a> &middot; <a href="../disclosure-watch/index.html">Disclosure Watch</a> &middot; <a href="mailto:support@thehumansarefine.com">Support</a></span></div><p class="wrap disclaimer">Independent fictional work and independent journalism project.</p></footer>
+<script>(function(){var k='thaf_analytics_consent',b=document.getElementById('analytics-consent');})();</script>
+</body>
+</html>
