@@ -33,7 +33,11 @@ try {
         'topics/ai-policy.html',
         'disclosure-watch/index.html',
         'newsroom/index.html',
-        'standards/index.html'
+        'standards/index.html',
+        'standards/verification.html',
+        'machines-are-talking.html',
+        'newswire.html',
+        'send-your-agent.html'
     )
 
     # Articles, newest first, each followed by its Evidence File.
