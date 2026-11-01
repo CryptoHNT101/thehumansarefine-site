@@ -51,6 +51,11 @@ credentials*
 /*.csv
 /*.log
 /*.zip
+# llms.txt is a PUBLIC discovery file, not a scratch capture. The /*.txt rule
+# above silently excluded it, so the AI discovery resource could never deploy.
+# Same failure mode as the newsroom/ rule: a broad deny-list hiding a public
+# file that everything downstream assumed was shipping. 2026-11-01.
+!/llms.txt
 /live-*
 /raw-*
 /gh-index.html
