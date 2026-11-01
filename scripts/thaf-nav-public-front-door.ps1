@@ -111,4 +111,11 @@ try {
     }
     Write-Output ''
     Write-Output ('nav items per page: 9')
+
+    # A page with no matching nav is a page this script did not reach. In APPLY
+    # mode that is a silent partial application, so it has to fail rather than
+    # print a note and return success.
+    if ($bad.Count -gt 0) { Write-Output 'RESULT: FAIL - pages were not updated'; exit 1 }
+    Write-Output 'RESULT: PASS'
+    exit 0
 } finally { Pop-Location }
