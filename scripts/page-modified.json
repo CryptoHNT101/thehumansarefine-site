@@ -1,182 +1,198 @@
 ﻿{
     "articles/aisi-protein-filtering-evidence.html":  {
-                                                          "hash":  "e9fd598d262517e7a65a862edfa1e0fae3982dda49074d2545508794a4aa38d1",
-                                                          "modified":  "2026-11-01T01:06:46-05:00"
+                                                          "hash":  "f4f43d1a5466d71e736e3332684edcf9ee22fe637aa511162c218e6412763d6d",
+                                                          "modified":  "2026-11-01T12:03:12-05:00"
                                                       },
     "articles/aisi-protein-filtering.html":  {
-                                                 "hash":  "1b782709e64ee386d9580bdb6e7c61ca928478649f773c14c70a3c3c8473f87e",
-                                                 "modified":  "2026-10-31T14:53:15-04:00"
+                                                 "hash":  "993669679669d90169acf33cf936cc3ba038a8e8bf19bc9e66465dedb0f8c9bc",
+                                                 "modified":  "2026-11-01T12:03:12-05:00"
                                              },
     "articles/alignment-auditors-false-positives-evidence.html":  {
-                                                                      "hash":  "055f1b30cce4bb1b6cc4d3115e3e8c33a018523f8ad58de50edc6769eb31a637",
-                                                                      "modified":  "2026-10-31T10:21:49-04:00"
+                                                                      "hash":  "474b505b1b75b3eeed6719da05c6ae4c9d4f5c921d5df93bac78574c534c8492",
+                                                                      "modified":  "2026-11-01T12:03:12-05:00"
                                                                   },
     "articles/alignment-auditors-false-positives.html":  {
-                                                             "hash":  "b1384048a0c43c5ca6d1c8a94b0a3e7d5986c957077f2059f499ef4b890312c7",
-                                                             "modified":  "2026-10-31T10:21:49-04:00"
+                                                             "hash":  "64e22f6ae8e984913a3a2d1f06997d6fd302b4c413047b825fc1d83831f3e97f",
+                                                             "modified":  "2026-11-01T12:03:12-05:00"
                                                          },
     "articles/anthropic-auto-mode-monitors-evidence.html":  {
-                                                                "hash":  "0b0f41a416de61aaf8f90079fa21121f2a9031eba7f6b889b87c6894d0c42084",
-                                                                "modified":  "2026-10-31T10:21:49-04:00"
+                                                                "hash":  "b310e9c675a615285bb50c5fa1d2b4f7a5d7e0059f258c1d321cec0c307cf01b",
+                                                                "modified":  "2026-11-01T12:03:12-05:00"
                                                             },
     "articles/anthropic-auto-mode-monitors.html":  {
-                                                       "hash":  "0f00714a21de708a12cb0af8642f82f1e4fd7c3ad86ba2c16eca728323ec01c0",
-                                                       "modified":  "2026-10-31T10:21:49-04:00"
+                                                       "hash":  "3b97ed5848f65269fd5e13dc2f1b5eb24224a63832da091746bb2dee2c0ffaab",
+                                                       "modified":  "2026-11-01T12:03:12-05:00"
                                                    },
     "articles/anthropic-public-benefit-fund-evidence.html":  {
-                                                                 "hash":  "7fa2b04e4bc0e6568086de47a7b95ad09df76b8551b5ab88561562d890db6b2c",
-                                                                 "modified":  "2026-10-31T10:21:49-04:00"
+                                                                 "hash":  "9471575badaf90074e77c2caf2dfd8c7e9e498da54c938dbe8ed190dffc339f0",
+                                                                 "modified":  "2026-11-01T12:03:12-05:00"
                                                              },
     "articles/anthropic-public-benefit-fund.html":  {
-                                                        "hash":  "b1826923b538bee3385a0e3ba8420675274782d1e4c32867251b533fac6a9f76",
-                                                        "modified":  "2026-10-31T10:21:49-04:00"
+                                                        "hash":  "3160f90fb466ae33594bc37daa7e187326b38ad2a2f8effc2aed9c43d950c5e5",
+                                                        "modified":  "2026-11-01T12:03:12-05:00"
                                                     },
     "articles/anthropic-s1-operating-profit-evidence.html":  {
-                                                                 "hash":  "a8c957736c35bcc235d0b847326ef93eec8c117b3eb2c176d7c5c88dc8a0c940",
-                                                                 "modified":  "2026-10-31T10:21:49-04:00"
+                                                                 "hash":  "ba0ab6877a57bdb658c789b1358e90fe03e012dc252541a5b048122a2959cf8c",
+                                                                 "modified":  "2026-11-01T12:03:12-05:00"
                                                              },
     "articles/anthropic-s1-operating-profit.html":  {
-                                                        "hash":  "8dd04309c64604fc929cc3a3199630b291eefc8ef62f08e9c2ea2f39d24cd0f0",
-                                                        "modified":  "2026-10-31T10:21:49-04:00"
+                                                        "hash":  "88c5e75c71ffd2a2bc3a978045f9d95dd6e341f9a94a593ec3e3c7fe47caa5dd",
+                                                        "modified":  "2026-11-01T12:03:12-05:00"
                                                     },
     "articles/claude-mythos-5-aisi-incident-evidence.html":  {
-                                                                 "hash":  "f8dd6e9be455ba6ac0da92110cb64e1279d92b72a7a9ead229ba224915e2a667",
-                                                                 "modified":  "2026-10-31T10:21:49-04:00"
+                                                                 "hash":  "9eb41b41d90ec5706f9e404d5cc5ccca6fc3de11f9aea66aad6a97c2d9465236",
+                                                                 "modified":  "2026-11-01T12:03:12-05:00"
                                                              },
     "articles/claude-mythos-5-aisi-incident.html":  {
-                                                        "hash":  "2a523313a6beb1f5e0cd11de58c3b41b6a2388d8096528f1545998e116ef5ae8",
-                                                        "modified":  "2026-10-31T10:21:49-04:00"
+                                                        "hash":  "1ac545346e916aa4bb2105c48388fe8080c86dd1aa542fd9d0963709be02fe13",
+                                                        "modified":  "2026-11-01T12:03:12-05:00"
                                                     },
     "articles/ecb-ai-adoption-europe-evidence.html":  {
-                                                          "hash":  "a630b151e726b029ac292ca27beaf9d7a825847b3f4b8af9369f79f898146a25",
-                                                          "modified":  "2026-11-01T01:06:46-05:00"
+                                                          "hash":  "e0760aee392261e248c0b172f77c0c11483c7b1b040cb96d95bea03e6c0de9fd",
+                                                          "modified":  "2026-11-01T12:03:12-05:00"
                                                       },
     "articles/ecb-ai-adoption-europe.html":  {
-                                                 "hash":  "31fa8e949b6508479aa6c2d73493b18489fbacedaf47fc60fc7fe8a2628b01ce",
-                                                 "modified":  "2026-10-31T14:53:15-04:00"
+                                                 "hash":  "ed92e1baa528d4e140c841c10c1214cafb69fe0bd3abf8b4ed11b60e5ac790fc",
+                                                 "modified":  "2026-11-01T12:03:12-05:00"
                                              },
     "articles/genie-4-world-model-evidence.html":  {
-                                                       "hash":  "06665a25e364f79fbb8832782c434d787a68c95e55fad203eb4cda5dfc6b5fbf",
-                                                       "modified":  "2026-10-31T10:21:49-04:00"
+                                                       "hash":  "c6d340fdc0b2a2c276ee91bcc1c871197045e518cad3c63a0ed9bae7b95d5618",
+                                                       "modified":  "2026-11-01T12:03:12-05:00"
                                                    },
     "articles/genie-4-world-model.html":  {
-                                              "hash":  "953f9c23c5b32be846d780278c59c4b5def70db424641a05b56c0b3b53989cda",
-                                              "modified":  "2026-10-31T10:21:49-04:00"
+                                              "hash":  "04c203df94f1d7e3e03b55018dda9402e0f2adf251b487314a2ee4f192ecc52b",
+                                              "modified":  "2026-11-01T12:03:12-05:00"
                                           },
     "articles/gpt-6-1-terra-critical-evidence.html":  {
-                                                          "hash":  "21be776b8d4882332a57e033288fb657f3f640fd6d77b042bfd445a402c08aa6",
-                                                          "modified":  "2026-10-31T10:21:49-04:00"
+                                                          "hash":  "55e021c8c20505e61f6f187e482e7a27d069c3f7aa5b2bf51cc61ec2ce622c7e",
+                                                          "modified":  "2026-11-01T12:03:12-05:00"
                                                       },
     "articles/gpt-6-1-terra-critical.html":  {
-                                                 "hash":  "805f7a4669d3e481cd8ab7ffac15dd2e09d694b7c015e2072edbfd9be797f4e9",
-                                                 "modified":  "2026-10-31T10:21:49-04:00"
+                                                 "hash":  "930c6dad853d539b46e2c0f56aa8f961464d80fc85c62723fb7ad52de3b150b0",
+                                                 "modified":  "2026-11-01T12:03:12-05:00"
                                              },
     "articles/graft-localizing-cheating-evidence.html":  {
-                                                             "hash":  "9b16d778aaff7808d781022a8543bc527be63d9db18a147c98f437757c28ebeb",
-                                                             "modified":  "2026-10-31T10:21:49-04:00"
+                                                             "hash":  "cead6750be9c48fbaac9d494c76107099e1e2876908b8831b8db2e63880bb7dc",
+                                                             "modified":  "2026-11-01T12:03:12-05:00"
                                                          },
     "articles/graft-localizing-cheating.html":  {
-                                                    "hash":  "60878179c5ffe2c9caf5078f8d9e6333d1a93f95d54e977aac685e4dd2bc082c",
-                                                    "modified":  "2026-10-31T10:21:49-04:00"
+                                                    "hash":  "379811e677cbfb5c20950c643dc0bb88e3dc81e21793d1661a98709cb66f60a9",
+                                                    "modified":  "2026-11-01T12:03:12-05:00"
                                                 },
     "articles/ico-ai-developers-data-protection-evidence.html":  {
-                                                                     "hash":  "7e79ac7d259f416cc4cc0b234c4b6ec02c32c4b87538aa3fbaddbba5ff16f90c",
-                                                                     "modified":  "2026-11-01T01:06:46-05:00"
+                                                                     "hash":  "085948cfbbfb52d54e54bc4d94de8fcd9fe60637eedd539c157be909f7ecb157",
+                                                                     "modified":  "2026-11-01T12:03:12-05:00"
                                                                  },
     "articles/ico-ai-developers-data-protection.html":  {
-                                                            "hash":  "cd3a60269da5bb27147bdf863f808ac2b8b70db76576f024426d296a9656fa43",
-                                                            "modified":  "2026-10-31T14:53:15-04:00"
+                                                            "hash":  "da555f27ce9f096e9d1326b274dca3106e2159807b9d21a1f2709c7b4fdca041",
+                                                            "modified":  "2026-11-01T12:03:12-05:00"
                                                         },
     "articles/metr-openai-agent-monitoring-evidence.html":  {
-                                                                "hash":  "e0e782ae9c05103925b58d31ed2c5b3acc685d1be23387f0b82d04e240cc5c28",
-                                                                "modified":  "2026-10-31T10:21:49-04:00"
+                                                                "hash":  "36361c0d027123d029af2bf245edc821fcd9cdd11b7beccd053d3241aa353509",
+                                                                "modified":  "2026-11-01T12:03:12-05:00"
                                                             },
     "articles/metr-openai-agent-monitoring.html":  {
-                                                       "hash":  "f4eb7e87ed9d77cc87ef71831526e1de665998c64496dfcd23dee8302e579537",
-                                                       "modified":  "2026-10-31T10:21:49-04:00"
+                                                       "hash":  "4ff82570e898cb347defd3a976cba89504df97db19e49422954ce88f7351fea6",
+                                                       "modified":  "2026-11-01T12:03:12-05:00"
                                                    },
     "articles/openai-hugging-face-intrusion-evidence.html":  {
-                                                                 "hash":  "a74e382f9cdb7ea21599f08213cea0cda4b8643ea676b62255bdc45bd6934b2b",
-                                                                 "modified":  "2026-10-31T10:21:49-04:00"
+                                                                 "hash":  "2e54c446893a1256ca327bd8c0abd1159f87a677652ef6086860f347f41e690f",
+                                                                 "modified":  "2026-11-01T12:03:12-05:00"
                                                              },
     "articles/openai-hugging-face-intrusion.html":  {
-                                                        "hash":  "ae734a5534e1658e5508dfab9cf240d0ce6dcbf072b67b9783b0ecdd402011cc",
-                                                        "modified":  "2026-10-31T10:21:49-04:00"
+                                                        "hash":  "5126f2fcfd3bf6024d7b194980d4dc52ad40a0ee9762c7ad1e280ebe882b64a1",
+                                                        "modified":  "2026-11-01T12:03:12-05:00"
                                                     },
     "articles/openai-wikimedia-fair-use-evidence.html":  {
-                                                             "hash":  "97c23b9a6e909f8067fe06f29c3060774e3d67b8ef745388faf1ab4d33a627ce",
-                                                             "modified":  "2026-10-31T10:21:49-04:00"
+                                                             "hash":  "3e50519ef767d8536a142be35185c83c787a156c69ee5060e53eee7e00572d62",
+                                                             "modified":  "2026-11-01T12:03:12-05:00"
                                                          },
     "articles/openai-wikimedia-fair-use.html":  {
-                                                    "hash":  "d3fc486053f4f3d43fea9e5786c4fea4f3009314d8374b76580586382d437998",
-                                                    "modified":  "2026-10-31T10:21:49-04:00"
+                                                    "hash":  "1859a2f81a53f0de5bf975f59b6c54c83cde30d258b43e65b7f5cb61928d6885",
+                                                    "modified":  "2026-11-01T12:03:12-05:00"
                                                 },
     "articles/robots-txt-ai-training-signal-evidence.html":  {
-                                                                 "hash":  "1191e02f5c5207dbdde1b565937ea6325d547138fdc30d1b2e54b31200a52b2f",
-                                                                 "modified":  "2026-10-31T10:21:49-04:00"
+                                                                 "hash":  "e47eb4aa8c617441bd71c7163a8dd9a80291056950eb8d80c83719a8ed0ef824",
+                                                                 "modified":  "2026-11-01T12:03:12-05:00"
                                                              },
     "articles/robots-txt-ai-training-signal.html":  {
-                                                        "hash":  "d4e81d139725ebcd6e8caeb4efe53b09c65043a8f753b7cc9dd7a5b4aa024501",
-                                                        "modified":  "2026-10-31T10:21:49-04:00"
+                                                        "hash":  "f11e2f2c453deefdd668e9093c16ef995936d1b89461c88d0090840050a3544f",
+                                                        "modified":  "2026-11-01T12:03:12-05:00"
                                                     },
     "articles/uk-planning-ai-planassist-evidence.html":  {
-                                                             "hash":  "bc4c943b383893f04c10327b75647187fa26037f19b1dd099aa9385e4e39bc00",
-                                                             "modified":  "2026-11-01T01:06:46-05:00"
+                                                             "hash":  "874b10e7647affc840353cfddbc253366cf46df3d00147516405675e7c0c6a98",
+                                                             "modified":  "2026-11-01T12:03:12-05:00"
                                                          },
     "articles/uk-planning-ai-planassist.html":  {
-                                                    "hash":  "606e08b4dd7de8d2f2fb4e0269268e692b064b9fa217f3079c11059959470de3",
-                                                    "modified":  "2026-10-31T14:53:15-04:00"
+                                                    "hash":  "9a51fa127f46024a74c121bf4e7d5b5925891901ffa21e9be4cb9904aac4d676",
+                                                    "modified":  "2026-11-01T12:03:12-05:00"
                                                 },
     "articles/vos-chatbots-court-claims-evidence.html":  {
-                                                             "hash":  "cd8bdc5c33caf2212758f1b706617dc7c0492db12d8e1b6cc99ca7897542de83",
-                                                             "modified":  "2026-10-31T10:21:49-04:00"
+                                                             "hash":  "a029bc1972cc436e52b5acfd2b19c835250378ff2480d135a120f61351ee6d73",
+                                                             "modified":  "2026-11-01T12:03:12-05:00"
                                                          },
     "articles/vos-chatbots-court-claims.html":  {
-                                                    "hash":  "22c832858e9ef5044bed4d57edc3998f0b6ab67fd6e5d07cd21fde2cef1b7d7a",
-                                                    "modified":  "2026-10-31T10:21:49-04:00"
+                                                    "hash":  "191debafa64a245a7ef1863769dca33dac84aba289629bf6089f8087bdb57f07",
+                                                    "modified":  "2026-11-01T12:03:12-05:00"
                                                 },
     "articles/wall-street-ai-bet-evidence.html":  {
-                                                      "hash":  "d212bf6a00cf563bc5a702709a2991d80f98b212e9ff470aaa290b1aaa662599",
-                                                      "modified":  "2026-11-01T01:04:16-05:00"
+                                                      "hash":  "73400541e95351d84e490af16e285275e918fb443e03029a2a3496f466132c7d",
+                                                      "modified":  "2026-11-01T12:03:12-05:00"
                                                   },
     "articles/wall-street-ai-bet.html":  {
-                                             "hash":  "77d2a9df7650b2850bbdfe25973e491de693754752785f7debbc964b7c21461b",
-                                             "modified":  "2026-11-01T01:04:16-05:00"
+                                             "hash":  "2b0d70913c3b22b63d2b171791ccbc3dec639e8e7df59e57b5340d3dfa4f32a8",
+                                             "modified":  "2026-11-01T12:03:12-05:00"
                                          },
     "disclosure-watch/index.html":  {
-                                        "hash":  "50e2a3ecb6431dcf4f51fadec1eec66be4a6f87640a4994eb42ffd096a525c48",
-                                        "modified":  "2026-10-31T10:21:49-04:00"
+                                        "hash":  "59787ad48e8dc76912e26c773026e6b0a09d3a1e6b49cb9e60767e1e8863ff66",
+                                        "modified":  "2026-11-01T12:03:12-05:00"
                                     },
     "index.html":  {
-                       "hash":  "faf44ea6ac5c6caf129f9c4c549b6562c27b021251d0532cf36f1ec6bf73584c",
-                       "modified":  "2026-11-01T01:06:46-05:00"
+                       "hash":  "1f9cea132162b970b47df7ff76f160bbccd2a752e1b83e13cf45125356d5e877",
+                       "modified":  "2026-11-01T12:03:12-05:00"
                    },
+    "machines-are-talking.html":  {
+                                      "hash":  "18b3d038f22ae45a99064ac04209cf76d6cef3257522ffd9d9243cc4bcfde229",
+                                      "modified":  "2026-11-01T12:03:07-05:00"
+                                  },
     "news/index.html":  {
-                            "hash":  "067402192ddfcf05f248a75250c43dfb5ace71c84828b22c2ca5de5503f113cd",
-                            "modified":  "2026-11-01T01:06:46-05:00"
+                            "hash":  "645e49bd1b58096161240dd87e0b60fdef9e16ee51173ff2f615de6ea39b2f73",
+                            "modified":  "2026-11-01T12:03:12-05:00"
                         },
     "newsroom/index.html":  {
-                                "hash":  "342125261fb4f4f3325330ae7df3d75a88067658028f492e7bda19cf787e2af7",
-                                "modified":  "2026-10-31T10:21:49-04:00"
+                                "hash":  "975764ec054b22f243f791d5c4da288a1485e0f8224f46c69f6d033036c4e9e9",
+                                "modified":  "2026-11-01T12:03:12-05:00"
                             },
-    "standards/index.html":  {
-                                 "hash":  "c21881f5973a9710516d2dc886a6b78e72005372ce2ee26495f3b97a92b0a01a",
-                                 "modified":  "2026-10-31T10:21:49-04:00"
+    "newswire.html":  {
+                          "hash":  "9a5cd8874087c92b6a2af6b38912525da81d7d39d428440c35016df53bcf0094",
+                          "modified":  "2026-11-01T12:03:07-05:00"
+                      },
+    "send-your-agent.html":  {
+                                 "hash":  "771de44c6f7b267cf9f986e620fd33495cb4d372f7b1764e3e5dcfee3bb7cd85",
+                                 "modified":  "2026-11-01T12:03:07-05:00"
                              },
+    "standards/index.html":  {
+                                 "hash":  "7f41cef31375280ae83fff8713ef8dfc3c4b7e546af3ac3df1aac97af8ebf7d3",
+                                 "modified":  "2026-11-01T12:03:12-05:00"
+                             },
+    "standards/verification.html":  {
+                                        "hash":  "862bfc29d3e34fc624ba2022158bc403efcca9b668b413bb10b444af486c8c5c",
+                                        "modified":  "2026-11-01T12:03:07-05:00"
+                                    },
     "topics/ai-agents.html":  {
-                                  "hash":  "2791bea1108b2004634d4d936da9de8ceb58869c9a36e295faf3273d9d84006b",
-                                  "modified":  "2026-10-31T10:21:49-04:00"
+                                  "hash":  "745f6ea2bc6d1b826d3148bd59e9e70fbc29713b5c91247aae9255e73ec813b3",
+                                  "modified":  "2026-11-01T12:03:12-05:00"
                               },
     "topics/ai-policy.html":  {
-                                  "hash":  "82a7498e067b72d92f87168177657ee02eb2c21a41b8e91ef335661e71234fb2",
-                                  "modified":  "2026-10-31T10:21:49-04:00"
+                                  "hash":  "9911de53e8342bf7526eff060e100c76f1757339bf5c3ea9f5186aae157d6db8",
+                                  "modified":  "2026-11-01T12:03:12-05:00"
                               },
     "topics/ai-safety.html":  {
-                                  "hash":  "75f8db5b0cf9608a8331b2c09c63217c3658de6182fedf83cddc482bd6d3f3b9",
-                                  "modified":  "2026-10-31T10:21:49-04:00"
+                                  "hash":  "668e4bcdd9b1c0e4fb34999055908ac97db6fbb9b463c62d72e917988cd81a01",
+                                  "modified":  "2026-11-01T12:03:12-05:00"
                               },
     "topics/frontier-ai.html":  {
-                                    "hash":  "73b6bb005027835a8b58ae2bce9bd55454ee560cafaec888ae55da5184b875ff",
-                                    "modified":  "2026-10-31T10:21:49-04:00"
+                                    "hash":  "a8983a09879c16a0a929e41974e31178bf37d474b293cc3c927ebd945ff5bdc8",
+                                    "modified":  "2026-11-01T12:03:12-05:00"
                                 }
 }
