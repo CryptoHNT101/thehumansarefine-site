@@ -1,4 +1,4 @@
-﻿# ============================================================================
+# ============================================================================
 # THE HUMANS ARE FINE - search and social metadata injector
 #
 # Adds, to every tracked page, the metadata the Release 2 rebuild dropped:
@@ -211,9 +211,22 @@ try {
         $trail = Read-Trail $html
         $sectionName = if ($trail) { $trail.TopicName } else { Page-Section $rel }
         $ogAlt = Decode-Basic $rawTitle
+        # The share card image is rendered from the article's <h1>
+        # (scripts/thaf-build-social-cards.ps1 draws the h1 as the headline),
+        # so the alt text must describe that headline. Deriving alt from
+        # <title> instead let the two drift: three published pages carried a
+        # <title> that no longer matched their <h1>, and their alt described a
+        # headline the page did not use. Pages that are not articles have no
+        # card of their own and keep their title.
+        $h1m = [regex]::Match($html, '(?is)<h1[^>]*>(.*?)</h1>')
+        $altSource = $ogAlt
+        if ($type -eq 'article' -and $h1m.Success) {
+            $altSource = (Decode-Basic ([regex]::Replace($h1m.Groups[1].Value, '<[^>]+>', ''))).Trim()
+            if ([string]::IsNullOrWhiteSpace($altSource)) { $altSource = $ogAlt }
+        }
         # live convention: an article's alt names it as a share card; any other
         # page uses its own title
-        $pageAlt = if ($type -eq 'article') { "Share card for The Humans Are Fine report: $ogAlt" } else { $ogAlt }
+        $pageAlt = if ($type -eq 'article') { "Share card for The Humans Are Fine report: $altSource" } else { $altSource }
         if (-not (& $have 'rel="canonical"')) {
             $head.Add('<link rel="canonical" href="' + (Esc $url) + '">')
         }

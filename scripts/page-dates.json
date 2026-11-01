@@ -2,7 +2,7 @@
     {
         "path":  "articles/aisi-protein-filtering-evidence.html",
         "published":  "2026-10-31T14:50:45-04:00",
-        "modified":  "2026-10-31T14:52:38-04:00"
+        "modified":  "2026-11-01T01:06:46-05:00"
     },
     {
         "path":  "articles/aisi-protein-filtering.html",
@@ -62,7 +62,7 @@
     {
         "path":  "articles/ecb-ai-adoption-europe-evidence.html",
         "published":  "2026-10-31T14:50:45-04:00",
-        "modified":  "2026-10-31T14:52:38-04:00"
+        "modified":  "2026-11-01T01:06:46-05:00"
     },
     {
         "path":  "articles/ecb-ai-adoption-europe.html",
@@ -102,7 +102,7 @@
     {
         "path":  "articles/ico-ai-developers-data-protection-evidence.html",
         "published":  "2026-10-31T14:50:45-04:00",
-        "modified":  "2026-10-31T14:52:38-04:00"
+        "modified":  "2026-11-01T01:06:46-05:00"
     },
     {
         "path":  "articles/ico-ai-developers-data-protection.html",
@@ -152,7 +152,7 @@
     {
         "path":  "articles/uk-planning-ai-planassist-evidence.html",
         "published":  "2026-10-31T14:50:45-04:00",
-        "modified":  "2026-10-31T14:52:38-04:00"
+        "modified":  "2026-11-01T01:06:46-05:00"
     },
     {
         "path":  "articles/uk-planning-ai-planassist.html",
@@ -170,6 +170,16 @@
         "modified":  "2026-10-31T10:21:49-04:00"
     },
     {
+        "path":  "articles/wall-street-ai-bet-evidence.html",
+        "published":  "2026-11-01T01:04:16-05:00",
+        "modified":  "2026-11-01T01:04:16-05:00"
+    },
+    {
+        "path":  "articles/wall-street-ai-bet.html",
+        "published":  "2026-11-01T01:04:16-05:00",
+        "modified":  "2026-11-01T01:04:16-05:00"
+    },
+    {
         "path":  "disclosure-watch/index.html",
         "published":  "2026-10-28T23:58:39-04:00",
         "modified":  "2026-10-31T10:21:49-04:00"
@@ -177,12 +187,12 @@
     {
         "path":  "index.html",
         "published":  "2026-10-04T16:07:09-04:00",
-        "modified":  "2026-10-31T10:21:49-04:00"
+        "modified":  "2026-11-01T01:06:46-05:00"
     },
     {
         "path":  "news/index.html",
         "published":  "2026-10-28T23:58:39-04:00",
-        "modified":  "2026-10-31T10:21:49-04:00"
+        "modified":  "2026-11-01T01:06:46-05:00"
     },
     {
         "path":  "newsroom/index.html",

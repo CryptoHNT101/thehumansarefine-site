@@ -1,7 +1,7 @@
 ﻿{
     "articles/aisi-protein-filtering-evidence.html":  {
-                                                          "hash":  "d4a270c373802fb7889cc4662f1d20aafe80821e27b2f93accc39b06e1233d59",
-                                                          "modified":  "2026-10-31T14:52:38-04:00"
+                                                          "hash":  "e9fd598d262517e7a65a862edfa1e0fae3982dda49074d2545508794a4aa38d1",
+                                                          "modified":  "2026-11-01T01:06:46-05:00"
                                                       },
     "articles/aisi-protein-filtering.html":  {
                                                  "hash":  "1b782709e64ee386d9580bdb6e7c61ca928478649f773c14c70a3c3c8473f87e",
@@ -48,8 +48,8 @@
                                                         "modified":  "2026-10-31T10:21:49-04:00"
                                                     },
     "articles/ecb-ai-adoption-europe-evidence.html":  {
-                                                          "hash":  "28567a6a995822f7e12bef3604a2c88378e75cfa2998031f1b71abfe6f15b569",
-                                                          "modified":  "2026-10-31T14:52:38-04:00"
+                                                          "hash":  "a630b151e726b029ac292ca27beaf9d7a825847b3f4b8af9369f79f898146a25",
+                                                          "modified":  "2026-11-01T01:06:46-05:00"
                                                       },
     "articles/ecb-ai-adoption-europe.html":  {
                                                  "hash":  "31fa8e949b6508479aa6c2d73493b18489fbacedaf47fc60fc7fe8a2628b01ce",
@@ -80,8 +80,8 @@
                                                     "modified":  "2026-10-31T10:21:49-04:00"
                                                 },
     "articles/ico-ai-developers-data-protection-evidence.html":  {
-                                                                     "hash":  "427d7d1172a929b0140b8efd3f40074994e1f55a4e728da490e807291694e6cb",
-                                                                     "modified":  "2026-10-31T14:52:38-04:00"
+                                                                     "hash":  "7e79ac7d259f416cc4cc0b234c4b6ec02c32c4b87538aa3fbaddbba5ff16f90c",
+                                                                     "modified":  "2026-11-01T01:06:46-05:00"
                                                                  },
     "articles/ico-ai-developers-data-protection.html":  {
                                                             "hash":  "cd3a60269da5bb27147bdf863f808ac2b8b70db76576f024426d296a9656fa43",
@@ -120,8 +120,8 @@
                                                         "modified":  "2026-10-31T10:21:49-04:00"
                                                     },
     "articles/uk-planning-ai-planassist-evidence.html":  {
-                                                             "hash":  "718d916f1f3aa471d9dd9e54a85b4736755a85ad789dfbb146e47ef1514e0a8c",
-                                                             "modified":  "2026-10-31T14:52:38-04:00"
+                                                             "hash":  "bc4c943b383893f04c10327b75647187fa26037f19b1dd099aa9385e4e39bc00",
+                                                             "modified":  "2026-11-01T01:06:46-05:00"
                                                          },
     "articles/uk-planning-ai-planassist.html":  {
                                                     "hash":  "606e08b4dd7de8d2f2fb4e0269268e692b064b9fa217f3079c11059959470de3",
@@ -135,17 +135,25 @@
                                                     "hash":  "22c832858e9ef5044bed4d57edc3998f0b6ab67fd6e5d07cd21fde2cef1b7d7a",
                                                     "modified":  "2026-10-31T10:21:49-04:00"
                                                 },
+    "articles/wall-street-ai-bet-evidence.html":  {
+                                                      "hash":  "d212bf6a00cf563bc5a702709a2991d80f98b212e9ff470aaa290b1aaa662599",
+                                                      "modified":  "2026-11-01T01:04:16-05:00"
+                                                  },
+    "articles/wall-street-ai-bet.html":  {
+                                             "hash":  "77d2a9df7650b2850bbdfe25973e491de693754752785f7debbc964b7c21461b",
+                                             "modified":  "2026-11-01T01:04:16-05:00"
+                                         },
     "disclosure-watch/index.html":  {
                                         "hash":  "50e2a3ecb6431dcf4f51fadec1eec66be4a6f87640a4994eb42ffd096a525c48",
                                         "modified":  "2026-10-31T10:21:49-04:00"
                                     },
     "index.html":  {
-                       "hash":  "7f1b6ae5eee90d42daff7c70aebbddf74220219300aa13351e1350e706b072cc",
-                       "modified":  "2026-10-31T10:21:49-04:00"
+                       "hash":  "faf44ea6ac5c6caf129f9c4c549b6562c27b021251d0532cf36f1ec6bf73584c",
+                       "modified":  "2026-11-01T01:06:46-05:00"
                    },
     "news/index.html":  {
-                            "hash":  "3215d5615306772fea034b573d37a090aa70d9d30cf795f410af6bbd15bda6fa",
-                            "modified":  "2026-10-31T10:21:49-04:00"
+                            "hash":  "067402192ddfcf05f248a75250c43dfb5ace71c84828b22c2ca5de5503f113cd",
+                            "modified":  "2026-11-01T01:06:46-05:00"
                         },
     "newsroom/index.html":  {
                                 "hash":  "342125261fb4f4f3325330ae7df3d75a88067658028f492e7bda19cf787e2af7",

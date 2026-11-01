@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</loc>
+    <loc>https://www.thehumansarefine.com/articles/wall-street-ai-bet.html</loc>
     <news:news>
       <news:publication>
         <news:name>THE HUMANS ARE FINE</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
-      <news:title>The ECB Says Europe Is Financing the AI Boom, Not Using It</news:title>
+      <news:publication_date>2026-11-01T01:04:16-05:00</news:publication_date>
+      <news:title>Wall Street&apos;s AI Bet: What Happens If the Machines Don&apos;t Deliver?</news:title>
     </news:news>
   </url>
   <url>
@@ -46,14 +46,14 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.thehumansarefine.com/articles/openai-wikimedia-fair-use.html</loc>
+    <loc>https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</loc>
     <news:news>
       <news:publication>
         <news:name>THE HUMANS ARE FINE</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-10-31T10:09:57-04:00</news:publication_date>
-      <news:title>OpenAI and Wikimedia Both File on Fair Use, From Opposite Sides</news:title>
+      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
+      <news:title>The ECB Says Europe Is Financing the AI Boom, Not Using It</news:title>
     </news:news>
   </url>
   <url>
@@ -65,6 +65,17 @@
       </news:publication>
       <news:publication_date>2026-10-31T10:09:57-04:00</news:publication_date>
       <news:title>OpenAI and Google Backed One robots.txt Opt-Out. The Draft Says It Stops No Crawl</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/openai-wikimedia-fair-use.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-31T10:09:57-04:00</news:publication_date>
+      <news:title>OpenAI and Wikimedia Both File on Fair Use, From Opposite Sides</news:title>
     </news:news>
   </url>
   <url>
