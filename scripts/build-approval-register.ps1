@@ -9,6 +9,20 @@ $ErrorActionPreference = 'Stop'
 $repo = 'C:\Users\isaac\Documents\StarNet-Outputs\sprint'
 $articlesDir = Join-Path $repo 'articles'
 
+# Hash the CONTENT, not the checkout. On Windows with core.autocrlf=true the
+# working tree holds CRLF while the git blob holds LF, so a raw file hash moves
+# whenever git rewrites a file it has not otherwise changed. That produced a
+# false "approved revision has drifted" on the first run of the verifier, on an
+# article nobody had touched. The convention is recorded in the register so a
+# reader can reproduce a hash independently.
+$__sha = [System.Security.Cryptography.SHA256]::Create()
+function Get-NormalizedSha256([string]$path) {
+    $text = [IO.File]::ReadAllText($path)
+    $text = $text -replace "`r`n", "`n"
+    $bytes = [Text.Encoding]::UTF8.GetBytes($text)
+    return ([BitConverter]::ToString($__sha.ComputeHash($bytes))).Replace('-', '').ToLower()
+}
+
 # Approvals documented in the Commander's own words. Quoted so they can be
 # checked against the transcript rather than taken on trust.
 $approvals = @{
@@ -44,7 +58,7 @@ foreach ($f in @(Get-ChildItem $articlesDir -Filter '*.html' | Where-Object { $_
     $slug = $f.BaseName
     $h = [IO.File]::ReadAllText($f.FullName)
     $headline = [System.Net.WebUtility]::HtmlDecode(([regex]::Match($h, '(?is)<h1[^>]*>(.*?)</h1>').Groups[1].Value -replace '<[^>]+>', '' -replace '\s+', ' ').Trim())
-    $sha = (Get-FileHash $f.FullName -Algorithm SHA256).Hash.ToLower()
+    $sha = Get-NormalizedSha256 $f.FullName
     $pub = [regex]::Match($h, '<meta\s+property="article:published_time"\s+content="([^"]+)"').Groups[1].Value
     $canonical = [regex]::Match($h, '<link\s+rel="canonical"\s+href="([^"]+)"').Groups[1].Value
 
@@ -66,7 +80,7 @@ foreach ($f in @(Get-ChildItem $articlesDir -Filter '*.html' | Where-Object { $_
         approvingParty = $authority
         approvalDate   = $date
         approvalEvidence = $evidence
-        revision       = @{ algorithm = 'sha256'; of = 'articles/' + $slug + '.html'; hash = $sha }
+        revision       = @{ algorithm = 'sha256'; of = 'articles/' + $slug + '.html'; contentNormalisation = 'CRLF->LF then UTF-8'; hash = $sha }
         publishedAt    = $pub
         canonicalUrl   = $canonical
     }
@@ -77,7 +91,8 @@ $register = [ordered]@{
     purpose       = 'Canonical record of who authorized each story, when, and which revision was authorized. A passing automated test is not an approval and must never be recorded here as one.'
     generatedAt   = (Get-Date).ToString('o')
     generatedBy   = 'scripts\build-approval-register.ps1'
-    rule          = 'An article may be published only when a row here shows status APPROVED - PUBLISHED with a named approving party, a date and verbatim evidence, and the revision hash matches the file on disk.'
+    rule          = 'An article may be published only when a row here shows status APPROVED - PUBLISHED with a named approving party, a date and verbatim evidence, and the recorded revision hash still matches the article content.'
+    hashConvention = 'sha256 over the article content with CRLF normalised to LF and encoded UTF-8, so the hash does not depend on git line-ending settings.'
     publishedCount = $items.Count
     articles      = $items
 }

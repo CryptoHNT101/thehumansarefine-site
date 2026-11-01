@@ -1,9 +1,10 @@
 ﻿{
     "register":  "THE HUMANS ARE FINE - editorial approval register",
     "purpose":  "Canonical record of who authorized each story, when, and which revision was authorized. A passing automated test is not an approval and must never be recorded here as one.",
-    "generatedAt":  "2026-11-01T07:31:35.1192771-05:00",
+    "generatedAt":  "2026-11-01T07:44:11.3767911-05:00",
     "generatedBy":  "scripts\\build-approval-register.ps1",
-    "rule":  "An article may be published only when a row here shows status APPROVED - PUBLISHED with a named approving party, a date and verbatim evidence, and the revision hash matches the file on disk.",
+    "rule":  "An article may be published only when a row here shows status APPROVED - PUBLISHED with a named approving party, a date and verbatim evidence, and the recorded revision hash still matches the article content.",
+    "hashConvention":  "sha256 over the article content with CRLF normalised to LF and encoded UTF-8, so the hash does not depend on git line-ending settings.",
     "publishedCount":  18,
     "articles":  [
                      {
@@ -14,7 +15,8 @@
                          "approvalDate":  "2026-10-31",
                          "approvalEvidence":  "Commander editorial approval: \"3. AISI - AI Protein Filtering\"",
                          "revision":  {
-                                          "hash":  "9e716b1ffe4d3288eb61bcf5332f1516c3362d171ecc3c62fd2549d5571acc8d",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "d3d8c37475585f57a98d9babb46e89851445d23834d86601f9d11302df7df79d",
                                           "of":  "articles/aisi-protein-filtering.html",
                                           "algorithm":  "sha256"
                                       },
@@ -29,7 +31,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "38848e113c6202b7e2801812a8bb7418874d0d6bc91c1c634b16a23050703f08",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "84572df804f106bd8018dc79aa78a262056e28ffeaf3f679bfb5488528025554",
                                           "of":  "articles/alignment-auditors-false-positives.html",
                                           "algorithm":  "sha256"
                                       },
@@ -44,7 +47,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "208711fc0d3d9567699ec2b96beeb9d7fee2d0ce471e79e36602440696e5c7bb",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "cbbe48589415768da8f94e88c0253a01b60cc38f6fdc72f7bb457d496df1c7ee",
                                           "of":  "articles/anthropic-auto-mode-monitors.html",
                                           "algorithm":  "sha256"
                                       },
@@ -59,7 +63,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "589467c16d499b7818df67d6481fbd3a49a375f67ac729dc3851b19896132311",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "5c6ea23615b50e601766ec04abf472afe532f1754d12835d85e3a18dd0ec1a05",
                                           "of":  "articles/anthropic-public-benefit-fund.html",
                                           "algorithm":  "sha256"
                                       },
@@ -74,7 +79,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "31af23d5bc0355c99d6adbda936fb16da0687cb8fa86ff3dfeef2ef256f598ea",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "83c6c77b493bbbf63be6c83668592c633ece22c91fbfb9a2471488db0fd14127",
                                           "of":  "articles/anthropic-s1-operating-profit.html",
                                           "algorithm":  "sha256"
                                       },
@@ -89,7 +95,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "6294411d24521b02c3ddb596c2f6892e926baa9176510345998283ad1f63f7e2",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "0000929016bec5f4b90fd1c6604dd0b2d36c3ee893bd20e226b0301fa3f2ae75",
                                           "of":  "articles/claude-mythos-5-aisi-incident.html",
                                           "algorithm":  "sha256"
                                       },
@@ -104,7 +111,8 @@
                          "approvalDate":  "2026-10-31",
                          "approvalEvidence":  "Commander editorial approval: \"Commander has reviewed and approved the following four articles for publication: 1. ECB - AI Adoption in Europe\"",
                          "revision":  {
-                                          "hash":  "97c7e4e63bd7f5bdc0a6c9d567a76b34e0a1607e3f34e260f260cc7626ec78cd",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "0d0e5313df9b7a497d859036b50271cccd4710b1340afd6c9d635eb93e113dd9",
                                           "of":  "articles/ecb-ai-adoption-europe.html",
                                           "algorithm":  "sha256"
                                       },
@@ -119,7 +127,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "63cfcec3c02eb4e9683818348784e878c5536a388a34cd597a2cc1d64a5a3bd4",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "40751506ee5ac0c01fabef56835342e7497a9abb789828f2a115d19c14588db5",
                                           "of":  "articles/genie-4-world-model.html",
                                           "algorithm":  "sha256"
                                       },
@@ -134,7 +143,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "9c276a25748d6699d0142a88ae8c1a2962af6d11fdb99ab154ce95042dcacead",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "d249a40b0b4127d40aa0c0a1814d40b3446569b7033c73a9e46e6cfa0a6a6bb5",
                                           "of":  "articles/gpt-6-1-terra-critical.html",
                                           "algorithm":  "sha256"
                                       },
@@ -149,7 +159,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "137573063383aff3255f320f48971b806898cf7804c176d635574df55c034b98",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "71bb6cdf95131d5e8410928067328ea796f1d397e9d1a0bf7e2155277f4fa5d6",
                                           "of":  "articles/graft-localizing-cheating.html",
                                           "algorithm":  "sha256"
                                       },
@@ -164,7 +175,8 @@
                          "approvalDate":  "2026-10-31",
                          "approvalEvidence":  "Commander editorial approval: \"4. ICO - AI Developers and Data Protection\"",
                          "revision":  {
-                                          "hash":  "0d5b28057a2eb6d9e35b74491af7276f61046412f2f10e897ff6e1e72feb8749",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "5edbd62731b3821c6d1193ea835047e71d27cfe458c34cec312a456632608e90",
                                           "of":  "articles/ico-ai-developers-data-protection.html",
                                           "algorithm":  "sha256"
                                       },
@@ -179,7 +191,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "3ddf9d525efd0be909d887253009b179859aa3771b4baa292eb553c0a8d53e6b",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "3e85b46eb3ee4d3636c5d6ab12a38d3343c2b5c455d4d617df403d4f1b42d996",
                                           "of":  "articles/metr-openai-agent-monitoring.html",
                                           "algorithm":  "sha256"
                                       },
@@ -194,7 +207,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "2b1fc0fd56dbb607ab1a295dd9034c108812657d6f6c1c3201132f04bba36579",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "cfc232e9327734b3c24a1202385b33ac8420c18e87e9de9d166a2c1e57d63a89",
                                           "of":  "articles/openai-hugging-face-intrusion.html",
                                           "algorithm":  "sha256"
                                       },
@@ -209,7 +223,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "c87e7611fc69ced9423d02f4e2cf6c5432d0ca594be3a746169501cb756b658e",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "775e5ce2a6f2b0d920beaaede90dd3c7e235c3ef75f09a34779bc45500a65fa8",
                                           "of":  "articles/openai-wikimedia-fair-use.html",
                                           "algorithm":  "sha256"
                                       },
@@ -224,7 +239,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "ac65ab580c9d9c6afeac06c766ee889a0edf47e9c0ac50e6d2da77640067b959",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "378be1651f58c307ec1bf53c2edfa2d0d1aa566a0c2ab99c8a11434274b8f3b0",
                                           "of":  "articles/robots-txt-ai-training-signal.html",
                                           "algorithm":  "sha256"
                                       },
@@ -239,7 +255,8 @@
                          "approvalDate":  "2026-10-31",
                          "approvalEvidence":  "Commander editorial approval: \"2. UK - DeepMind Planning AI\"",
                          "revision":  {
-                                          "hash":  "a75a2e0cd925380d61c98c356a020118146d943bb53b27eab4dc558bcb779598",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "0b5ad084ecfbe615a7655c7f0f1d5d8f096ba28a614a73b64fe28be72d77330b",
                                           "of":  "articles/uk-planning-ai-planassist.html",
                                           "algorithm":  "sha256"
                                       },
@@ -254,7 +271,8 @@
                          "approvalDate":  null,
                          "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
                          "revision":  {
-                                          "hash":  "9dc2029de6a93f55491713c09cb4b8cbdea3ad010bf10ee63ac12d0d60761759",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "dc9dd4c7db852576e7aa6639e2b2d58ee4f2d643cb23e3db1f9ec1e09c18874d",
                                           "of":  "articles/vos-chatbots-court-claims.html",
                                           "algorithm":  "sha256"
                                       },
@@ -269,7 +287,8 @@
                          "approvalDate":  "2026-11-01",
                          "approvalEvidence":  "Commander editorial publication sprint: \"The Commander has personally reviewed and APPROVED FOR PUBLICATION the Wall Street AI investigation. Publish it as the main lead story on the homepage.\"",
                          "revision":  {
-                                          "hash":  "48a151cffe257dcaa356cc397a7f1af68ec5e9e8a78e704208e609dd704f24e1",
+                                          "contentNormalisation":  "CRLF-\u003eLF then UTF-8",
+                                          "hash":  "e74ebdd5b63189b17409acca342703d3df66bc973e7076e6a6837fe305214d32",
                                           "of":  "articles/wall-street-ai-bet.html",
                                           "algorithm":  "sha256"
                                       },

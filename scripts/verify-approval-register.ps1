@@ -18,6 +18,13 @@ $repo = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 Push-Location $repo
 $pass = 0; $fail = 0; $warn = 0
 function Ok($m)   { Write-Output "PASS  $m"; $script:pass++ }
+$__sha = [System.Security.Cryptography.SHA256]::Create()
+function Get-NormalizedSha256([string]$path) {
+    $text = [IO.File]::ReadAllText($path)
+    $text = $text -replace "`r`n", "`n"
+    $bytes = [Text.Encoding]::UTF8.GetBytes($text)
+    return ([BitConverter]::ToString($__sha.ComputeHash($bytes))).Replace('-', '').ToLower()
+}
 function Bad($m)  { Write-Output "FAIL  $m"; $script:fail++ }
 function Note($m) { Write-Output "WARN  $m"; $script:warn++ }
 
@@ -45,7 +52,7 @@ try {
     foreach ($row in $reg.articles) {
         $full = Join-Path $repo ('articles\' + $row.slug + '.html')
         if (-not (Test-Path $full)) { Bad ("$($row.slug) : file missing"); continue }
-        $now = (Get-FileHash $full -Algorithm SHA256).Hash.ToLower()
+        $now = Get-NormalizedSha256 $full
         if ($row.revision.hash -eq $now) { Ok ("$($row.slug) : file matches the recorded revision") }
         else {
             if ($row.status -eq 'APPROVED - PUBLISHED') {
