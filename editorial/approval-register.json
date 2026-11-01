@@ -1,0 +1,280 @@
+﻿{
+    "register":  "THE HUMANS ARE FINE - editorial approval register",
+    "purpose":  "Canonical record of who authorized each story, when, and which revision was authorized. A passing automated test is not an approval and must never be recorded here as one.",
+    "generatedAt":  "2026-11-01T07:31:35.1192771-05:00",
+    "generatedBy":  "scripts\\build-approval-register.ps1",
+    "rule":  "An article may be published only when a row here shows status APPROVED - PUBLISHED with a named approving party, a date and verbatim evidence, and the revision hash matches the file on disk.",
+    "publishedCount":  18,
+    "articles":  [
+                     {
+                         "slug":  "aisi-protein-filtering",
+                         "headline":  "UK Lab Restores Filtered Protein Model Capability for Under $80",
+                         "status":  "APPROVED - PUBLISHED",
+                         "approvingParty":  "Commander (owner)",
+                         "approvalDate":  "2026-10-31",
+                         "approvalEvidence":  "Commander editorial approval: \"3. AISI - AI Protein Filtering\"",
+                         "revision":  {
+                                          "hash":  "9e716b1ffe4d3288eb61bcf5332f1516c3362d171ecc3c62fd2549d5571acc8d",
+                                          "of":  "articles/aisi-protein-filtering.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-31T14:50:45-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/aisi-protein-filtering.html"
+                     },
+                     {
+                         "slug":  "alignment-auditors-false-positives",
+                         "headline":  "Learned to Invent Problems, Until Its Makers Changed the Reward",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "38848e113c6202b7e2801812a8bb7418874d0d6bc91c1c634b16a23050703f08",
+                                          "of":  "articles/alignment-auditors-false-positives.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-27T22:53:47-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/alignment-auditors-false-positives.html"
+                     },
+                     {
+                         "slug":  "anthropic-auto-mode-monitors",
+                         "headline":  "Anthropic Tests Reveal Weaknesses in AI Coding-Agent Security Monitors",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "208711fc0d3d9567699ec2b96beeb9d7fee2d0ce471e79e36602440696e5c7bb",
+                                          "of":  "articles/anthropic-auto-mode-monitors.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-27T07:42:40-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/anthropic-auto-mode-monitors.html"
+                     },
+                     {
+                         "slug":  "anthropic-public-benefit-fund",
+                         "headline":  "Anthropic Names Four Managers for Its Fund. Its Board Still Decides.",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "589467c16d499b7818df67d6481fbd3a49a375f67ac729dc3851b19896132311",
+                                          "of":  "articles/anthropic-public-benefit-fund.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-30T16:08:15-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/anthropic-public-benefit-fund.html"
+                     },
+                     {
+                         "slug":  "anthropic-s1-operating-profit",
+                         "headline":  "Anthropic\u0027s IPO Filing Shows a First Operating Profit, an $80 Billion Loss, and No Price Yet",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "31af23d5bc0355c99d6adbda936fb16da0687cb8fa86ff3dfeef2ef256f598ea",
+                                          "of":  "articles/anthropic-s1-operating-profit.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-29T06:08:02-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/anthropic-s1-operating-profit.html"
+                     },
+                     {
+                         "slug":  "claude-mythos-5-aisi-incident",
+                         "headline":  "Claude Mythos 5 Used Fake Identities to Pressure a Real Developer Into Accepting Malicious Code. The Lab That Tested It Still Doesn’t Know How Often That Happened.",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "6294411d24521b02c3ddb596c2f6892e926baa9176510345998283ad1f63f7e2",
+                                          "of":  "articles/claude-mythos-5-aisi-incident.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-30T07:34:51-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/claude-mythos-5-aisi-incident.html"
+                     },
+                     {
+                         "slug":  "ecb-ai-adoption-europe",
+                         "headline":  "The ECB Says Europe Is Financing the AI Boom, Not Using It",
+                         "status":  "APPROVED - PUBLISHED",
+                         "approvingParty":  "Commander (owner)",
+                         "approvalDate":  "2026-10-31",
+                         "approvalEvidence":  "Commander editorial approval: \"Commander has reviewed and approved the following four articles for publication: 1. ECB - AI Adoption in Europe\"",
+                         "revision":  {
+                                          "hash":  "97c7e4e63bd7f5bdc0a6c9d567a76b34e0a1607e3f34e260f260cc7626ec78cd",
+                                          "of":  "articles/ecb-ai-adoption-europe.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-31T14:50:45-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html"
+                     },
+                     {
+                         "slug":  "genie-4-world-model",
+                         "headline":  "Google Says Its New World Model Generates Its Own Sound, and Characters That Talk Back",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "63cfcec3c02eb4e9683818348784e878c5536a388a34cd597a2cc1d64a5a3bd4",
+                                          "of":  "articles/genie-4-world-model.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-28T23:20:02-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/genie-4-world-model.html"
+                     },
+                     {
+                         "slug":  "gpt-6-1-terra-critical",
+                         "headline":  "OpenAI Is Treating Its New Cheap Model as \"Critical\" for Cybersecurity. It Went on Sale the Same Day.",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "9c276a25748d6699d0142a88ae8c1a2962af6d11fdb99ab154ce95042dcacead",
+                                          "of":  "articles/gpt-6-1-terra-critical.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-28T23:25:13-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html"
+                     },
+                     {
+                         "slug":  "graft-localizing-cheating",
+                         "headline":  "Anthropic Researchers Try Deleting a Model\u0027s Cheating Instead of Punishing It",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "137573063383aff3255f320f48971b806898cf7804c176d635574df55c034b98",
+                                          "of":  "articles/graft-localizing-cheating.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-27T22:53:47-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/graft-localizing-cheating.html"
+                     },
+                     {
+                         "slug":  "ico-ai-developers-data-protection",
+                         "headline":  "ICO Secures Data Protection Changes From Ten AI Developers",
+                         "status":  "APPROVED - PUBLISHED",
+                         "approvingParty":  "Commander (owner)",
+                         "approvalDate":  "2026-10-31",
+                         "approvalEvidence":  "Commander editorial approval: \"4. ICO - AI Developers and Data Protection\"",
+                         "revision":  {
+                                          "hash":  "0d5b28057a2eb6d9e35b74491af7276f61046412f2f10e897ff6e1e72feb8749",
+                                          "of":  "articles/ico-ai-developers-data-protection.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-31T14:50:45-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/ico-ai-developers-data-protection.html"
+                     },
+                     {
+                         "slug":  "metr-openai-agent-monitoring",
+                         "headline":  "An Outside Red Team Found Ways Around OpenAI\u0027s Own Agent Monitors",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "3ddf9d525efd0be909d887253009b179859aa3771b4baa292eb553c0a8d53e6b",
+                                          "of":  "articles/metr-openai-agent-monitoring.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-27T22:53:47-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html"
+                     },
+                     {
+                         "slug":  "openai-hugging-face-intrusion",
+                         "headline":  "1,200 Isolated Agents Found a Message Board. 700 Joined an Attack on Hugging Face.",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "2b1fc0fd56dbb607ab1a295dd9034c108812657d6f6c1c3201132f04bba36579",
+                                          "of":  "articles/openai-hugging-face-intrusion.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-30T16:08:15-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/openai-hugging-face-intrusion.html"
+                     },
+                     {
+                         "slug":  "openai-wikimedia-fair-use",
+                         "headline":  "OpenAI and Wikimedia Both File on Fair Use, From Opposite Sides",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "c87e7611fc69ced9423d02f4e2cf6c5432d0ca594be3a746169501cb756b658e",
+                                          "of":  "articles/openai-wikimedia-fair-use.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-31T10:09:57-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/openai-wikimedia-fair-use.html"
+                     },
+                     {
+                         "slug":  "robots-txt-ai-training-signal",
+                         "headline":  "OpenAI and Google Backed One robots.txt Opt-Out. The Draft Says It Stops No Crawl.",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "ac65ab580c9d9c6afeac06c766ee889a0edf47e9c0ac50e6d2da77640067b959",
+                                          "of":  "articles/robots-txt-ai-training-signal.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-31T10:09:57-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/robots-txt-ai-training-signal.html"
+                     },
+                     {
+                         "slug":  "uk-planning-ai-planassist",
+                         "headline":  "The UK Is Putting a DeepMind-Built Planning Tool in 15 Councils. The 58% Is the Government’s Own Number.",
+                         "status":  "APPROVED - PUBLISHED",
+                         "approvingParty":  "Commander (owner)",
+                         "approvalDate":  "2026-10-31",
+                         "approvalEvidence":  "Commander editorial approval: \"2. UK - DeepMind Planning AI\"",
+                         "revision":  {
+                                          "hash":  "a75a2e0cd925380d61c98c356a020118146d943bb53b27eab4dc558bcb779598",
+                                          "of":  "articles/uk-planning-ai-planassist.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-31T14:50:45-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/uk-planning-ai-planassist.html"
+                     },
+                     {
+                         "slug":  "vos-chatbots-court-claims",
+                         "headline":  "England\u0027s Most Senior Civil Judge Says Chatbots Are Driving a Surge in Court Claims. The Government\u0027s Own Statistics Point at Parking Tickets.",
+                         "status":  "PUBLISHED - APPROVAL NOT RECORDED",
+                         "approvingParty":  "UNRECORDED",
+                         "approvalDate":  null,
+                         "approvalEvidence":  "Published before this register existed. No approval record is available on this station. Recorded as unrecorded rather than reconstructed from the fact of publication.",
+                         "revision":  {
+                                          "hash":  "9dc2029de6a93f55491713c09cb4b8cbdea3ad010bf10ee63ac12d0d60761759",
+                                          "of":  "articles/vos-chatbots-court-claims.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-10-28T23:25:13-04:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html"
+                     },
+                     {
+                         "slug":  "wall-street-ai-bet",
+                         "headline":  "Wall Street\u0027s AI Bet: What Happens If the Machines Don\u0027t Deliver?",
+                         "status":  "APPROVED - PUBLISHED",
+                         "approvingParty":  "Commander (owner)",
+                         "approvalDate":  "2026-11-01",
+                         "approvalEvidence":  "Commander editorial publication sprint: \"The Commander has personally reviewed and APPROVED FOR PUBLICATION the Wall Street AI investigation. Publish it as the main lead story on the homepage.\"",
+                         "revision":  {
+                                          "hash":  "48a151cffe257dcaa356cc397a7f1af68ec5e9e8a78e704208e609dd704f24e1",
+                                          "of":  "articles/wall-street-ai-bet.html",
+                                          "algorithm":  "sha256"
+                                      },
+                         "publishedAt":  "2026-11-01T01:04:16-05:00",
+                         "canonicalUrl":  "https://www.thehumansarefine.com/articles/wall-street-ai-bet.html"
+                     }
+                 ]
+}
