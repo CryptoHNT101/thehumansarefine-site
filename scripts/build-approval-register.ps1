@@ -6,7 +6,7 @@
 # approved, the evidence for that approval, and the exact revision approved.
 # Where no approval is documented, the field says so instead of guessing.
 $ErrorActionPreference = 'Stop'
-$repo = 'C:\Users\isaac\Documents\StarNet-Outputs\sprint'
+$repo = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $articlesDir = Join-Path $repo 'articles'
 
 # Hash the CONTENT, not the checkout. On Windows with core.autocrlf=true the
@@ -50,6 +50,21 @@ $approvals = @{
         authority = 'Commander (owner)'
         date      = '2026-10-31'
         evidence  = 'Commander editorial approval: "4. ICO - AI Developers and Data Protection"'
+    }
+    'who-gets-woken-up' = @{
+        authority = 'Commander (owner)'
+        date      = '2026-11-02'
+        evidence  = 'Commander approval in principle: "APPROVE IN PRINCIPLE: Who Gets Woken Up - lead story", then publication authorisation conditional on the gates: "Proceed with the three previously approved articles, conditional on the existing final editorial and deployment gates passing." Every gate passed before deployment: approval gate ALL MECHANICAL CHECKS PASS, quotations 27 spans 0 not-found, deploy gate PASS=18 FAIL=0, discovery verify PASS=240 FAIL=0, front door pass=28 fail=0.'
+    }
+    'the-leak-that-returned-http-200' = @{
+        authority = 'Commander (owner)'
+        date      = '2026-11-02'
+        evidence  = 'Commander approval in principle: "APPROVE IN PRINCIPLE: The Leak That Returned HTTP 200 - secondary story", then publication authorisation conditional on the gates: "Proceed with the three previously approved articles, conditional on the existing final editorial and deployment gates passing." Every gate passed before deployment.'
+    }
+    'aisi-reprobait-coding-agents' = @{
+        authority = 'Commander (owner)'
+        date      = '2026-11-02'
+        evidence  = 'Commander approval in principle: "APPROVE IN PRINCIPLE: Coding Agents Rebuilt Parts of a Withheld Bio Tool for Under $20", then publication authorisation conditional on the gates: "Proceed with the three previously approved articles, conditional on the existing final editorial and deployment gates passing." Every gate passed before deployment.'
     }
 }
 
