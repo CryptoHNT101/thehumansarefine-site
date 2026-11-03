@@ -6,7 +6,31 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Sun, 01 Nov 2026 06:04:16 GMT</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 01:18:44 GMT</lastBuildDate>
+<item>
+<title>The Leak That Returned HTTP 200</title>
+<link>https://www.thehumansarefine.com/articles/the-leak-that-returned-http-200.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/the-leak-that-returned-http-200.html</guid>
+<pubDate>Tue, 03 Nov 2026 01:18:44 GMT</pubDate>
+<category>News</category>
+<description>For thirteen days Cloudflare&apos;s AI platform returned other customers&apos; content inside successful responses. Its pre-launch testing checked status codes, not output.</description>
+</item>
+<item>
+<title>Coding Agents Rebuilt Parts of a Withheld Bio Tool for Under $20</title>
+<link>https://www.thehumansarefine.com/articles/aisi-reprobait-coding-agents.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/aisi-reprobait-coding-agents.html</guid>
+<pubDate>Tue, 03 Nov 2026 01:18:44 GMT</pubDate>
+<category>News</category>
+<description>A UK government evaluation gave four coding agents a paper, a training set and one GPU. Two of three biological AI tools were reproduced at or near the original&apos;s performance; the cheaper rebuilds cost $4-$20 in compute.</description>
+</item>
+<item>
+<title>Who Gets Woken Up</title>
+<link>https://www.thehumansarefine.com/articles/who-gets-woken-up.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/who-gets-woken-up.html</guid>
+<pubDate>Tue, 03 Nov 2026 01:18:44 GMT</pubDate>
+<category>News</category>
+<description>OpenAI published a candid account of how it monitors its own models. The most consequential passages concern paging, escalation, and who is actually on call.</description>
+</item>
 <item>
 <title>Wall Street&apos;s AI Bet: What Happens If the Machines Don&apos;t Deliver?</title>
 <link>https://www.thehumansarefine.com/articles/wall-street-ai-bet.html</link>
@@ -24,12 +48,12 @@
 <description>The UK AI Security Institute says stripping viral sequences from protein language model training data suppressed the targeted ability without significantly damaging others, then recovered it for under $80 of compute.</description>
 </item>
 <item>
-<title>The ECB Says Europe Is Financing the AI Boom, Not Using It</title>
-<link>https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</guid>
+<title>ICO Secures Data Protection Changes From Ten AI Developers</title>
+<link>https://www.thehumansarefine.com/articles/ico-ai-developers-data-protection.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/ico-ai-developers-data-protection.html</guid>
 <pubDate>Sat, 31 Oct 2026 18:50:45 GMT</pubDate>
 <category>AI Policy &amp; Governance</category>
-<description>An ECB executive board member puts AI&apos;s addition to euro-area capex plans at about 10 per cent, while only 7 per cent of surveyed firms call their AI use significant. Those are survey answers, not output.</description>
+<description>The UK Information Commissioner&apos;s Office says ten foundation model developers made or committed to data protection changes after its scrutiny, and has opened a six-week call for evidence on agentic AI. The announcement is dated 8 October 2026.</description>
 </item>
 <item>
 <title>The UK Is Putting a DeepMind-Built Planning Tool in 15 Councils. The 58% Is the Government&apos;s Own Number.</title>
@@ -40,12 +64,12 @@
 <description>PlanAssist expands from three pilot councils to 15 for 12 months, with every English council intended by end-2027. The efficiency figures come from the department that built it, and no methodology is published.</description>
 </item>
 <item>
-<title>ICO Secures Data Protection Changes From Ten AI Developers</title>
-<link>https://www.thehumansarefine.com/articles/ico-ai-developers-data-protection.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/ico-ai-developers-data-protection.html</guid>
+<title>The ECB Says Europe Is Financing the AI Boom, Not Using It</title>
+<link>https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</guid>
 <pubDate>Sat, 31 Oct 2026 18:50:45 GMT</pubDate>
 <category>AI Policy &amp; Governance</category>
-<description>The UK Information Commissioner&apos;s Office says ten foundation model developers made or committed to data protection changes after its scrutiny, and has opened a six-week call for evidence on agentic AI. The announcement is dated 8 October 2026.</description>
+<description>An ECB executive board member puts AI&apos;s addition to euro-area capex plans at about 10 per cent, while only 7 per cent of surveyed firms call their AI use significant. Those are survey answers, not output.</description>
 </item>
 <item>
 <title>OpenAI and Google Backed One robots.txt Opt-Out. The Draft Says It Stops No Crawl</title>
@@ -96,14 +120,6 @@
 <description>Filed with the share count and price range blank, the prospectus shows a first operating profit, then a $59.6 billion charge against its own valuation.</description>
 </item>
 <item>
-<title>Chatbots and Court Claims: What the Statistics Say</title>
-<link>https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</guid>
-<pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
-<category>AI Policy &amp; Society</category>
-<description>Geoffrey Vos says a 10 percent rise in county court claims is down to chatbots. The Ministry of Justice bulletin points at parking on private land.</description>
-</item>
-<item>
 <title>OpenAI Calls Its New Cheap Model Critical. It Went on Sale Anyway.</title>
 <link>https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/gpt-6-1-terra-critical.html</guid>
@@ -112,20 +128,20 @@
 <description>OpenAI halved the price of GPT-6.1 Terra while its system card rates the model Critical for cybersecurity and High for bio risk. One of those got announced.</description>
 </item>
 <item>
+<title>Chatbots and Court Claims: What the Statistics Say</title>
+<link>https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/vos-chatbots-court-claims.html</guid>
+<pubDate>Thu, 29 Oct 2026 03:25:13 GMT</pubDate>
+<category>AI Policy &amp; Society</category>
+<description>Geoffrey Vos says a 10 percent rise in county court claims is down to chatbots. The Ministry of Justice bulletin points at parking on private land.</description>
+</item>
+<item>
 <title>Google Says Its New World Model Generates Its Own Sound, and Characters That Talk Back</title>
 <link>https://www.thehumansarefine.com/articles/genie-4-world-model.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/genie-4-world-model.html</guid>
 <pubDate>Thu, 29 Oct 2026 03:20:02 GMT</pubDate>
 <category>Frontier AI</category>
 <description>DeepMind's Genie 4 builds interactive worlds from a sentence and gives them voices. Its makers admit the worlds drift, and publish no safety result.</description>
-</item>
-<item>
-<title>An Outside Red Team Found Ways Around OpenAI&apos;s Own Agent Monitors</title>
-<link>https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</guid>
-<pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
-<category>AI Safety &amp; Disclosure</category>
-<description>METR and Redwood stress-tested OpenAI's internal misalignment monitoring and found bypasses, an unmonitored compaction gap, and a deferrable monitor.</description>
 </item>
 <item>
 <title>Learned to Invent Problems, Until Its Makers Changed the Reward</title>
@@ -142,6 +158,14 @@
 <pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
 <category>AI Safety &amp; Disclosure</category>
 <description>A training method routes a model's cheating into parameters that are then deleted. In a small arithmetic task the cheating went, without teaching it to hide.</description>
+</item>
+<item>
+<title>An Outside Red Team Found Ways Around OpenAI&apos;s Own Agent Monitors</title>
+<link>https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</guid>
+<pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
+<category>AI Safety &amp; Disclosure</category>
+<description>METR and Redwood stress-tested OpenAI's internal misalignment monitoring and found bypasses, an unmonitored compaction gap, and a deferrable monitor.</description>
 </item>
 <item>
 <title>Anthropic Tests Reveal Weaknesses in AI Coding-Agent Security Monitors</title>

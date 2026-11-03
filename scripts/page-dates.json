@@ -10,6 +10,16 @@
         "modified":  "2026-11-01T12:03:12-05:00"
     },
     {
+        "path":  "articles/aisi-reprobait-coding-agents-evidence.html",
+        "published":  "2026-11-02T20:18:44-05:00",
+        "modified":  "2026-11-02T20:20:42-05:00"
+    },
+    {
+        "path":  "articles/aisi-reprobait-coding-agents.html",
+        "published":  "2026-11-02T20:18:44-05:00",
+        "modified":  "2026-11-02T20:20:42-05:00"
+    },
+    {
         "path":  "articles/alignment-auditors-false-positives-evidence.html",
         "published":  "2026-10-27T22:53:47-04:00",
         "modified":  "2026-11-01T12:03:12-05:00"
@@ -150,6 +160,16 @@
         "modified":  "2026-11-01T12:03:12-05:00"
     },
     {
+        "path":  "articles/the-leak-that-returned-http-200-evidence.html",
+        "published":  "2026-11-02T20:18:44-05:00",
+        "modified":  "2026-11-02T20:20:42-05:00"
+    },
+    {
+        "path":  "articles/the-leak-that-returned-http-200.html",
+        "published":  "2026-11-02T20:18:44-05:00",
+        "modified":  "2026-11-02T20:20:42-05:00"
+    },
+    {
         "path":  "articles/uk-planning-ai-planassist-evidence.html",
         "published":  "2026-10-31T14:50:45-04:00",
         "modified":  "2026-11-01T12:03:12-05:00"
@@ -172,12 +192,22 @@
     {
         "path":  "articles/wall-street-ai-bet-evidence.html",
         "published":  "2026-11-01T01:04:16-05:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-02T20:18:49-05:00"
     },
     {
         "path":  "articles/wall-street-ai-bet.html",
         "published":  "2026-11-01T01:04:16-05:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-02T20:18:49-05:00"
+    },
+    {
+        "path":  "articles/who-gets-woken-up-evidence.html",
+        "published":  "2026-11-02T20:18:44-05:00",
+        "modified":  "2026-11-02T20:20:42-05:00"
+    },
+    {
+        "path":  "articles/who-gets-woken-up.html",
+        "published":  "2026-11-02T20:18:44-05:00",
+        "modified":  "2026-11-02T20:20:42-05:00"
     },
     {
         "path":  "disclosure-watch/index.html",
@@ -187,17 +217,17 @@
     {
         "path":  "index.html",
         "published":  "2026-10-04T16:07:09-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-02T20:18:49-05:00"
     },
     {
         "path":  "machines-are-talking.html",
         "published":  "2026-11-01T12:03:07-05:00",
-        "modified":  "2026-11-01T12:03:07-05:00"
+        "modified":  "2026-11-02T20:18:49-05:00"
     },
     {
         "path":  "news/index.html",
         "published":  "2026-10-28T23:58:39-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-02T20:18:49-05:00"
     },
     {
         "path":  "newsroom/index.html",
@@ -207,12 +237,12 @@
     {
         "path":  "newswire.html",
         "published":  "2026-11-01T12:03:07-05:00",
-        "modified":  "2026-11-01T12:03:07-05:00"
+        "modified":  "2026-11-02T20:18:49-05:00"
     },
     {
         "path":  "send-your-agent.html",
         "published":  "2026-11-01T12:03:07-05:00",
-        "modified":  "2026-11-01T12:03:07-05:00"
+        "modified":  "2026-11-02T20:18:49-05:00"
     },
     {
         "path":  "standards/index.html",
@@ -222,7 +252,7 @@
     {
         "path":  "standards/verification.html",
         "published":  "2026-11-01T12:03:07-05:00",
-        "modified":  "2026-11-01T12:03:07-05:00"
+        "modified":  "2026-11-02T20:18:49-05:00"
     },
     {
         "path":  "topics/ai-agents.html",
@@ -237,7 +267,7 @@
     {
         "path":  "topics/ai-safety.html",
         "published":  "2026-10-28T23:58:39-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-02T20:18:49-05:00"
     },
     {
         "path":  "topics/frontier-ai.html",

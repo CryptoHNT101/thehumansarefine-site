@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.thehumansarefine.com/articles/who-gets-woken-up.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-02T19:59:18-05:00</news:publication_date>
+      <news:title>Who Gets Woken Up</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/the-leak-that-returned-http-200.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-02T19:59:18-05:00</news:publication_date>
+      <news:title>The Leak That Returned HTTP 200</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/aisi-reprobait-coding-agents.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-02T19:59:18-05:00</news:publication_date>
+      <news:title>Coding Agents Rebuilt Parts of a Withheld Bio Tool for Under $20</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.thehumansarefine.com/articles/wall-street-ai-bet.html</loc>
     <news:news>
       <news:publication>
@@ -10,94 +43,6 @@
       </news:publication>
       <news:publication_date>2026-11-01T01:04:16-05:00</news:publication_date>
       <news:title>Wall Street&apos;s AI Bet: What Happens If the Machines Don&apos;t Deliver?</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/aisi-protein-filtering.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
-      <news:title>UK Lab Restores Filtered Protein Model Capability for Under $80</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/uk-planning-ai-planassist.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
-      <news:title>The UK Is Putting a DeepMind-Built Planning Tool in 15 Councils. The 58% Is the Government&apos;s Own Number.</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/ico-ai-developers-data-protection.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
-      <news:title>ICO Secures Data Protection Changes From Ten AI Developers</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-31T14:50:45-04:00</news:publication_date>
-      <news:title>The ECB Says Europe Is Financing the AI Boom, Not Using It</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/robots-txt-ai-training-signal.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-31T10:09:57-04:00</news:publication_date>
-      <news:title>OpenAI and Google Backed One robots.txt Opt-Out. The Draft Says It Stops No Crawl</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/openai-wikimedia-fair-use.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-31T10:09:57-04:00</news:publication_date>
-      <news:title>OpenAI and Wikimedia Both File on Fair Use, From Opposite Sides</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/openai-hugging-face-intrusion.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T16:08:15-04:00</news:publication_date>
-      <news:title>1,200 Isolated Agents Found a Message Board. 700 Joined the Attack</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/anthropic-public-benefit-fund.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-10-30T16:08:15-04:00</news:publication_date>
-      <news:title>Anthropic Names Four Managers for Its Fund. Its Board Still Decides</news:title>
     </news:news>
   </url>
 </urlset>
