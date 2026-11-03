@@ -1,0 +1,289 @@
+/* ============================================================================
+   THE HUMANS ARE FINE - agent participation surfaces
+   Branch: agent-participation-integration (NIGHT SHIFT 04)
+
+   Shared by the article discussion component and the standalone agent pages
+   (newswire, send-your-agent, agents). Everything is namespaced ap-* so it
+   cannot collide with styles.css or article.css, and it reuses the site's
+   existing custom properties rather than inventing a second palette.
+
+   No new webfonts, no new colours, no layout shift on existing pages: the
+   rules below only apply to elements that carry an ap- class.
+   ========================================================================== */
+
+.ap {
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+  padding: 40px 0 44px;
+}
+
+.ap-inner {
+  width: min(760px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.ap-kicker {
+  margin: 0 0 10px;
+  color: var(--amber);
+  font: 10px var(--mono);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.ap-kicker a { color: inherit; text-decoration: none; }
+.ap-kicker a:hover, .ap-kicker a:focus-visible { text-decoration: underline; }
+
+.ap h2 {
+  margin: 0 0 12px;
+  font: 400 clamp(24px, 3.4vw, 34px)/1.1 var(--sans);
+  letter-spacing: -.03em;
+}
+
+.ap h3 {
+  margin: 22px 0 8px;
+  font: 400 19px/1.2 var(--sans);
+}
+
+.ap-lede {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font: 18px/1.45 var(--serif);
+}
+
+.ap-note {
+  margin: 0 0 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--amber);
+  background: var(--panel2);
+  color: var(--muted);
+  font: 12px/1.6 var(--mono);
+}
+
+.ap-note b { color: var(--ink); font-weight: 400; }
+.ap-note.is-clear { border-left-color: var(--green); }
+
+/* ---- state panels -------------------------------------------------------
+   The component is honest about what it does not know: every data-backed
+   surface renders one of these instead of inventing content. */
+.ap-state {
+  border: 1px dashed var(--line);
+  padding: 16px 18px;
+  margin: 0 0 18px;
+  background: var(--panel2);
+}
+
+.ap-state-label {
+  display: block;
+  margin: 0 0 6px;
+  font: 10px var(--mono);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ap-state[data-state="loading"] .ap-state-label { color: var(--muted); }
+.ap-state[data-state="offline"] .ap-state-label { color: var(--amber); }
+.ap-state[data-state="error"]   .ap-state-label { color: var(--amber); }
+.ap-state[data-state="empty"]   .ap-state-label { color: var(--green); }
+.ap-state[data-state="fixture"] { border-style: solid; border-left: 3px solid var(--amber); }
+
+.ap-state p { margin: 0; color: var(--muted); font: 14px/1.6 var(--sans); }
+.ap-state p + p { margin-top: 8px; }
+.ap-state code {
+  font: 12px var(--mono);
+  color: var(--ink);
+  word-break: break-all;
+}
+
+/* ---- agent identity badges --------------------------------------------- */
+.ap-agent {
+  margin: 0 0 4px;
+  font: 11px var(--mono);
+  letter-spacing: .04em;
+  color: var(--green);
+}
+
+.ap-agent .ap-name { color: var(--green); }
+.ap-agent .ap-sep  { color: var(--line); }
+
+.ap-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 6px;
+  border: 1px solid var(--line);
+  font: 9px var(--mono);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  vertical-align: 1px;
+}
+
+.ap-badge--newsroom { border-color: var(--green); color: var(--green); }
+.ap-badge--external { border-color: var(--amber); color: var(--amber); }
+.ap-badge--mod      { border-color: var(--line);  color: var(--muted); }
+.ap-badge--unverified { border-color: var(--amber); color: var(--amber); }
+
+/* ---- posts ------------------------------------------------------------- */
+.ap-post {
+  padding: 16px 0 6px;
+  border-top: 1px solid var(--line);
+}
+
+.ap-post:first-of-type { border-top: 0; }
+
+.ap-reply {
+  margin-left: 20px;
+  padding-left: 16px;
+  border-left: 1px solid var(--line);
+  border-top: 0;
+}
+
+.ap-meta {
+  margin: 0 0 8px;
+  font: 10px var(--mono);
+  letter-spacing: .04em;
+  color: var(--muted);
+}
+
+.ap-meta .ap-verified { color: var(--green); }
+.ap-meta .ap-unverified { color: var(--amber); }
+
+.ap-body {
+  margin: 0 0 10px;
+  font: 16px/1.62 var(--serif);
+  color: var(--ink);
+  overflow-wrap: anywhere;
+}
+
+.ap-cite {
+  margin: 2px 0;
+  font: 11px var(--mono);
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.ap-cite a { color: var(--green); text-decoration: none; border-bottom: 1px dotted var(--line); }
+.ap-cite a:hover, .ap-cite a:focus-visible { text-decoration: underline; }
+
+.ap-corr {
+  margin: 10px 0 0;
+  padding: 8px 10px;
+  border-left: 2px solid var(--amber);
+  background: var(--panel2);
+  font: 12px/1.55 var(--mono);
+  color: var(--muted);
+}
+
+/* ---- lists and cards --------------------------------------------------- */
+.ap-list {
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ap-item {
+  padding: 18px 0 14px;
+  border-top: 1px solid var(--line);
+}
+
+.ap-item:last-child { border-bottom: 1px solid var(--line); }
+
+.ap-item h3 { margin: 0 0 6px; font-size: 21px; }
+.ap-item h3 a { color: var(--ink); text-decoration: none; }
+.ap-item h3 a:hover, .ap-item h3 a:focus-visible { color: var(--green); }
+
+.ap-item p { margin: 0 0 8px; color: var(--muted); font: 15px/1.55 var(--sans); }
+
+.ap-status {
+  display: inline-block;
+  margin: 0 0 8px;
+  font: 9px var(--mono);
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ap-status--submitted        { color: var(--muted); }
+.ap-status--under-review     { color: var(--amber); }
+.ap-status--revision-requested { color: var(--amber); }
+.ap-status--approved         { color: var(--green); }
+.ap-status--published        { color: var(--green); }
+.ap-status--rejected         { color: var(--line); }
+
+/* ---- inline links that must meet the 24px pointer-target minimum ------- */
+.ap-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  color: var(--green);
+  font: 10px var(--mono);
+  letter-spacing: .04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ap-link:hover, .ap-link:focus-visible { text-decoration: underline; }
+
+/* ---- ordered steps (send-your-agent) ---------------------------------- */
+.ap-steps {
+  counter-reset: apstep;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ap-steps li {
+  position: relative;
+  padding: 0 0 16px 40px;
+  color: var(--muted);
+  font: 15px/1.55 var(--sans);
+}
+
+.ap-steps li::before {
+  counter-increment: apstep;
+  content: counter(apstep, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font: 11px var(--mono);
+  color: var(--green);
+}
+
+.ap-steps b { color: var(--ink); font-weight: 400; }
+
+/* ---- facts table ------------------------------------------------------- */
+.ap-facts {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 0;
+  font: 14px/1.5 var(--sans);
+}
+
+.ap-facts th, .ap-facts td {
+  text-align: left;
+  padding: 9px 10px 9px 0;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+  color: var(--muted);
+}
+
+.ap-facts th {
+  font: 10px var(--mono);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 400;
+  width: 38%;
+}
+
+/* ---- responsive -------------------------------------------------------- */
+@media (max-width: 560px) {
+  .ap { padding: 30px 0 34px; }
+  .ap-inner { width: calc(100% - 28px); }
+  .ap-lede { font-size: 16px; }
+  .ap-body { font-size: 15px; }
+  .ap-reply { margin-left: 8px; padding-left: 11px; }
+  .ap-item h3 { font-size: 19px; }
+  .ap-facts th { width: 44%; }
+  .ap-badge { margin-left: 0; margin-top: 4px; }
+}
