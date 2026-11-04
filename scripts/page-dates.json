@@ -1,5 +1,15 @@
 ﻿[
     {
+        "path":  "agents/agent.html",
+        "published":  "2026-11-02T23:55:12-05:00",
+        "modified":  "2026-11-02T23:55:12-05:00"
+    },
+    {
+        "path":  "agents/index.html",
+        "published":  "2026-11-02T23:55:12-05:00",
+        "modified":  "2026-11-02T23:55:12-05:00"
+    },
+    {
         "path":  "articles/aisi-protein-filtering-evidence.html",
         "published":  "2026-10-31T14:50:45-04:00",
         "modified":  "2026-11-01T12:03:12-05:00"
@@ -7,7 +17,7 @@
     {
         "path":  "articles/aisi-protein-filtering.html",
         "published":  "2026-10-31T14:50:45-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/aisi-reprobait-coding-agents-evidence.html",
@@ -17,7 +27,7 @@
     {
         "path":  "articles/aisi-reprobait-coding-agents.html",
         "published":  "2026-11-02T20:18:44-05:00",
-        "modified":  "2026-11-02T20:20:42-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/alignment-auditors-false-positives-evidence.html",
@@ -27,7 +37,7 @@
     {
         "path":  "articles/alignment-auditors-false-positives.html",
         "published":  "2026-10-27T22:53:47-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/anthropic-auto-mode-monitors-evidence.html",
@@ -37,7 +47,7 @@
     {
         "path":  "articles/anthropic-auto-mode-monitors.html",
         "published":  "2026-10-27T07:42:40-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/anthropic-public-benefit-fund-evidence.html",
@@ -47,7 +57,7 @@
     {
         "path":  "articles/anthropic-public-benefit-fund.html",
         "published":  "2026-10-30T16:08:15-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/anthropic-s1-operating-profit-evidence.html",
@@ -57,7 +67,17 @@
     {
         "path":  "articles/anthropic-s1-operating-profit.html",
         "published":  "2026-10-29T06:08:02-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
+    },
+    {
+        "path":  "articles/barnsley-ai-upskilling-challenge-fund-evidence.html",
+        "published":  "2026-11-03T22:09:31-05:00",
+        "modified":  "2026-11-03T22:09:31-05:00"
+    },
+    {
+        "path":  "articles/barnsley-ai-upskilling-challenge-fund.html",
+        "published":  "2026-11-03T22:09:31-05:00",
+        "modified":  "2026-11-03T22:09:31-05:00"
     },
     {
         "path":  "articles/claude-mythos-5-aisi-incident-evidence.html",
@@ -67,7 +87,7 @@
     {
         "path":  "articles/claude-mythos-5-aisi-incident.html",
         "published":  "2026-10-30T07:34:51-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/ecb-ai-adoption-europe-evidence.html",
@@ -77,7 +97,7 @@
     {
         "path":  "articles/ecb-ai-adoption-europe.html",
         "published":  "2026-10-31T14:50:45-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/genie-4-world-model-evidence.html",
@@ -87,7 +107,7 @@
     {
         "path":  "articles/genie-4-world-model.html",
         "published":  "2026-10-28T23:20:02-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/gpt-6-1-terra-critical-evidence.html",
@@ -97,7 +117,7 @@
     {
         "path":  "articles/gpt-6-1-terra-critical.html",
         "published":  "2026-10-28T23:25:13-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/graft-localizing-cheating-evidence.html",
@@ -107,7 +127,7 @@
     {
         "path":  "articles/graft-localizing-cheating.html",
         "published":  "2026-10-27T22:53:47-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/ico-ai-developers-data-protection-evidence.html",
@@ -117,7 +137,7 @@
     {
         "path":  "articles/ico-ai-developers-data-protection.html",
         "published":  "2026-10-31T14:50:45-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/metr-openai-agent-monitoring-evidence.html",
@@ -127,7 +147,7 @@
     {
         "path":  "articles/metr-openai-agent-monitoring.html",
         "published":  "2026-10-27T22:53:47-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/openai-hugging-face-intrusion-evidence.html",
@@ -137,7 +157,7 @@
     {
         "path":  "articles/openai-hugging-face-intrusion.html",
         "published":  "2026-10-30T16:08:15-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/openai-wikimedia-fair-use-evidence.html",
@@ -147,7 +167,7 @@
     {
         "path":  "articles/openai-wikimedia-fair-use.html",
         "published":  "2026-10-31T10:09:57-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/robots-txt-ai-training-signal-evidence.html",
@@ -157,7 +177,7 @@
     {
         "path":  "articles/robots-txt-ai-training-signal.html",
         "published":  "2026-10-31T10:09:57-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/the-leak-that-returned-http-200-evidence.html",
@@ -167,7 +187,7 @@
     {
         "path":  "articles/the-leak-that-returned-http-200.html",
         "published":  "2026-11-02T20:18:44-05:00",
-        "modified":  "2026-11-02T20:20:42-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/uk-planning-ai-planassist-evidence.html",
@@ -177,7 +197,7 @@
     {
         "path":  "articles/uk-planning-ai-planassist.html",
         "published":  "2026-10-31T14:50:45-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/vos-chatbots-court-claims-evidence.html",
@@ -187,7 +207,7 @@
     {
         "path":  "articles/vos-chatbots-court-claims.html",
         "published":  "2026-10-28T23:25:13-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/wall-street-ai-bet-evidence.html",
@@ -197,7 +217,7 @@
     {
         "path":  "articles/wall-street-ai-bet.html",
         "published":  "2026-11-01T01:04:16-05:00",
-        "modified":  "2026-11-02T20:18:49-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "articles/who-gets-woken-up-evidence.html",
@@ -207,7 +227,7 @@
     {
         "path":  "articles/who-gets-woken-up.html",
         "published":  "2026-11-02T20:18:44-05:00",
-        "modified":  "2026-11-02T20:20:42-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "disclosure-watch/index.html",
@@ -217,7 +237,7 @@
     {
         "path":  "index.html",
         "published":  "2026-10-04T16:07:09-04:00",
-        "modified":  "2026-11-02T20:18:49-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "machines-are-talking.html",
@@ -227,7 +247,7 @@
     {
         "path":  "news/index.html",
         "published":  "2026-10-28T23:58:39-04:00",
-        "modified":  "2026-11-02T20:18:49-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "newsroom/index.html",
@@ -240,9 +260,19 @@
         "modified":  "2026-11-02T20:18:49-05:00"
     },
     {
+        "path":  "newswire/index.html",
+        "published":  "2026-11-02T23:55:12-05:00",
+        "modified":  "2026-11-02T23:55:12-05:00"
+    },
+    {
         "path":  "send-your-agent.html",
         "published":  "2026-11-01T12:03:07-05:00",
         "modified":  "2026-11-02T20:18:49-05:00"
+    },
+    {
+        "path":  "send-your-agent/index.html",
+        "published":  "2026-11-02T23:55:12-05:00",
+        "modified":  "2026-11-02T23:55:12-05:00"
     },
     {
         "path":  "standards/index.html",
@@ -262,7 +292,7 @@
     {
         "path":  "topics/ai-policy.html",
         "published":  "2026-10-28T23:58:39-04:00",
-        "modified":  "2026-11-01T12:03:12-05:00"
+        "modified":  "2026-11-03T22:09:38-05:00"
     },
     {
         "path":  "topics/ai-safety.html",

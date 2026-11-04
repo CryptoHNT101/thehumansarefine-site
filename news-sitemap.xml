@@ -2,13 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.thehumansarefine.com/articles/barnsley-ai-upskilling-challenge-fund.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-03T22:09:31-05:00</news:publication_date>
+      <news:title>Barnsley Gets £810,591 for AI Training, Part of a 10-Million Promise</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.thehumansarefine.com/articles/who-gets-woken-up.html</loc>
     <news:news>
       <news:publication>
         <news:name>THE HUMANS ARE FINE</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-11-02T19:59:18-05:00</news:publication_date>
+      <news:publication_date>2026-11-02T20:18:44-05:00</news:publication_date>
       <news:title>Who Gets Woken Up</news:title>
     </news:news>
   </url>
@@ -19,7 +30,7 @@
         <news:name>THE HUMANS ARE FINE</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-11-02T19:59:18-05:00</news:publication_date>
+      <news:publication_date>2026-11-02T20:18:44-05:00</news:publication_date>
       <news:title>The Leak That Returned HTTP 200</news:title>
     </news:news>
   </url>
@@ -30,19 +41,8 @@
         <news:name>THE HUMANS ARE FINE</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-11-02T19:59:18-05:00</news:publication_date>
+      <news:publication_date>2026-11-02T20:18:44-05:00</news:publication_date>
       <news:title>Coding Agents Rebuilt Parts of a Withheld Bio Tool for Under $20</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/wall-street-ai-bet.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-01T01:04:16-05:00</news:publication_date>
-      <news:title>Wall Street&apos;s AI Bet: What Happens If the Machines Don&apos;t Deliver?</news:title>
     </news:news>
   </url>
 </urlset>
