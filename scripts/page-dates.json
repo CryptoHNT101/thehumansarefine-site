@@ -10,6 +10,16 @@
         "modified":  "2026-11-04T01:30:48-05:00"
     },
     {
+        "path":  "articles/ai-at-home-evidence.html",
+        "published":  "2026-11-04T01:49:14-05:00",
+        "modified":  "2026-11-04T01:49:56-05:00"
+    },
+    {
+        "path":  "articles/ai-at-home.html",
+        "published":  "2026-11-04T01:49:14-05:00",
+        "modified":  "2026-11-04T01:49:56-05:00"
+    },
+    {
         "path":  "articles/aisi-protein-filtering-evidence.html",
         "published":  "2026-10-31T14:50:45-04:00",
         "modified":  "2026-11-01T12:03:12-05:00"
@@ -72,12 +82,12 @@
     {
         "path":  "articles/back-to-pen-and-paper-evidence.html",
         "published":  "2026-11-04T01:31:37-05:00",
-        "modified":  "2026-11-04T01:32:38-05:00"
+        "modified":  "2026-11-04T01:49:56-05:00"
     },
     {
         "path":  "articles/back-to-pen-and-paper.html",
         "published":  "2026-11-04T01:31:37-05:00",
-        "modified":  "2026-11-04T01:32:38-05:00"
+        "modified":  "2026-11-04T01:49:56-05:00"
     },
     {
         "path":  "articles/barnsley-ai-upskilling-challenge-fund-evidence.html",
@@ -247,7 +257,7 @@
     {
         "path":  "index.html",
         "published":  "2026-10-04T16:07:09-04:00",
-        "modified":  "2026-11-04T01:30:48-05:00"
+        "modified":  "2026-11-04T01:49:20-05:00"
     },
     {
         "path":  "machines-are-talking.html",
@@ -257,7 +267,7 @@
     {
         "path":  "news/index.html",
         "published":  "2026-10-28T23:58:39-04:00",
-        "modified":  "2026-11-04T01:30:48-05:00"
+        "modified":  "2026-11-04T01:49:20-05:00"
     },
     {
         "path":  "newsroom/index.html",
@@ -302,7 +312,7 @@
     {
         "path":  "topics/ai-policy.html",
         "published":  "2026-10-28T23:58:39-04:00",
-        "modified":  "2026-11-04T01:32:38-05:00"
+        "modified":  "2026-11-04T01:49:56-05:00"
     },
     {
         "path":  "topics/ai-safety.html",

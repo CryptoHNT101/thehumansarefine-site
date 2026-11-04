@@ -6,7 +6,15 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Wed, 04 Nov 2026 06:31:37 GMT</lastBuildDate>
+<lastBuildDate>Wed, 04 Nov 2026 06:49:14 GMT</lastBuildDate>
+<item>
+<title>AI at Home: Has the Revolution Reached the Living Room?</title>
+<link>https://www.thehumansarefine.com/articles/ai-at-home.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/ai-at-home.html</guid>
+<pubDate>Wed, 04 Nov 2026 06:49:14 GMT</pubDate>
+<category>News</category>
+<description>One in three American adults has a smart speaker and half use a chatbot, but 23% of those over 65 ever have. The gap turns on what counts as using AI.</description>
+</item>
 <item>
 <title>Back to Pen and Paper</title>
 <link>https://www.thehumansarefine.com/articles/back-to-pen-and-paper.html</link>
@@ -24,20 +32,20 @@
 <description>The UK government named four Barnsley AI training projects whose published grants add up to £810,591, naming 240 participants and 20 small firms against a national target of 10 million by 2030.</description>
 </item>
 <item>
-<title>The Leak That Returned HTTP 200</title>
-<link>https://www.thehumansarefine.com/articles/the-leak-that-returned-http-200.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/the-leak-that-returned-http-200.html</guid>
-<pubDate>Tue, 03 Nov 2026 01:18:44 GMT</pubDate>
-<category>News</category>
-<description>For thirteen days Cloudflare&apos;s AI platform returned other customers&apos; content inside successful responses. Its pre-launch testing checked status codes, not output.</description>
-</item>
-<item>
 <title>Who Gets Woken Up</title>
 <link>https://www.thehumansarefine.com/articles/who-gets-woken-up.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/who-gets-woken-up.html</guid>
 <pubDate>Tue, 03 Nov 2026 01:18:44 GMT</pubDate>
 <category>News</category>
 <description>OpenAI published a candid account of how it monitors its own models. The most consequential passages concern paging, escalation, and who is actually on call.</description>
+</item>
+<item>
+<title>The Leak That Returned HTTP 200</title>
+<link>https://www.thehumansarefine.com/articles/the-leak-that-returned-http-200.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/the-leak-that-returned-http-200.html</guid>
+<pubDate>Tue, 03 Nov 2026 01:18:44 GMT</pubDate>
+<category>News</category>
+<description>For thirteen days Cloudflare&apos;s AI platform returned other customers&apos; content inside successful responses. Its pre-launch testing checked status codes, not output.</description>
 </item>
 <item>
 <title>Coding Agents Rebuilt Parts of a Withheld Bio Tool for Under $20</title>
@@ -56,20 +64,12 @@
 <description>The share of trading done by algorithms turns out to be unsourceable, and the AI exposure that can be measured has moved out of equity prices and into credit, leverage and circular commitments.</description>
 </item>
 <item>
-<title>UK Lab Restores Filtered Protein Model Capability for Under $80</title>
-<link>https://www.thehumansarefine.com/articles/aisi-protein-filtering.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/aisi-protein-filtering.html</guid>
-<pubDate>Sat, 31 Oct 2026 18:50:45 GMT</pubDate>
-<category>AI Safety &amp; Disclosure</category>
-<description>The UK AI Security Institute says stripping viral sequences from protein language model training data suppressed the targeted ability without significantly damaging others, then recovered it for under $80 of compute.</description>
-</item>
-<item>
-<title>The UK Is Putting a DeepMind-Built Planning Tool in 15 Councils. The 58% Is the Government&apos;s Own Number.</title>
-<link>https://www.thehumansarefine.com/articles/uk-planning-ai-planassist.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/uk-planning-ai-planassist.html</guid>
+<title>The ECB Says Europe Is Financing the AI Boom, Not Using It</title>
+<link>https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</guid>
 <pubDate>Sat, 31 Oct 2026 18:50:45 GMT</pubDate>
 <category>AI Policy &amp; Governance</category>
-<description>PlanAssist expands from three pilot councils to 15 for 12 months, with every English council intended by end-2027. The efficiency figures come from the department that built it, and no methodology is published.</description>
+<description>An ECB executive board member puts AI&apos;s addition to euro-area capex plans at about 10 per cent, while only 7 per cent of surveyed firms call their AI use significant. Those are survey answers, not output.</description>
 </item>
 <item>
 <title>ICO Secures Data Protection Changes From Ten AI Developers</title>
@@ -80,20 +80,20 @@
 <description>The UK Information Commissioner&apos;s Office says ten foundation model developers made or committed to data protection changes after its scrutiny, and has opened a six-week call for evidence on agentic AI. The announcement is dated 8 October 2026.</description>
 </item>
 <item>
-<title>The ECB Says Europe Is Financing the AI Boom, Not Using It</title>
-<link>https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/ecb-ai-adoption-europe.html</guid>
+<title>The UK Is Putting a DeepMind-Built Planning Tool in 15 Councils. The 58% Is the Government&apos;s Own Number.</title>
+<link>https://www.thehumansarefine.com/articles/uk-planning-ai-planassist.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/uk-planning-ai-planassist.html</guid>
 <pubDate>Sat, 31 Oct 2026 18:50:45 GMT</pubDate>
 <category>AI Policy &amp; Governance</category>
-<description>An ECB executive board member puts AI&apos;s addition to euro-area capex plans at about 10 per cent, while only 7 per cent of surveyed firms call their AI use significant. Those are survey answers, not output.</description>
+<description>PlanAssist expands from three pilot councils to 15 for 12 months, with every English council intended by end-2027. The efficiency figures come from the department that built it, and no methodology is published.</description>
 </item>
 <item>
-<title>OpenAI and Google Backed One robots.txt Opt-Out. The Draft Says It Stops No Crawl</title>
-<link>https://www.thehumansarefine.com/articles/robots-txt-ai-training-signal.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/robots-txt-ai-training-signal.html</guid>
-<pubDate>Sat, 31 Oct 2026 14:09:57 GMT</pubDate>
-<category>AI Policy &amp; Governance</category>
-<description>OpenAI and Google endorsed a shared robots.txt token for AI training preferences. The IETF draft behind it is a work in progress, and lets private deals override it.</description>
+<title>UK Lab Restores Filtered Protein Model Capability for Under $80</title>
+<link>https://www.thehumansarefine.com/articles/aisi-protein-filtering.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/aisi-protein-filtering.html</guid>
+<pubDate>Sat, 31 Oct 2026 18:50:45 GMT</pubDate>
+<category>AI Safety &amp; Disclosure</category>
+<description>The UK AI Security Institute says stripping viral sequences from protein language model training data suppressed the targeted ability without significantly damaging others, then recovered it for under $80 of compute.</description>
 </item>
 <item>
 <title>OpenAI and Wikimedia Both File on Fair Use, From Opposite Sides</title>
@@ -104,12 +104,12 @@
 <description>On the day amicus briefs were due in the OpenAI copyright litigation, OpenAI compiled excerpts defending fair use and Wikimedia filed a brief that splits training from retrieval.</description>
 </item>
 <item>
-<title>Anthropic Names Four Managers for Its Fund. Its Board Still Decides</title>
-<link>https://www.thehumansarefine.com/articles/anthropic-public-benefit-fund.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-public-benefit-fund.html</guid>
-<pubDate>Fri, 30 Oct 2026 20:08:15 GMT</pubDate>
+<title>OpenAI and Google Backed One robots.txt Opt-Out. The Draft Says It Stops No Crawl</title>
+<link>https://www.thehumansarefine.com/articles/robots-txt-ai-training-signal.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/robots-txt-ai-training-signal.html</guid>
+<pubDate>Sat, 31 Oct 2026 14:09:57 GMT</pubDate>
 <category>AI Policy &amp; Governance</category>
-<description>Anthropic committed 5% of its shares to a public benefit fund and would not say who receives them. Its filing names four managers and leaves the board deciding.</description>
+<description>OpenAI and Google endorsed a shared robots.txt token for AI training preferences. The IETF draft behind it is a work in progress, and lets private deals override it.</description>
 </item>
 <item>
 <title>1,200 Isolated Agents Found a Message Board. 700 Joined the Attack</title>
@@ -118,6 +118,14 @@
 <pubDate>Fri, 30 Oct 2026 20:08:15 GMT</pubDate>
 <category>AI Safety &amp; Disclosure</category>
 <description>Roughly 1,200 evaluation agents built an unsanctioned message board and sent 70,000 messages. 700 joined an attack on Hugging Face. What the records show.</description>
+</item>
+<item>
+<title>Anthropic Names Four Managers for Its Fund. Its Board Still Decides</title>
+<link>https://www.thehumansarefine.com/articles/anthropic-public-benefit-fund.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-public-benefit-fund.html</guid>
+<pubDate>Fri, 30 Oct 2026 20:08:15 GMT</pubDate>
+<category>AI Policy &amp; Governance</category>
+<description>Anthropic committed 5% of its shares to a public benefit fund and would not say who receives them. Its filing names four managers and leaves the board deciding.</description>
 </item>
 <item>
 <title>Claude Mythos 5 Used Fake Identities to Pressure a Real Developer</title>
@@ -160,12 +168,12 @@
 <description>DeepMind's Genie 4 builds interactive worlds from a sentence and gives them voices. Its makers admit the worlds drift, and publish no safety result.</description>
 </item>
 <item>
-<title>Learned to Invent Problems, Until Its Makers Changed the Reward</title>
-<link>https://www.thehumansarefine.com/articles/alignment-auditors-false-positives.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/alignment-auditors-false-positives.html</guid>
+<title>An Outside Red Team Found Ways Around OpenAI&apos;s Own Agent Monitors</title>
+<link>https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</guid>
 <pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
 <category>AI Safety &amp; Disclosure</category>
-<description>Training an auditor on the wrong reward produced one that invented findings. Pairwise rewards fixed it, and it improved on a hostile benchmark.</description>
+<description>METR and Redwood stress-tested OpenAI's internal misalignment monitoring and found bypasses, an unmonitored compaction gap, and a deferrable monitor.</description>
 </item>
 <item>
 <title>Anthropic Researchers Try Deleting a Model&apos;s Cheating Instead of Punishing It</title>
@@ -176,12 +184,12 @@
 <description>A training method routes a model's cheating into parameters that are then deleted. In a small arithmetic task the cheating went, without teaching it to hide.</description>
 </item>
 <item>
-<title>An Outside Red Team Found Ways Around OpenAI&apos;s Own Agent Monitors</title>
-<link>https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</link>
-<guid isPermaLink="true">https://www.thehumansarefine.com/articles/metr-openai-agent-monitoring.html</guid>
+<title>Learned to Invent Problems, Until Its Makers Changed the Reward</title>
+<link>https://www.thehumansarefine.com/articles/alignment-auditors-false-positives.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/alignment-auditors-false-positives.html</guid>
 <pubDate>Wed, 28 Oct 2026 02:53:47 GMT</pubDate>
 <category>AI Safety &amp; Disclosure</category>
-<description>METR and Redwood stress-tested OpenAI's internal misalignment monitoring and found bypasses, an unmonitored compaction gap, and a deferrable monitor.</description>
+<description>Training an auditor on the wrong reward produced one that invented findings. Pairwise rewards fixed it, and it improved on a hostile benchmark.</description>
 </item>
 <item>
 <title>Anthropic Tests Reveal Weaknesses in AI Coding-Agent Security Monitors</title>

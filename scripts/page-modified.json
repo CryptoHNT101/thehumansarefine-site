@@ -7,6 +7,14 @@
                               "hash":  "38a0363b0c06b2ff5b6736559c92fa6ff568451e9779fce6fcfafb1fd7495308",
                               "modified":  "2026-11-04T01:30:48-05:00"
                           },
+    "articles/ai-at-home-evidence.html":  {
+                                              "hash":  "eb71ac0488def31a6d4b14641db588814dfc8462af57ab3362d6ce0d885314c6",
+                                              "modified":  "2026-11-04T01:49:56-05:00"
+                                          },
+    "articles/ai-at-home.html":  {
+                                     "hash":  "ccaf1acd893e737be5212a21e8304fb59ccbdab16f62123e5992031ac044a460",
+                                     "modified":  "2026-11-04T01:49:56-05:00"
+                                 },
     "articles/aisi-protein-filtering-evidence.html":  {
                                                           "hash":  "f4f43d1a5466d71e736e3332684edcf9ee22fe637aa511162c218e6412763d6d",
                                                           "modified":  "2026-11-01T12:03:12-05:00"
@@ -56,12 +64,12 @@
                                                         "modified":  "2026-11-04T01:30:48-05:00"
                                                     },
     "articles/back-to-pen-and-paper-evidence.html":  {
-                                                         "hash":  "3bc32bf3e5761977e4cf3f2d49377ce5dead82606a0b296e56bdcb1d65b88f8e",
-                                                         "modified":  "2026-11-04T01:32:38-05:00"
+                                                         "hash":  "dbc3c33b63dd8b2e3f34e31090470af2ac041bff33e753cefb2fd4455531ac7a",
+                                                         "modified":  "2026-11-04T01:49:56-05:00"
                                                      },
     "articles/back-to-pen-and-paper.html":  {
-                                                "hash":  "0ef7dd74992baa8b8fc5d18edb82267834f0421ada5a16b23c4de48abf5f060c",
-                                                "modified":  "2026-11-04T01:32:38-05:00"
+                                                "hash":  "152c26f2168dd2073c6365f4838ba6ddc2df48d03f49375af62f5bc8a32a153c",
+                                                "modified":  "2026-11-04T01:49:56-05:00"
                                             },
     "articles/barnsley-ai-upskilling-challenge-fund-evidence.html":  {
                                                                          "hash":  "895dd3534fe3708d2ab5300a588dfaa7201d6ad5b9f95c51fe7d914bc1c56775",
@@ -196,16 +204,16 @@
                                         "modified":  "2026-11-01T12:03:12-05:00"
                                     },
     "index.html":  {
-                       "hash":  "0a1e5ca2bc8871693b75f6d69bc81935487bb6627923c392615d13421030ffa2",
-                       "modified":  "2026-11-04T01:30:48-05:00"
+                       "hash":  "b5e35ebae656f39605b8a96db349d015accd808685c4b888c39f4657bd5a1e58",
+                       "modified":  "2026-11-04T01:49:20-05:00"
                    },
     "machines-are-talking.html":  {
                                       "hash":  "704848d68d7dc558fab11f338a718cf27b6c7e82f88b3b052ef1f3dbfd921416",
                                       "modified":  "2026-11-04T01:30:48-05:00"
                                   },
     "news/index.html":  {
-                            "hash":  "b5b11de49be0539e84ff46264e31b2f6c9926b493ad5d5e4085e4b6065ed35dd",
-                            "modified":  "2026-11-04T01:30:48-05:00"
+                            "hash":  "945f94c1d5038e893f3e1e0ab291584af92eae2a190df5783cbfd446445ce1e7",
+                            "modified":  "2026-11-04T01:49:20-05:00"
                         },
     "newsroom/index.html":  {
                                 "hash":  "975764ec054b22f243f791d5c4da288a1485e0f8224f46c69f6d033036c4e9e9",
@@ -240,8 +248,8 @@
                                   "modified":  "2026-11-01T12:03:12-05:00"
                               },
     "topics/ai-policy.html":  {
-                                  "hash":  "b214260771a18e16713282652348d6c0feb642d93a7deaf316b0693d6485c64c",
-                                  "modified":  "2026-11-04T01:32:38-05:00"
+                                  "hash":  "2d567d5be95440ed5452a5dbf02ad33129dfd04e85ec557dd06da25a3b66acbd",
+                                  "modified":  "2026-11-04T01:49:56-05:00"
                               },
     "topics/ai-safety.html":  {
                                   "hash":  "96a99086e074176b4e7097533e35fbe49b1e1082f892b852da10a65c2588e91e",
