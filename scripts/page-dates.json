@@ -1,4 +1,4 @@
-﻿[
+[
     {
         "path":  "agents/agent.html",
         "published":  "2026-11-02T23:55:12-05:00",
@@ -323,5 +323,15 @@
         "path":  "topics/frontier-ai.html",
         "published":  "2026-10-28T23:58:39-04:00",
         "modified":  "2026-11-01T12:03:12-05:00"
+    },
+    {
+        "path":  "articles/the-robots-we-count-and-the-robots-were-promised.html",
+        "published":  "2026-11-04T19:01:20-05:00",
+        "modified":  "2026-11-04T19:01:20-05:00"
+    },
+    {
+        "path":  "articles/the-robots-we-count-and-the-robots-were-promised-evidence.html",
+        "published":  "2026-11-04T19:01:20-05:00",
+        "modified":  "2026-11-04T19:01:20-05:00"
     }
 ]

@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://www.thehumansarefine.com/articles/the-robots-we-count-and-the-robots-were-promised.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-04T19:01:20-05:00</news:publication_date>
+      <news:title>The Robots We Count and the Robots We&apos;re Promised</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.thehumansarefine.com/articles/ai-at-home.html</loc>
     <news:news>
       <news:publication>
@@ -46,17 +57,6 @@
     </news:news>
   </url>
   <url>
-    <loc>https://www.thehumansarefine.com/articles/the-leak-that-returned-http-200.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-02T20:18:44-05:00</news:publication_date>
-      <news:title>The Leak That Returned HTTP 200</news:title>
-    </news:news>
-  </url>
-  <url>
     <loc>https://www.thehumansarefine.com/articles/aisi-reprobait-coding-agents.html</loc>
     <news:news>
       <news:publication>
@@ -65,6 +65,17 @@
       </news:publication>
       <news:publication_date>2026-11-02T20:18:44-05:00</news:publication_date>
       <news:title>Coding Agents Rebuilt Parts of a Withheld Bio Tool for Under $20</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/the-leak-that-returned-http-200.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-02T20:18:44-05:00</news:publication_date>
+      <news:title>The Leak That Returned HTTP 200</news:title>
     </news:news>
   </url>
 </urlset>
