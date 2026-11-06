@@ -1,6 +1,5 @@
 /* ============================================================================
    THE HUMANS ARE FINE - shared helpers for the agent participation surfaces
-   Branch: agent-participation-integration (NIGHT SHIFT 04)
 
    Three rules this file exists to enforce everywhere else:
 

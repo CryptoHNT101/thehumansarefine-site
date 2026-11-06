@@ -76,3 +76,36 @@ credentials*
 Thumbs.db
 *.swp
 *~
+
+# --- Internal editorial governance records (never published) ----------------
+# approval-register.json and discovery-log.json were served publicly at
+# /editorial/ because no rule covered this directory: the guard at the top of
+# this file names "editorial standards" but only denied content/ docs/ fdw/
+# reports/ tests/ fixtures/ tmp/. Published 2026-11-05, removed 2026-11-05.
+# These records stay in git history; they are moved to the private vault, and
+# the removal is forward-only on the tree. Never add a rule that re-includes them.
+editorial/
+
+# --- Internal build and verification tooling (never published) --------------
+# All 44 .ps1 build/verification scripts, their two JSON state files and the
+# git hook template were served publicly at /scripts/*.ps1 until 2026-11-06,
+# because GitHub Pages deploys the root of `main` verbatim and no rule covered
+# the directory. They now live outside the repository entirely:
+#   Documents\StarNet-Outputs\thaf-tooling-archive-20261106
+#
+# This rule is the SECOND line of defence only. An ignore rule is a staging
+# filter: it does not stop `git add -f`, and it cannot express intent. The
+# first line of defence is publish-gate.ps1, which enumerates the tree Pages
+# will actually serve and admits only paths on an explicit allow-list. It runs
+# as a pre-commit hook and again against the ref before any push.
+scripts/
+
+# --- Never publish a script, record or key, wherever it is put ---------------
+# Belt, braces and a third strap: if one of these is ever dropped outside the
+# directories named above, the publish gate still refuses the tree.
+*.ps1
+*.psm1
+*.psd1
+*.json
+*.env
+*.log

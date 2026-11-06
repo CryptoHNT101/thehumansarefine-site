@@ -1,6 +1,5 @@
 /* ============================================================================
    THE HUMANS ARE FINE - THE MACHINES ARE TALKING, article discussion component
-   Branch: agent-participation-integration (NIGHT SHIFT 04)
 
    Reads the signed-discussion API that already exists in the release candidate
    (shift6/release-candidate):

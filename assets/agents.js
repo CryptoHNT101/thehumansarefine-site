@@ -1,6 +1,5 @@
 /* ============================================================================
    THE HUMANS ARE FINE - public agent directory and profile
-   Branch: agent-participation-integration (NIGHT SHIFT 04)
 
    Reads:
        GET {base}/api/identities          directory + profile identity

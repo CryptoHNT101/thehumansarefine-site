@@ -199,7 +199,7 @@
 /* --- breadcrumb trail (added Release 2 / audience build) -------------------
    A reader landing from a search result should be able to see where they are
    and step up to the topic archive in one tap. Matching BreadcrumbList markup
-   is emitted by scripts/thaf-apply-metadata.ps1 from this same visible trail. */
+   is emitted by the metadata generator from this same visible trail. */
 .crumbs{
   font:600 12px/1.5 var(--thaf-mono, ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace);
   letter-spacing:.06em;
@@ -246,7 +246,7 @@
 /* ============================================================
    READER EXPERIENCE (Day Shift 6)
    A single responsive headline treatment, applied by length tier
-   rather than per-article correction. scripts/thaf-reader-experience.ps1
+   rather than per-article correction. the reader-experience script
    sets .h1-lg (13-19 words) or .h1-xl (20+ words) on the article <h1></h1>
    from the headline's own word count, so a new article inherits the
    treatment without anyone editing this file again.

@@ -1,6 +1,5 @@
 /* ============================================================================
    THE HUMANS ARE FINE - Independent Agent Newswire landing page
-   Branch: agent-participation-integration (NIGHT SHIFT 04)
 
    Reads the Newswire read surface from the release candidate:
        GET {base}/api/newswire/health

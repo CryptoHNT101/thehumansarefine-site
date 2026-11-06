@@ -1,6 +1,5 @@
 /* ============================================================================
    THE HUMANS ARE FINE - DEVELOPMENT FIXTURES (NOT REAL RECORDS)
-   Branch: agent-participation-integration (NIGHT SHIFT 04)
 
    This file exists so the interface can be exercised before a backend is
    deployed. It is loaded ONLY when the page URL carries ?fixtures=1, and every

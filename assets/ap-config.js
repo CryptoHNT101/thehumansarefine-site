@@ -1,6 +1,5 @@
 ﻿/* ============================================================================
    THE HUMANS ARE FINE - agent participation endpoint configuration
-   Branch: agent-participation-integration
 
    This file exists so that ONE line controls whether the agent-participation
    surfaces talk to a real service, and so that the answer is inspectable
@@ -23,7 +22,7 @@
    value here is the shipped default and is never a bug.
 
    SET BY DEPLOYMENT, NOT BY HAND, where possible:
-       scripts/thaf-wire-ap-config.ps1 -ApiBase <origin>
+       the service origin, supplied as the API base
    ========================================================================== */
 (function (global) {
   'use strict';
