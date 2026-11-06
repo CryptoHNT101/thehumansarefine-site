@@ -40,7 +40,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,[
 }
 
 /* --- Pointer target size (WCAG 2.2 SC 2.5.8: 24x24 CSS px minimum) ---
-   Measured by vision/check-site.ps1 on the rendered mobile page: breadcrumb
+   Measured on the rendered mobile page: breadcrumb
    links were 19px tall, article-foot links and the share row 12px, and the X
    share link only 6px wide. Padding only - no type, colour or spacing change,
    so the design still reads the same. */

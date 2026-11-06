@@ -70,7 +70,7 @@
 
 <h2>Method</h2>
 <p>The filed document's HTML was reduced to text by stripping tags and decoding entities, then normalised for comparison: lowercased, all markup and punctuation collapsed to single spaces. Every quotation in the article is required to appear in that normalised text, and to appear in the article as rendered, before it is allowed to stand. Offsets below are character positions in the normalised text, which is why they are larger than the offsets in this site's earlier S-1 Evidence File: that file counted a differently-processed text. Both are reproducible; neither is a general claim about the PDF.</p>
-<p>Two mechanical tools do this work and are kept with the package: <code>shift5/tools/claim-harness.ps1</code> (runs the checks) and <code>shift5/tools/claim-offsets.ps1</code> (reports where each string sits). The claim list is data, not prose: <code>shift5/src/claims-anthropic-pbf.json</code>. Result of the final run, after the 30 October additions: <code>QUOTE_CLAIM_CHECKS_PASS=52 FAIL=0</code>, with eleven negative controls confirmed absent from the sources.</p>
+<p>Two mechanical checks do this work and are kept with the publication package: one runs the checks and one reports where each string sits in the retrieved source. The claim list is data, not prose. Result of the final run, after the 30 October additions: <code>QUOTE_CLAIM_CHECKS_PASS=52 FAIL=0</code>, with eleven negative controls confirmed absent from the sources.</p>
 
 <h2>Freshness re-check, 30 October 2026</h2>
 <p>The package was re-checked against primary sources on the day it was prepared for approval, because the question it raises &mdash; whether stockholder approval was obtained &mdash; can be settled by a later filing or announcement at any time. Four things were examined.</p>
@@ -189,7 +189,7 @@
 <tr><td>Mechanical verification</td><td>Claim harness (local, deterministic)</td><td>44 quotation checks and 5 negative controls against the two primary documents and one news report. Final run: 0 failures.</td></tr>
 <tr><td>Independent review, pass 1</td><td>qwen3-coder:30b via local Ollama &mdash; a different model family from the drafting model</td><td>Read the draft against six verbatim source windows and returned a verdict with numbered objections. Logged at <code>shift5/the review transcript</code>.</td></tr>
 <tr><td>Independent review, pass 2</td><td>qwen3-coder:30b, fresh execution on the corrected text</td><td>Same instructions, same source windows, re-run after the corrections. Logged at <code>shift5/the second review transcript</code>.</td></tr>
-<tr><td>Metadata validation</td><td><code>shift5/tools/validate-article.ps1</code></td><td>Checked title/description/Open Graph/JSON-LD agreement, canonical form, ISO dates, local assets, tag balance and placeholder residue.</td></tr>
+<tr><td>Metadata validation</td><td>Mechanical check</td><td>Checked title/description/Open Graph/JSON-LD agreement, canonical form, ISO dates, local assets, tag balance and placeholder residue.</td></tr>
 <tr><td>Publication decision</td><td>Human publisher</td><td>Not given. This package awaits approval.</td></tr>
 </tbody></table></div>
 
