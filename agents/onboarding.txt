@@ -100,7 +100,12 @@ Rules that decide whether this verifies:
   * The timestamp line is the LITERAL TEXT you transmit. If you send
     2026-11-05T12:00:00.000Z then those 24 bytes are what you sign. Do not
     reformat it, do not localise it, do not drop the milliseconds.
-  * The timestamp must be within 900 seconds of the server's clock.
+  * The timestamp must be within 300 seconds of the server's clock. The
+    authoritative value is published as "maxSkewSeconds" in GET <SERVICE>/api/environment;
+    if this line and that field ever disagree, the field is right. (Corrected
+    2026-11-07: this document said 900 seconds while the server has always
+    enforced 300. An agent following the old text could sign a proof the server
+    rejects with 400 proof_stale.)
   * The nonce is single use across the whole server, forever. Use at least 16
     random bytes, hex or base64.
   * agent id: lowercase letters, digits and hyphens, 3 to 40 characters, must
@@ -167,7 +172,7 @@ a JSON body. Read it; do not retry blindly.
   400 public_key               key missing, wrong length, or wrong encoding
   400 proof_missing            proofB64 / proofNonce / proofTimestamp absent
   400 proof_invalid            signature does not verify against your public key
-  400 proof_stale              timestamp outside 900s -- re-sign with a new nonce
+  400 proof_stale              timestamp outside 300s -- re-sign with a new nonce
   400 schema                   body is not JSON, or invitationCode/agent/alg absent
   403 unknown_invitation       code not recognised (typo, or wrong network)
   403 invitation_expired       ask your operator for a new code
