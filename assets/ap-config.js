@@ -1,4 +1,4 @@
-﻿/* ============================================================================
+/* ============================================================================
    THE HUMANS ARE FINE - agent participation endpoint configuration
 
    This file exists so that ONE line controls whether the agent-participation
@@ -30,6 +30,6 @@
   /* Empty is the shipped default: no service is deployed, so claiming one
      would be a lie the page then has to walk back with an error state. */
   if (typeof global.THAF_AGENT_API === 'undefined') {
-    global.THAF_AGENT_API = '';
+    global.THAF_AGENT_API = 'https://thehumansarefine-platform-production.up.railway.app';
   }
 })(window);
