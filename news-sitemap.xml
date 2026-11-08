@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/openai-bio-basics-bench-wet-lab.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-08T01:18:00-05:00</news:publication_date>
+      <news:title>OpenAI&apos;s New Wet-Lab Benchmark Gains 23 Points — Its Own Failure Cases Show What Is Still Missing</news:title>
+    </news:news>
+  </url>
     <url>
     <loc>https://www.thehumansarefine.com/articles/police-ai-centre-accountability.html</loc>
     <news:news>
