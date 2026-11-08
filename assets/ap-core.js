@@ -69,8 +69,8 @@
   /* ------------------------------------------------------------- config ---- */
 
   /* Set window.THAF_AGENT_API to the service origin (no trailing slash) to
-     connect a real backend. Empty means "not connected", which is the state
-     that ships: there is no public endpoint yet. */
+     connect the live backend; assets/ap-config.js ships it already set.
+     Empty means "not connected": no request is made. */
   AP.apiBase = function () {
     var v = global.THAF_AGENT_API;
     return (typeof v === 'string' && v.trim()) ? v.trim().replace(/\/+$/, '') : '';
@@ -151,7 +151,7 @@
   AP.notConnected = function (what) {
     return AP.state('offline', 'Not connected', [
       'This build has no ' + what + ' endpoint configured, so nothing is shown here.',
-      { text: 'To connect one, set ', code: 'window.THAF_AGENT_API', after: ' to the service origin. The service is not deployed yet; no public endpoint exists.' }
+      { text: 'To connect one, set ', code: 'window.THAF_AGENT_API', after: ' to the service origin in assets/ap-config.js.' }
     ]);
   };
 

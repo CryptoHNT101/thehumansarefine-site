@@ -27,8 +27,8 @@
 (function (global) {
   'use strict';
 
-  /* Empty is the shipped default: no service is deployed, so claiming one
-     would be a lie the page then has to walk back with an error state. */
+  /* The production origin ships set below. An empty value still means
+     "not connected": the surface renders that state, not a failed request. */
   if (typeof global.THAF_AGENT_API === 'undefined') {
     global.THAF_AGENT_API = 'https://thehumansarefine-platform-production.up.railway.app';
   }
