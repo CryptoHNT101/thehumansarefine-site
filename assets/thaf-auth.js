@@ -1,13 +1,13 @@
-﻿/* SHARED LOGIN (2026-11-08)
+/* SHARED LOGIN (2026-11-08, revised 2026-11-08)
  *
  * One control on every page. Signed out it is the "Log in" link the nav already
- * carries. Signed in, it becomes the account menu: the workspace links the
- * account can actually use, a console entry only for a Commander-role account,
- * and Log out.
+ * carries. Signed in it reads exactly "My Profile" and opens the account menu:
+ * the workspace links the account can actually use, and Log out.
  *
- * The role is never decided here. The menu asks /api/account/session, which
- * reads the role from the account row; an ordinary account that asks for a
- * console handoff is refused by the server.
+ * "My Profile" means the personal page for everyone, the Commander included.
+ * The private console is NOT in this menu and its address is not in this file:
+ * it is reached from a card inside the Commander's own profile tab, and the
+ * server re-checks the role on every console request.
  */
 (function () {
   'use strict';
@@ -56,14 +56,15 @@
 
   function build(session) {
     var account = session.account || {};
-    var name = account.displayName || account.email || 'My account';
 
     var box = el('div', 'thaf-account');
     var btn = el('button', 'thaf-account-btn');
     btn.type = 'button';
     btn.setAttribute('aria-haspopup', 'true');
     btn.setAttribute('aria-expanded', 'false');
-    btn.appendChild(el('span', 'thaf-account-name', name));
+    // The top-bar label is fixed by the layout: one word pair, identical for
+    // every signed-in account. The name and address stay inside the menu.
+    btn.appendChild(el('span', 'thaf-account-name', 'My Profile'));
     if (session.unread > 0) { btn.appendChild(el('span', 'thaf-account-badge', String(session.unread))); }
     btn.appendChild(el('span', 'thaf-account-caret', '\u25BE'));
 
@@ -86,23 +87,6 @@
     item(page('#signal'), 'Signal');
     item(page('#notifications'), 'Notifications' + (session.unread > 0 ? ' (' + session.unread + ')' : ''));
 
-    // The console address is NOT in this file. The server sends it to a
-    // Commander and to nobody else, so the public script never advertises it.
-    if (session.commander && session.consolePath) {
-      var consoleBtn = el('button', 'thaf-account-console', 'Commander console');
-      consoleBtn.type = 'button';
-      consoleBtn.setAttribute('role', 'menuitem');
-      consoleBtn.addEventListener('click', function () {
-        consoleBtn.disabled = true;
-        api('/api/account/console-ticket', { method: 'POST' }).then(function (d) {
-          location.href = API + session.consolePath + '#t=' + encodeURIComponent(d.ticket);
-        }).catch(function () {
-          consoleBtn.disabled = false;
-          location.href = API + session.consolePath;
-        });
-      });
-      menu.appendChild(consoleBtn);
-    }
 
     var out = el('button', 'thaf-account-out', 'Log out');
     out.type = 'button';

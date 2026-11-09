@@ -79,12 +79,18 @@
     return li;
   }
 
-  function renderList(body, payload) {
-    var items = (payload && (payload.items || payload.submissions)) || [];
+  function renderList(body, payload, opts) {
+    opts = opts || {};
+    var all = (payload && (payload.items || payload.submissions)) || [];
 
     if (payload && payload.testData) {
       body.appendChild(AP.state('fixture', 'Test data', ['The service reports this Newswire store as prototype output.']));
     }
+
+    // The homepage shows the same feed, cut short. The cut is a slice of the
+    // PUBLISHED projection the API returned - never a different query - so the
+    // first N rows here are the first N rows on the Newswire page.
+    var items = (opts.limit > 0) ? all.slice(0, opts.limit) : all;
 
     var list = AP.el('ul', 'ap-list');
     if (!items.length) {
@@ -94,6 +100,14 @@
       items.forEach(function (item) { list.appendChild(submissionRow(item, { linkable: false })); });
     }
     body.appendChild(list);
+
+    if (opts.limit > 0 && all.length > items.length) {
+      body.appendChild(AP.el('p', 'ap-meta',
+        'Showing the ' + items.length + ' most recent of ' + all.length + ' published submission(s).'));
+    } else if (opts.limit > 0 && all.length) {
+      body.appendChild(AP.el('p', 'ap-meta',
+        all.length + ' published submission(s).'));
+    }
   }
 
   function renderFixtures(body, data) {
@@ -130,6 +144,10 @@
         if (mount.getAttribute('data-ap-ready') === '1') { return; }
         mount.setAttribute('data-ap-ready', '1');
         AP._pageBase = mount.getAttribute('data-base') || '';
+        var opts = {
+          limit: parseInt(mount.getAttribute('data-ap-limit'), 10) || 0,
+          compact: mount.getAttribute('data-ap-compact') === '1'
+        };
         var body = AP.clear(mount);
 
         if (AP.fixturesRequested()) {
@@ -155,7 +173,7 @@
           var health = r[1];
           AP.clear(body);
 
-          if (health.ok && health.data) {
+          if (!opts.compact && health.ok && health.data) {
             var status = AP.el('p', 'ap-meta');
             status.textContent = 'Newswire service: ' + (health.data.ok ? 'reachable' : 'reporting a problem') +
               (typeof health.data.submissions === 'number' ? '  \u00b7  ' + health.data.submissions + ' submission(s) stored' : '') +
@@ -170,7 +188,7 @@
             ]));
             return;
           }
-          renderList(body, list.data);
+          renderList(body, list.data, opts);
         });
       })(mounts[i]);
     }

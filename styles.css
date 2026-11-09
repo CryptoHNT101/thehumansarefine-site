@@ -48,11 +48,13 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,[
 .share-row a{min-width:24px;justify-content:center}
 
 
-/* SHARED LOGIN (2026-11-08): one "Log in" control in the primary nav, and the
-   account menu it becomes once a session exists. Same control at every width. */
-.nav a.nav-login{margin-left:auto;align-self:center;padding:8px 18px;border:1px solid var(--green);background:var(--green);color:#0b1014;font:700 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:2px}
+/* SHARED LOGIN: one "Log in" control in the primary nav, second item after Home,
+   and the account menu it becomes once a session exists. The control keeps its
+   markup position at every width rather than being reordered, so the bar reads
+   the same on a phone as it does on a desktop. */
+.nav a.nav-login{align-self:center;padding:8px 18px;border:1px solid var(--green);background:var(--green);color:#0b1014;font:700 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:2px}
 .nav a.nav-login:hover,.nav a.nav-login:focus-visible{background:#d7f0dc;color:#0b1014}
-.thaf-account{position:relative;margin-left:auto;align-self:center}
+.thaf-account{position:relative;align-self:center}
 .thaf-account-btn{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid var(--green);background:transparent;color:var(--ink);font:700 10px var(--mono);letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border-radius:2px}
 .thaf-account-btn:hover,.thaf-account-btn:focus-visible{background:#132024}
 .thaf-account-name{max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -65,8 +67,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,[
 .thaf-account-menu a:hover,.thaf-account-menu a:focus-visible,.thaf-account-menu button:hover,.thaf-account-menu button:focus-visible{background:#1d2b31;color:var(--green)}
 .thaf-account-console{border-top:1px solid var(--line)!important;margin-top:6px;color:var(--amber)!important}
 .thaf-account-out{border-top:1px solid var(--line)!important;margin-top:6px;color:var(--muted)!important}
+/* A rail headline is a headline, not a kicker: the .text-link class on those
+   anchors is there for the hover colour, but it must not shrink the type to the
+   10px mono label size or underline it. */
+.rail h2 a.text-link{font:inherit;color:var(--ink);text-decoration:none}
+.rail h2 a.text-link:hover,.rail h2 a.text-link:focus-visible{color:var(--green)}
 @media(max-width:800px){
-  .nav a.nav-login{order:-1;margin-left:0}
-  .thaf-account{order:-1;margin-left:0}
   .thaf-account-menu{left:0;right:auto}
 }
