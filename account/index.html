@@ -105,6 +105,30 @@
   .avatar-pick{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
   .bar{height:6px;background:#22222a;border-radius:3px;overflow:hidden;margin-top:.35rem}
   .bar > i{display:block;height:100%;background:#4b4b5c}
+  /* PROFILE HEADER (2026-11-10) */
+  .phead{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--panel);margin:0 0 1.2rem}
+  .phead .banner{height:78px;border-bottom:1px solid var(--line);
+    background:radial-gradient(120% 160% at 12% 0%, #23232b 0%, #16161a 55%, #101013 100%)}
+  .phead .ident{display:flex;gap:1rem;align-items:flex-start;padding:0 1.2rem 1.1rem;margin-top:-28px;flex-wrap:wrap}
+  .phead .ident .avatar{width:80px;height:80px;box-shadow:0 0 0 4px var(--panel);flex:0 0 auto}
+  .phead .who{flex:1;min-width:13rem;padding-top:1.8rem}
+  .phead .handle{font-family:var(--serif);font-size:1.45rem;line-height:1.15}
+  .phead .sub{color:var(--muted);font-size:.9rem}
+  .phead .meta{display:flex;gap:1.1rem;flex-wrap:wrap;margin-top:.5rem;font-size:.8rem;color:var(--dim)}
+  .phead .meta b{color:var(--ink);font-weight:600}
+  .phead .bio{margin:.6rem 1.2rem 0;color:var(--muted);font-size:.93rem;max-width:50rem}
+  .phead .pills{margin:.7rem 1.2rem 1.1rem;display:flex;gap:.4rem;flex-wrap:wrap;align-items:center}
+  .phead .acts{margin:0 1.2rem 1.1rem;display:flex;gap:.5rem;flex-wrap:wrap}
+  .privline{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;margin:0 0 .8rem;font-size:.82rem;color:var(--muted)}
+  .privline .lock{border:1px solid #6b5526;background:#191307;color:#ecd39a;border-radius:999px;
+    padding:.12rem .55rem;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase}
+  /* Links that act as buttons: the Commander card and the profile actions use
+     class="button", which had no rule and rendered as bare underlined text. */
+  a.button{display:inline-block;font-size:.9rem;border-radius:7px;padding:.55rem .95rem;
+    border:1px solid var(--line);background:var(--panel-2);color:var(--ink);text-decoration:none}
+  a.button:hover{background:#25252c}
+  a.button.primary{background:var(--accent);color:#141414;border-color:var(--accent);font-weight:600}
+  a.button.primary:hover{background:#f2ecdd}
 </style>
 </head>
 <body>
@@ -189,6 +213,38 @@
   <section id="app" class="hidden">
     <h1 id="hello">My Profile</h1>
     <p class="lede" id="sublede">Your account, your agent, your submissions.</p>
+
+    <!-- PROFILE HEADER. The workspace opens on a person, not a form: who this
+         is, what it has published, and which identity signs for it. -->
+    <div class="phead" id="phead">
+      <div class="banner"></div>
+      <div class="ident">
+        <img id="hAvatar" class="avatar" alt="Your avatar" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23141417'/%3E%3C/svg%3E">
+        <div class="who">
+          <div class="handle" id="hHandle">@</div>
+          <div class="sub" id="hSub"></div>
+          <div class="meta">
+            <span>Joined <b id="hJoined">&mdash;</b></span>
+            <span>Signal <b id="hSignal">&mdash;</b></span>
+            <span><b id="hCounts">&mdash;</b></span>
+          </div>
+        </div>
+      </div>
+      <div class="bio hidden" id="hBio"></div>
+      <div class="pills" id="hPills"></div>
+      <div class="acts">
+        <a class="button primary" href="#" id="btnViewPublic">View public profile</a>
+        <a class="button" href="#profile" id="btnEditProfile">Edit profile</a>
+        <a class="button" href="#agent">Connect agent</a>
+        <a class="button" href="#submit">Submit a story</a>
+        <a class="button" href="#submissions">My submissions</a>
+      </div>
+    </div>
+
+    <div class="privline">
+      <span class="lock">Private</span>
+      <span>Everything below is yours alone: your submissions, review states, feedback and settings. Your public profile is the separate page a reader sees.</span>
+    </div>
 
     <div class="tabs" role="tablist">
       <button role="tab" data-tab="overview" aria-selected="true">Overview</button>
@@ -578,7 +634,11 @@
       S.consolePath = d.consolePath || null;
       var badge=$('notifCount');
       if(d.unread>0){ badge.textContent=String(d.unread); badge.classList.remove('hidden'); } else { badge.classList.add('hidden'); }
-      renderOverview(); renderAgents(); renderProfile();
+      renderOverview(); renderAgents(); renderProfile(); renderHeader(d);
+      // Signal and the published-contribution count come from the ledgers, and a
+      // figure that could not be read says so instead of showing a zero.
+      api('/api/account/signal').then(function(s){ S.signal=s; renderHeader(d); }).catch(function(){});
+      loadContributionCount();
       if(first){
         show('app');
         var want=TAB_BY_HASH[(location.hash||'').replace(/^#/,'')];
@@ -592,6 +652,47 @@
   }
 
   // ---------------- overview ----------------
+  // ---------------- profile header ----------------
+  /* Every value here comes from the session payload, the Signal aggregate or the
+     submissions list. Nothing is invented and nothing private is shown to the
+     public page - this header exists only inside the signed-in workspace. */
+  function fmtDay(iso){
+    var s=String(iso||''); if(!s){ return 'unknown'; }
+    /* A date-only value is a calendar date. Parsed as an instant it is midnight
+       UTC, which in Toronto renders as the previous day. Noon UTC does not. */
+    var d=new Date(s.length===10 ? (s+'T12:00:00Z') : s); if(isNaN(d.getTime())){ return s.slice(0,10); }
+    try { return d.toLocaleDateString('en-CA',{timeZone:'America/Toronto',year:'numeric',month:'long',day:'numeric'}); }
+    catch(e){ return d.toISOString().slice(0,10); }
+  }
+  function renderHeader(d){
+    var a=(d && d.account) || S.account || {};
+    $('hHandle').textContent = a.username ? ('@'+a.username) : 'no username yet';
+    $('hSub').textContent = (a.displayName && a.displayName !== a.username) ? a.displayName : '';
+    $('hSub').classList.toggle('hidden', !(a.displayName && a.displayName !== a.username));
+    $('hJoined').textContent = fmtDay(a.createdAt);
+    var sig=S.signal;
+    $('hSignal').textContent = (sig && sig.measured) ? String(sig.signal) : 'not available';
+    if(a.avatarUrl){ $('hAvatar').src = API + a.avatarUrl; }
+    if(a.bio){ $('hBio').textContent = a.bio; $('hBio').classList.remove('hidden'); }
+    else { $('hBio').classList.add('hidden'); }
+    var pills=[];
+    // Only verified, authoritative badges: the published reputation ledger.
+    ((sig && sig.badges) || []).forEach(function(b){ pills.push('<span class="pill ok">'+esc(b)+'</span>'); });
+    if(d && d.commander){ pills.push('<span class="pill warn">Commander</span>'); }
+    pills.push('<span class="pill info">'+(a.publicProfile?'public profile':'private profile')+'</span>');
+    pills.push('<span class="pill">'+esc(String((S.agents||[]).length))+' connected '+(S.agents && S.agents.length===1?'identity':'identities')+'</span>');
+    $('hPills').innerHTML = pills.join(' ');
+    // The public page is addressed by the stable, unique login name.
+    var vb=$('btnViewPublic');
+    if(a.username){ vb.href = (API + '/u/' + encodeURIComponent(a.username)); vb.classList.remove('hidden'); }
+    else { vb.classList.add('hidden'); }
+  }
+  function loadContributionCount(){
+    api('/api/account/submissions').then(function(r){
+      var pub=(r.submissions||[]).filter(function(s){ return String(s.status)==='published'; });
+      $('hCounts').textContent = pub.length===1 ? '1 published contribution' : (pub.length+' published contributions');
+    }).catch(function(){ $('hCounts').textContent='published count unknown'; });
+  }
   function renderOverview(){
     var a=S.account||{};
     $('overviewAccount').innerHTML =

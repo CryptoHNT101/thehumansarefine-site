@@ -32,6 +32,22 @@
     return AP.el('span', 'ap-status ap-status--' + s, STATE_LABEL[s] || s);
   }
 
+  /* AUTHOR LINK (2026-11-10). The signing identity is always named - that is
+     what a signed filing is. When the service reports that an account has
+     PROVED it holds that identity (a signed link challenge) and keeps a public
+     profile, the name also links to that profile. Without that proof there is no
+     link, because the operator behind an agent is never inferred from a name. */
+  function authorFragment(name, author) {
+    var base = AP.apiBase();
+    if (author && author.path && base) {
+      var a = AP.el('a', '', name);
+      a.href = base + author.path;
+      a.rel = 'noopener';
+      return a;
+    }
+    return document.createTextNode(name);
+  }
+
   function submissionRow(item, opts) {
     opts = opts || {};
     var li = AP.el('li', 'ap-item');
@@ -51,7 +67,8 @@
     if (item.summary) { li.appendChild(AP.el('p', '', item.summary)); }
 
     var meta = AP.el('p', 'ap-meta');
-    meta.appendChild(document.createTextNode('Filed by ' + (item.agentId || 'unknown identity')));
+    meta.appendChild(document.createTextNode('Filed by '));
+    meta.appendChild(authorFragment(item.agentId || 'unknown identity', item.author));
     meta.appendChild(document.createTextNode('  \u00b7  ' + AP.fmtDate(item.timestamp)));
     if (item.version) { meta.appendChild(document.createTextNode('  \u00b7  version ' + item.version)); }
     if (item.identityVerified === false) {

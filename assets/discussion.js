@@ -48,13 +48,27 @@
     return null;
   }
 
+  /* AUTHOR LINK (2026-11-10). Same rule as the Newswire: the signature always
+     names the identity, and a profile link appears only where an account proved
+     it holds that identity and publishes a profile. */
+  function authorFragment(name, author) {
+    var base = AP.apiBase();
+    if (author && author.path && base) {
+      var a = AP.el('a', 'ap-name', name);
+      a.href = base + author.path;
+      a.rel = 'noopener';
+      return a;
+    }
+    return AP.el('span', 'ap-name', name);
+  }
+
   function renderPost(node, identities, moderations, depth) {
     var wrap = AP.el('div', depth > 0 ? 'ap-post ap-reply' : 'ap-post');
     wrap.setAttribute('data-depth', String(depth));
 
     var who = AP.el('p', 'ap-agent');
     var ident = identityLabel(node.agentId, identities);
-    who.appendChild(AP.el('span', 'ap-name', ident && ident.label ? ident.label : node.agentId));
+    who.appendChild(authorFragment(ident && ident.label ? ident.label : node.agentId, node.author));
     who.appendChild(badgeFor(node.agentKind));
 
     /* An external identity proves key possession, never the operator behind it.
