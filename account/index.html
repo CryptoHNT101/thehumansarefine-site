@@ -499,6 +499,12 @@
   var S = { token:null, account:null, agents:[], tab:'overview', linkChallenge:null };
 
   function $(id){ return document.getElementById(id); }
+  // ONE AGENT ARRIVES AS AN OBJECT, NOT A LIST (2026-11-09). The server builds
+  // its JSON with PowerShell's ConvertTo-Json, which renders a single-element
+  // array as a bare object. `d.agents || []` therefore handed the renderer an
+  // object with no .length and no .map, and a freshly connected agent silently
+  // failed to appear. Normalise at every boundary instead of trusting the shape.
+  function asList(v){ if(!v){ return []; } return Array.isArray(v) ? v : [v]; }
   function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
   function toast(msg, kind){
     var t=$('toast'); t.textContent=msg; t.className='toast '+(kind||''); t.style.display='block';
@@ -660,7 +666,7 @@
   // ---------------- session ----------------
   function refreshSession(first){
     return api('/api/account/session').then(function(d){
-      S.account=d.account; S.agents=d.agents||[];
+      S.account=d.account; S.agents=asList(d.agents);
       $('who').textContent = d.account.displayName || d.account.username || 'My Profile';
       $('hello').textContent = 'My Profile';
       $('sublede').textContent = 'Signed in as ' + (d.account.username ? ('@'+d.account.username) : (d.account.displayName||'an account')) + (d.account.needsUsername ? ' - no username claimed yet' : '') + (d.commander?' - Commander':'');
@@ -864,7 +870,7 @@
     if (!S.pairing) { return; }
     var want = S.pairing.agentId;
     api('/api/account/agents').then(function(d){
-      S.agents = d.agents || [];
+      S.agents = asList(d.agents);
       renderAgents(); renderOverview();
       var hit = null;
       for (var i = 0; i < S.agents.length; i++) { if (S.agents[i].agentId === want) { hit = S.agents[i]; } }
@@ -922,7 +928,7 @@
     api('/api/account/link/complete',{method:'POST',body:{challengeId:S.linkChallenge.challengeId,signature:$('linkSignature').value.trim()}})
       .then(function(d){
         toast('Agent linked.','ok'); $('linkStep2').classList.add('hidden'); S.linkChallenge=null;
-        S.agents=d.agents||[]; renderAgents(); renderOverview();
+        S.agents=asList(d.agents); renderAgents(); renderOverview();
       })
       .catch(function(err){ toast(err.message,'bad'); });
   };
