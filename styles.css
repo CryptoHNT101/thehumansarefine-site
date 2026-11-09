@@ -89,3 +89,13 @@ section[id]{scroll-margin-top:14px}
 @media(max-width:800px){
   .thaf-account-menu{left:0;right:auto}
 }
+
+/* ---- category bar (2026-11-10) -------------------------------------------
+   One bar, the five published categories plus the all-items tab. It is a
+   separate strip under the section heading, never inside the masthead, and on
+   a phone it scrolls sideways instead of wrapping the main header apart. */
+.cat-bar{display:flex;flex-wrap:wrap;gap:6px 10px;margin:20px 0 0;padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cat-bar a{font:10px var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--muted);padding:7px 11px;border:1px solid transparent;border-radius:2px;white-space:nowrap;display:inline-block}
+.cat-bar a:hover,.cat-bar a:focus-visible{color:var(--green);border-color:var(--line)}
+.cat-bar a.active{color:#0b1014;background:var(--green);border-color:var(--green);font-weight:700}
+@media(max-width:640px){.cat-bar{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:12px}.cat-bar a{flex:0 0 auto}}

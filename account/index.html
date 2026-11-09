@@ -263,7 +263,19 @@
         <input id="pwNew" type="password" autocomplete="new-password" minlength="12">
         <div class="row" style="margin-top:1rem"><button type="button" id="btnChangePw">Change password</button></div>
       </div>
-      <!-- COMMANDER ONLY. Shown when the SERVER says the account holds the
+      <!-- RECOVERY CODES. The independent way back in: each code works once on
+           the public "Lost your password?" form, with no session and no console. -->
+      <div class="card">
+        <h2>Recovery codes</h2>
+        <p class="muted" style="margin-top:0">Single-use codes that reset this password from the sign-in page with no session and no console. Each one works once. Making a new batch retires the old one.</p>
+        <div class="kv" id="recoverySummary"></div>
+        <div class="row" style="margin-top:1rem">
+          <button type="button" id="btnNewCodes">Create a new batch</button>
+          <span class="dim" id="codesResult"></span>
+        </div>
+        <div id="codesBox" class="code hidden" style="margin-top:.8rem"></div>
+        <div class="note hidden" id="codesNote" style="margin-top:.6rem"></div>
+      </div>      <!-- COMMANDER ONLY. Shown when the SERVER says the account holds the
            Commander role; every request the console makes is re-checked
            server-side, so hiding this card is presentation, never the control.
            The link does not appear in the public top bar. -->
@@ -490,6 +502,36 @@
         toast('Signed in, but the console handoff was refused: '+err.message,'bad');
       });
   }
+  // ---------------- recovery codes ----------------
+  // The independent way back in. Codes are shown once, here, and stored by the
+  // server only as hashes, so this page can report how many remain but can
+  // never re-display one.
+  function renderRecovery(s){
+    if(!s){ $('recoverySummary').innerHTML=''; return; }
+    $('recoverySummary').innerHTML =
+      '<dt>Codes remaining</dt><dd>'+esc(String(s.remaining))+'</dd>'+
+      '<dt>Already used</dt><dd>'+esc(String(s.used))+'</dd>'+
+      '<dt>Expired</dt><dd>'+esc(String(s.expired))+'</dd>';
+  }
+  function loadRecovery(){
+    api('/api/account/recovery-codes').then(function(d){ renderRecovery(d.summary); }).catch(function(){ });
+  }
+  $('btnNewCodes').onclick=function(){
+    var pw=$('pwCurrent').value;
+    if(!pw){ toast('Enter your current password first.','bad'); $('pwCurrent').focus(); return; }
+    api('/api/account/recovery-codes',{method:'POST',body:{current:pw}})
+      .then(function(d){
+        $('codesBox').classList.remove('hidden');
+        $('codesBox').textContent=(d.codes||[]).join('\n');
+        $('codesResult').textContent=d.count+' codes, usable until '+String(d.expiresAt).slice(0,10);
+        var n=$('codesNote'); n.classList.remove('hidden');
+        n.textContent='Stored nowhere and emailed nowhere. Copy them now: they cannot be shown again, and any earlier unused codes have stopped working.';
+        $('pwCurrent').value='';
+        loadRecovery();
+        toast('New recovery codes issued.','ok');
+      })
+      .catch(function(err){ toast(err.message,'bad'); });
+  };
   $('btnConsole').onclick=openConsole;
 
   $('formVerify').onsubmit=function(e){
@@ -569,6 +611,8 @@
     $('pBio').value=a.bio||'';
     $('pPublic').value = a.publicProfile ? 'true' : 'false';
     if(a.avatarUrl){ $('avatarImg').src = API + a.avatarUrl; }
+    loadRecovery();
+
   }
   function renderAgents(){
     var el=$('agentList');

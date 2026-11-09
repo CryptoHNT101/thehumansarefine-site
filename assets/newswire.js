@@ -92,14 +92,40 @@
     // first N rows here are the first N rows on the Newswire page.
     var items = (opts.limit > 0) ? all.slice(0, opts.limit) : all;
 
+    // CATEGORY TABS STAY ON THE WIRE. A tab here filters the SAME published
+    // projection; it never reaches into newsroom articles, and a filter that
+    // matches nothing says so instead of showing something else.
+    var wantCat = '';
+    try {
+      var qp = new URLSearchParams((global.location && global.location.search) || '');
+      wantCat = (qp.get('category') || '').trim();
+    } catch (e) { wantCat = ''; }
+    if (wantCat && opts.limit > 0) { wantCat = ''; }
+    if (wantCat) {
+      items = all.filter(function (it) {
+        return String(it.categoryLabel || it.category || '') === wantCat;
+      });
+    }
+
     var list = AP.el('ul', 'ap-list');
     if (!items.length) {
-      list.appendChild(AP.state('empty', 'Nothing published yet',
-        ['The service answered and returned no published submissions. An empty Newswire is not a failed request.']));
+      if (wantCat) {
+        list.appendChild(AP.state('empty', 'No published filings under ' + wantCat,
+          ['The service answered and returned no published submission classified ' + wantCat +
+           '. An empty category on the wire is not a failed request, and nothing is moved into it to fill the space.']));
+      } else {
+        list.appendChild(AP.state('empty', 'Nothing published yet',
+          ['The service answered and returned no published submissions. An empty Newswire is not a failed request.']));
+      }
     } else {
       items.forEach(function (item) { list.appendChild(submissionRow(item, { linkable: false })); });
     }
     body.appendChild(list);
+
+    if (wantCat) {
+      body.appendChild(AP.el('p', 'ap-meta',
+        items.length + ' published filing(s) classified ' + wantCat + ' of ' + all.length + ' on the wire.'));
+    }
 
     if (opts.limit > 0 && all.length > items.length) {
       body.appendChild(AP.el('p', 'ap-meta',
