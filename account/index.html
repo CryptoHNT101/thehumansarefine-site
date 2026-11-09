@@ -402,7 +402,7 @@
     $('btnSignOut').classList.toggle('hidden', which!=='app');
     if(which!=='app'){ $('btnConsole').classList.add('hidden'); }
   }
-  function authMode(mode){
+  function authMode(mode, keepHash){
     ['formRegister','formLogin','formVerify','formRecover'].forEach(function(id){ $(id).classList.add('hidden'); });
     $('form'+mode).classList.remove('hidden');
     var copy = {
@@ -412,11 +412,16 @@
       Recover:['Recover access','A single-use recovery code resets the password and signs out every other session.']
     }[mode];
     $('authTitle').textContent = copy[0]; $('authLede').textContent = copy[1];
-    // Deep links and reloads keep the mode the visitor is looking at.
-    try{
-      var h = { Login:'#login', Register:'#create', Recover:'#recover', Verify:'#verify' }[mode];
-      if(location.hash !== h){ history.replaceState(null,'',h); }
-    }catch(e){}
+    // Deep links and reloads keep the mode the visitor is looking at. At boot
+    // the fragment is NOT rewritten: the site's account menu links straight at a
+    // workspace tab (#submissions), and rewriting it here sent the visitor to
+    // Overview instead. Caught by the live journey, not by reading the code.
+    if(!keepHash){
+      try{
+        var h = { Login:'#login', Register:'#create', Recover:'#recover', Verify:'#verify' }[mode];
+        if(location.hash !== h){ history.replaceState(null,'',h); }
+      }catch(e){}
+    }
   }
 
   // ---------------- auth ----------------
@@ -755,7 +760,7 @@
   // button on the site points at. Create account and recovery are one click away
   // on the same page, and deep links (#create, #recover) select them directly.
   var bootMode = ({ '#login':'Login', '#create':'Register', '#register':'Register', '#recover':'Recover', '#verify':'Verify' })[location.hash] || 'Login';
-  authMode(bootMode);
+  authMode(bootMode, true);
   try{ S.token = sessionStorage.getItem('thaf_token'); }catch(e){}
   if(S.token){ refreshSession(true); } else { show('anon'); }
 })();
