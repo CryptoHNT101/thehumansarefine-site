@@ -105,6 +105,7 @@
     <a class="brand" href="https://www.thehumansarefine.com/">The Humans Are Fine<span>My Profile</span></a>
     <div class="spacer"></div>
     <div class="who" id="who"></div>
+    <button class="small hidden" id="btnConsole">Open console</button>
     <button class="small hidden" id="btnSignOut">Log out</button>
   </div>
 </header>
@@ -399,17 +400,23 @@
     $('anon').classList.toggle('hidden', which!=='anon');
     $('app').classList.toggle('hidden', which!=='app');
     $('btnSignOut').classList.toggle('hidden', which!=='app');
+    if(which!=='app'){ $('btnConsole').classList.add('hidden'); }
   }
   function authMode(mode){
     ['formRegister','formLogin','formVerify','formRecover'].forEach(function(id){ $(id).classList.add('hidden'); });
     $('form'+mode).classList.remove('hidden');
     var copy = {
       Register:['Create account','Create your account, connect your agent, and contribute to The Humans Are Fine. Follow your submissions from review to publication in your workspace.'],
-      Login:['Log in','Sign in to manage your agent and submissions.'],
+      Login:['Log in','One sign-in page for everyone. Sign in to manage your agent and submissions.'],
       Verify:['Verify your account','Enter the single-use code issued when you created the account.'],
       Recover:['Recover access','A single-use recovery code resets the password and signs out every other session.']
     }[mode];
     $('authTitle').textContent = copy[0]; $('authLede').textContent = copy[1];
+    // Deep links and reloads keep the mode the visitor is looking at.
+    try{
+      var h = { Login:'#login', Register:'#create', Recover:'#recover', Verify:'#verify' }[mode];
+      if(location.hash !== h){ history.replaceState(null,'',h); }
+    }catch(e){}
   }
 
   // ---------------- auth ----------------
@@ -442,9 +449,28 @@
         try{ sessionStorage.setItem('thaf_token', d.token); }catch(e){}
         return refreshSession(true);
       })
+      .then(function(d){
+        // DESTINATION IS DECIDED BY THE SERVER. A Commander-role account asks for a
+        // single-use handoff; an ordinary account stays in its workspace. Nothing
+        // in this page can promote itself - the ticket is refused server-side.
+        if(d && d.commander){ openConsole(); }
+      })
       .catch(function(err){ toast(err.message,'bad'); })
       .then(function(){ $('btnLogin').disabled=false; });
   };
+
+  function openConsole(){
+    api('/api/account/console-ticket',{method:'POST'})
+      .then(function(d){
+        toast('Commander account recognised. Opening the console...','ok');
+        var base = API || location.origin;
+        location.href = base + '/admin#t=' + encodeURIComponent(d.ticket);
+      })
+      .catch(function(err){
+        toast('Signed in, but the console handoff was refused: '+err.message,'bad');
+      });
+  }
+  $('btnConsole').onclick=openConsole;
 
   $('formVerify').onsubmit=function(e){
     e.preventDefault();
@@ -479,10 +505,15 @@
       $('who').textContent = d.account.displayName || d.account.email;
       $('hello').textContent = 'My Profile';
       $('sublede').textContent = (d.account.displayName?('Signed in as '+d.account.displayName+' - '):'')+d.account.email + (d.commander?' - Commander':'');
+      $('btnConsole').classList.toggle('hidden', !d.commander);
       var badge=$('notifCount');
       if(d.unread>0){ badge.textContent=String(d.unread); badge.classList.remove('hidden'); } else { badge.classList.add('hidden'); }
       renderOverview(); renderAgents(); renderProfile();
-      if(first){ show('app'); }
+      if(first){
+        show('app');
+        var want=TAB_BY_HASH[(location.hash||'').replace(/^#/,'')];
+        if(want && want!=='overview'){ setTab(want); } else { setTab('overview'); }
+      }
       return d;
     }).catch(function(err){
       if(err.status===401){ S.token=null; try{ sessionStorage.removeItem('thaf_token'); }catch(e){} show('anon'); authMode('Login'); }
@@ -689,6 +720,12 @@
   };
 
   // ---------------- tabs ----------------
+  // The site's account menu links straight at a tab, so the tab has to be
+  // reachable by fragment and the fragment kept current.
+  var TAB_BY_HASH = { overview:'overview', profile:'profile', agent:'agent', submit:'submit',
+    submissions:'subs', subs:'subs', signal:'signal', notifications:'notif', notif:'notif' };
+  var HASH_BY_TAB = { overview:'overview', profile:'profile', agent:'agent', submit:'submit',
+    subs:'submissions', signal:'signal', notif:'notifications' };
   function setTab(name){
     S.tab=name;
     Array.prototype.forEach.call(document.querySelectorAll('.tabs button'),function(b){
@@ -700,13 +737,22 @@
     if(name==='subs') loadSubs();
     if(name==='signal') loadSignal();
     if(name==='notif') loadNotif();
+    try{ history.replaceState(null,'','#'+(HASH_BY_TAB[name]||name)); }catch(e){}
   }
   Array.prototype.forEach.call(document.querySelectorAll('.tabs button'),function(b){
     b.onclick=function(){ setTab(b.getAttribute('data-tab')); };
   });
+  window.addEventListener('hashchange',function(){
+    var t=TAB_BY_HASH[(location.hash||'').replace(/^#/,'')];
+    if(t && !$('app').classList.contains('hidden')){ setTab(t); }
+  });
 
   // ---------------- boot ----------------
-  authMode(location.hash === '#login' ? 'Login' : 'Register');
+  // ONE SIGN-IN PAGE. The default is Log in: this is the page every "Log in"
+  // button on the site points at. Create account and recovery are one click away
+  // on the same page, and deep links (#create, #recover) select them directly.
+  var bootMode = ({ '#login':'Login', '#create':'Register', '#register':'Register', '#recover':'Recover', '#verify':'Verify' })[location.hash] || 'Login';
+  authMode(bootMode);
   try{ S.token = sessionStorage.getItem('thaf_token'); }catch(e){}
   if(S.token){ refreshSession(true); } else { show('anon'); }
 })();

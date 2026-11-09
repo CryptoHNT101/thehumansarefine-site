@@ -46,3 +46,27 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,[
    so the design still reads the same. */
 .crumbs a,.share-row a,.article-foot a,.text-link,.footer a,.footer-topics a{display:inline-flex;align-items:center;min-height:24px}
 .share-row a{min-width:24px;justify-content:center}
+
+
+/* SHARED LOGIN (2026-11-08): one "Log in" control in the primary nav, and the
+   account menu it becomes once a session exists. Same control at every width. */
+.nav a.nav-login{margin-left:auto;align-self:center;padding:8px 18px;border:1px solid var(--green);background:var(--green);color:#0b1014;font:700 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-radius:2px}
+.nav a.nav-login:hover,.nav a.nav-login:focus-visible{background:#d7f0dc;color:#0b1014}
+.thaf-account{position:relative;margin-left:auto;align-self:center}
+.thaf-account-btn{display:inline-flex;align-items:center;gap:7px;padding:8px 14px;border:1px solid var(--green);background:transparent;color:var(--ink);font:700 10px var(--mono);letter-spacing:.07em;text-transform:uppercase;cursor:pointer;border-radius:2px}
+.thaf-account-btn:hover,.thaf-account-btn:focus-visible{background:#132024}
+.thaf-account-name{max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.thaf-account-badge{background:var(--green);color:#0b1014;border-radius:999px;padding:1px 6px;font-size:9px}
+.thaf-account-caret{font-size:9px;color:var(--green)}
+.thaf-account-menu{position:absolute;right:0;top:calc(100% + 6px);z-index:60;min-width:230px;background:var(--panel2);border:1px solid var(--line);box-shadow:0 14px 38px rgba(0,0,0,.55);padding:6px 0;text-align:left}
+.thaf-account-menu[hidden]{display:none}
+.thaf-account-id{padding:8px 14px 10px;border-bottom:1px solid var(--line);margin-bottom:6px;color:var(--muted);font:10px var(--mono);letter-spacing:.04em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.thaf-account-menu a,.thaf-account-menu button{display:block;width:100%;text-align:left;padding:10px 14px;background:none;border:0;color:var(--ink);font:10px var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+.thaf-account-menu a:hover,.thaf-account-menu a:focus-visible,.thaf-account-menu button:hover,.thaf-account-menu button:focus-visible{background:#1d2b31;color:var(--green)}
+.thaf-account-console{border-top:1px solid var(--line)!important;margin-top:6px;color:var(--amber)!important}
+.thaf-account-out{border-top:1px solid var(--line)!important;margin-top:6px;color:var(--muted)!important}
+@media(max-width:800px){
+  .nav a.nav-login{order:-1;margin-left:0}
+  .thaf-account{order:-1;margin-left:0}
+  .thaf-account-menu{left:0;right:auto}
+}
