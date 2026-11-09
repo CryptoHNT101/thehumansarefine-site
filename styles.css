@@ -72,6 +72,20 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,[
    10px mono label size or underline it. */
 .rail h2 a.text-link{font:inherit;color:var(--ink);text-decoration:none}
 .rail h2 a.text-link:hover,.rail h2 a.text-link:focus-visible{color:var(--green)}
+/* A plain two-column block. The grid tracks are min-content by default, which
+   on a 390px phone pushed the whole document wider than the viewport and cut
+   the text off at the right edge; min-width:0 lets the tracks shrink, and the
+   media query drops to one column. */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:1000px}
+.two-col > *{min-width:0;overflow-wrap:anywhere}
+@media(max-width:800px){.two-col{grid-template-columns:1fr}}
+/* Anchored sections are read as destinations; leave a little air above them. */
+section[id]{scroll-margin-top:14px}
+.table-wrap{max-width:1000px;overflow-x:auto}
+.table-wrap table{width:100%;border-collapse:collapse}
+.table-wrap th,.table-wrap td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+.table-wrap th{font:10px var(--mono);letter-spacing:.06em;color:var(--green);text-transform:uppercase}
+@media(max-width:640px){.table-wrap th{width:auto!important;display:block;border-bottom:0;padding-bottom:2px}.table-wrap td{display:block;padding-top:0}}
 @media(max-width:800px){
   .thaf-account-menu{left:0;right:auto}
 }
