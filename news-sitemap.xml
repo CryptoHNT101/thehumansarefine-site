@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  News sitemap. Google News: "Only include recent URLs for articles that were created in the
+  last two days. Once the articles are older than two days, either remove those URLs from the
+  news sitemap or remove the news:news metadata."
+  (https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap, read 2026-11-09.)
+
+  Reconciled 2026-11-09: this file held four entries dated 2026-11-08, 2026-11-06 x2 and
+  2026-11-04, so three were outside the window. They were removed here only. All four articles
+  remain in sitemap.xml, so nothing was dropped from search. Publication dates are the
+  articles' own original timestamps and have not been altered.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
@@ -10,39 +21,6 @@
       </news:publication>
       <news:publication_date>2026-11-08T01:18:00-05:00</news:publication_date>
       <news:title>OpenAI&apos;s New Wet-Lab Benchmark Gains 23 Points — Its Own Failure Cases Show What Is Still Missing</news:title>
-    </news:news>
-  </url>
-    <url>
-    <loc>https://www.thehumansarefine.com/articles/police-ai-centre-accountability.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-06T18:58:22-05:00</news:publication_date>
-      <news:title>The Home Office&apos;s £141m AI Policing Package Keeps the Ethics with Chief Officers</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/sex-robots-before-humanoid-housekeepers.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-06T18:58:22-05:00</news:publication_date>
-      <news:title>Will Sex Robots Reach Our Homes Before Humanoid Housekeepers?</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.thehumansarefine.com/articles/the-robots-we-count-and-the-robots-were-promised.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-04T19:01:20-05:00</news:publication_date>
-      <news:title>The Robots We Count and the Robots We&apos;re Promised</news:title>
     </news:news>
   </url>
 </urlset>
