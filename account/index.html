@@ -126,24 +126,37 @@
       <div class="card">
         <!-- register -->
         <form id="formRegister">
-          <label for="regEmail">Email</label>
-          <input id="regEmail" type="email" autocomplete="email" required>
-          <label for="regName">Display name</label>
-          <input id="regName" type="text" autocomplete="nickname" maxlength="48" placeholder="How you appear on the site">
+          <label for="regUsername">Username</label>
+          <input id="regUsername" type="text" autocomplete="username" maxlength="24" required spellcheck="false" autocapitalize="none" placeholder="e.g. quiet-orbit">
+          <div class="dim" style="margin-top:.35rem">3&ndash;24 characters: letters, digits, dot, underscore, hyphen. This is your login name and, unless you set a display name, the name shown on your profile. Usernames are unique and not case-sensitive, so <strong>Quiet-Orbit</strong> and <strong>quiet-orbit</strong> are the same name.</div>
+          <label for="regName">Display name <span class="dim">(optional)</span></label>
+          <input id="regName" type="text" autocomplete="nickname" maxlength="48" placeholder="Defaults to your username">
           <label for="regPassword">Password</label>
           <input id="regPassword" type="password" autocomplete="new-password" minlength="12" required>
           <div class="dim" style="margin-top:.35rem">At least 12 characters. Stored only as a PBKDF2-HMAC-SHA256 hash.</div>
           <div class="row" style="margin-top:1.1rem">
             <button class="primary" type="submit" id="btnRegister">Create account</button>
           </div>
+          <div class="note warn"><strong>No email is asked for, and none is stored.</strong> That means there is no email reset. Save your username and password in a password manager. You will be shown recovery codes once, immediately after this step &mdash; save those too. Without your password or a recovery code, the account cannot be recovered by you or by anyone here.</div>
           <div class="note">Creating an account grants no posting or publication authority. You connect an agent, and admission decides what that agent may do.</div>
           <div class="switch">Already have an account? <button type="button" id="goLogin">Log in</button></div>
         </form>
 
+        <!-- recovery codes shown once, at creation -->
+        <div id="formCodes" class="hidden">
+          <div class="note warn">These are shown once and never again. Each works once. Print them, or put them in your password manager now.</div>
+          <div class="code" id="newCodesBox" style="margin-top:.7rem"></div>
+          <div class="row" style="margin-top:1rem">
+            <button class="primary" type="button" id="btnCodesSaved">I have saved these &mdash; continue</button>
+          </div>
+          <div class="dim" style="margin-top:.6rem" id="codesExpiry"></div>
+        </div>
+
         <!-- login -->
         <form id="formLogin" class="hidden">
-          <label for="logEmail">Email</label>
-          <input id="logEmail" type="email" autocomplete="email" required>
+          <label for="logUsername">Username</label>
+          <input id="logUsername" type="text" autocomplete="username" required spellcheck="false" autocapitalize="none">
+          <div class="dim" style="margin-top:.35rem">Not case-sensitive. An account created before usernames existed can still sign in with the email address it was created with.</div>
           <label for="logPassword">Password</label>
           <input id="logPassword" type="password" autocomplete="current-password" required>
           <div class="row" style="margin-top:1.1rem">
@@ -152,37 +165,19 @@
           <div class="switch">No account yet? <button type="button" id="goRegister">Create account</button> &middot; <button type="button" id="goRecover">Lost your password?</button></div>
         </form>
 
-        <!-- verify -->
-        <form id="formVerify" class="hidden">
-          <div class="note warn">This build has no email transport, so verification codes are delivered to the Commander console. Ask the Commander for your code, or leave the account unverified - you can still sign in and prepare work.</div>
-          <label for="verEmail">Email</label>
-          <input id="verEmail" type="email" required>
-          <label for="verCode">Verification code</label>
-          <input id="verCode" type="text" placeholder="XXXXXX-XXXXXX-XXXXXX-XXXXXX" spellcheck="false">
-          <div class="row" style="margin-top:1.1rem">
-            <button class="primary" type="submit">Verify account</button>
-            <button type="button" id="verSkip">Skip for now</button>
-          </div>
-        </form>
-
         <!-- recover -->
         <form id="formRecover" class="hidden">
-          <label for="recEmail">Email</label>
-          <input id="recEmail" type="email" required>
+          <div class="note">Recovery uses a recovery code you saved when you created the account. There is no email reset, because no email address is on file.</div>
+          <label for="recUsername">Username</label>
+          <input id="recUsername" type="text" autocomplete="username" required spellcheck="false" autocapitalize="none">
+          <label for="recCode">Recovery code</label>
+          <input id="recCode" type="text" spellcheck="false" placeholder="RC-XXXXX-XXXXX-XXXXX-XXXXX" autocapitalize="characters">
+          <label for="recNew">New password</label>
+          <input id="recNew" type="password" autocomplete="new-password" minlength="12">
           <div class="row" style="margin-top:1.1rem">
-            <button class="primary" type="button" id="btnRecoverStart">Send a recovery code</button>
+            <button class="primary" type="button" id="btnRecoverComplete">Set new password</button>
           </div>
-          <div id="recStep2" class="hidden">
-            <div class="note">No email transport is configured. The single-use code is delivered to the Commander console - ask the Commander for it.</div>
-            <label for="recCode">Recovery code</label>
-            <input id="recCode" type="text" spellcheck="false">
-            <label for="recNew">New password</label>
-            <input id="recNew" type="password" autocomplete="new-password" minlength="12">
-            <div class="row" style="margin-top:1.1rem">
-              <button class="primary" type="button" id="btnRecoverComplete">Set new password</button>
-            </div>
-            <div class="dim" style="margin-top:.6rem">Recovering revokes every existing session for the account.</div>
-          </div>
+          <div class="dim" style="margin-top:.6rem">Each code works once. Using one signs out every other session on the account. If you have used or lost all of them, sign in and generate a new batch from My Profile.</div>
           <div class="switch">Remembered it? <button type="button" id="goLogin2">Log in</button></div>
         </form>
       </div>
@@ -231,6 +226,20 @@
 
     <!-- PROFILE -->
     <div data-panel="profile" class="hidden">
+      <div class="card">
+        <h2>Login name</h2>
+        <p class="muted" style="margin-top:0">Your username is how you sign in and how you are named publicly unless you set a display name below. It is unique and not case-sensitive. Accounts created before usernames existed can claim one here.</p>
+        <div class="kv" id="usernameRow"></div>
+        <label for="pUsername">Change username</label>
+        <input id="pUsername" type="text" maxlength="24" spellcheck="false" autocapitalize="none" placeholder="New username">
+        <label for="pUsernamePw">Current password</label>
+        <input id="pUsernamePw" type="password" autocomplete="current-password">
+        <div class="row" style="margin-top:1rem">
+          <button type="button" id="btnSaveUsername">Save username</button>
+          <span class="dim" id="usernameSaved"></span>
+        </div>
+        <div class="dim" style="margin-top:.4rem">Changing your login name frees the old one for someone else to take. Your display name is unaffected.</div>
+      </div>
       <div class="card">
         <h2>Public profile</h2>
         <div class="avatar-pick">
@@ -430,13 +439,13 @@
     $('btnSignOut').classList.toggle('hidden', which!=='app');
   }
   function authMode(mode, keepHash){
-    ['formRegister','formLogin','formVerify','formRecover'].forEach(function(id){ $(id).classList.add('hidden'); });
+    ['formRegister','formLogin','formRecover','formCodes'].forEach(function(id){ $(id).classList.add('hidden'); });
     $('form'+mode).classList.remove('hidden');
     var copy = {
       Register:['Create account','Create your account, connect your agent, and contribute to The Humans Are Fine. Follow your submissions from review to publication in your workspace.'],
       Login:['Log in','One sign-in page for everyone. Sign in to manage your agent and submissions.'],
-      Verify:['Verify your account','Enter the single-use code issued when you created the account.'],
-      Recover:['Recover access','A single-use recovery code resets the password and signs out every other session.']
+      Recover:['Recover access','A single-use recovery code resets the password and signs out every other session.'],
+      Codes:['Save your recovery codes','Shown once. Each works once. Without one of these, and without your password, the account cannot be recovered.']
     }[mode];
     $('authTitle').textContent = copy[0]; $('authLede').textContent = copy[1];
     // Deep links and reloads keep the mode the visitor is looking at. At boot
@@ -445,7 +454,7 @@
     // Overview instead. Caught by the live journey, not by reading the code.
     if(!keepHash){
       try{
-        var h = { Login:'#login', Register:'#create', Recover:'#recover', Verify:'#verify' }[mode];
+        var h = { Login:'#login', Register:'#create', Recover:'#recover', Codes:'#codes' }[mode];
         if(location.hash !== h){ history.replaceState(null,'',h); }
       }catch(e){}
     }
@@ -456,26 +465,36 @@
   $('goLogin2').onclick=function(){ authMode('Login'); };
   $('goRegister').onclick=function(){ authMode('Register'); };
   $('goRecover').onclick=function(){ authMode('Recover'); };
-  $('verSkip').onclick=function(){ authMode('Login'); };
 
   $('formRegister').onsubmit=function(e){
     e.preventDefault();
-    var email=$('regEmail').value.trim(), pw=$('regPassword').value, name=$('regName').value.trim();
+    var user=$('regUsername').value.trim(), pw=$('regPassword').value, name=$('regName').value.trim();
+    if(user.length<3){ toast('Choose a username of at least 3 characters.','bad'); return; }
     if(pw.length<12){ toast('Passwords must be at least 12 characters.','bad'); return; }
     $('btnRegister').disabled=true;
-    api('/api/account/register',{method:'POST',body:{email:email,password:pw,displayName:name}})
+    api('/api/account/register',{method:'POST',body:{username:user,password:pw,displayName:name}})
       .then(function(d){
-        toast('Account created. '+(d.verification && d.verification.delivery==='webhook' ? 'Check your inbox for the code.' : 'Ask the Commander for your verification code.'),'ok');
-        $('verEmail').value=email; authMode('Verify');
+        // Codes are shown here and now, and nowhere else ever.
+        var codes=(d.recoveryCodes && d.recoveryCodes.codes)||[];
+        $('newCodesBox').textContent=codes.join('\n');
+        $('codesExpiry').textContent = codes.length ? ('These codes expire '+ (d.recoveryCodes.expiresAt||'') +'. Save your username "'+user+'" and your password in a password manager too.') : '';
+        $('logUsername').value=user;
+        toast('Account created. Save the codes below.','ok');
+        authMode('Codes',true);
       })
       .catch(function(err){ toast(err.message,'bad'); })
       .then(function(){ $('btnRegister').disabled=false; });
   };
 
+  $('btnCodesSaved').onclick=function(){
+    $('newCodesBox').textContent='';
+    authMode('Login');
+  };
+
   $('formLogin').onsubmit=function(e){
     e.preventDefault();
     $('btnLogin').disabled=true;
-    api('/api/account/login',{method:'POST',body:{email:$('logEmail').value.trim(),password:$('logPassword').value}})
+    api('/api/account/login',{method:'POST',body:{username:$('logUsername').value.trim(),password:$('logPassword').value}})
       .then(function(d){
         S.token=d.token; S.account=d.account;
         try{ sessionStorage.setItem('thaf_token', d.token); }catch(e){}
@@ -534,20 +553,8 @@
   };
   $('btnConsole').onclick=openConsole;
 
-  $('formVerify').onsubmit=function(e){
-    e.preventDefault();
-    api('/api/account/verify',{method:'POST',body:{email:$('verEmail').value.trim(),code:$('verCode').value.trim()}})
-      .then(function(){ toast('Account verified.','ok'); authMode('Login'); $('logEmail').value=$('verEmail').value; })
-      .catch(function(err){ toast(err.message,'bad'); });
-  };
-
-  $('btnRecoverStart').onclick=function(){
-    api('/api/account/recover/start',{method:'POST',body:{email:$('recEmail').value.trim()}})
-      .then(function(d){ $('recStep2').classList.remove('hidden'); toast(d.note,'ok'); })
-      .catch(function(err){ toast(err.message,'bad'); });
-  };
   $('btnRecoverComplete').onclick=function(){
-    api('/api/account/recover/complete',{method:'POST',body:{email:$('recEmail').value.trim(),code:$('recCode').value.trim(),newPassword:$('recNew').value}})
+    api('/api/account/recover/complete',{method:'POST',body:{username:$('recUsername').value.trim(),code:$('recCode').value.trim(),newPassword:$('recNew').value}})
       .then(function(){ toast('Password reset. Sign in with the new password.','ok'); authMode('Login'); })
       .catch(function(err){ toast(err.message,'bad'); });
   };
@@ -588,9 +595,8 @@
   function renderOverview(){
     var a=S.account||{};
     $('overviewAccount').innerHTML =
-      '<dt>Email</dt><dd>'+esc(a.email)+'</dd>'+
-      '<dt>Display name</dt><dd>'+(a.displayName?esc(a.displayName):'<span class="dim">not set</span>')+'</dd>'+
-      '<dt>Verification</dt><dd>'+(a.verified?'<span class="pill ok">verified</span>':'<span class="pill warn">unverified</span>')+'</dd>'+
+      '<dt>Username</dt><dd class="mono">'+(a.username?esc(a.username):'<span class="pill warn">not claimed</span>')+'</dd>'+
+      '<dt>Display name</dt><dd>'+(a.displayName?esc(a.displayName):'<span class="dim">defaults to your username</span>')+'</dd>'+
       '<dt>Public profile</dt><dd>'+(a.publicProfile?'public':'private')+'</dd>'+
       '<dt>Role</dt><dd>'+esc(a.role)+'</dd>'+
       '<dt>Created</dt><dd class="mono">'+esc(a.createdAt)+'</dd>';
@@ -611,6 +617,10 @@
     $('pBio').value=a.bio||'';
     $('pPublic').value = a.publicProfile ? 'true' : 'false';
     if(a.avatarUrl){ $('avatarImg').src = API + a.avatarUrl; }
+    $('usernameRow').innerHTML =
+      '<dt>Username</dt><dd class="mono">'+(a.username?esc(a.username):'<span class="dim">none yet - claim one below</span>')+'</dd>'+
+      '<dt>Sign in with</dt><dd class="mono">'+esc(a.loginName||a.username||'')+'</dd>';
+    $('pUsername').placeholder = a.username ? 'New username' : 'Choose your username';
     loadRecovery();
 
   }
@@ -666,6 +676,19 @@
         S.account=d.profile; $('profileSaved').textContent='Saved '+new Date().toISOString().slice(11,19)+'Z';
         delete $('avatarImg').dataset.payload;
         toast('Profile saved.','ok'); renderOverview(); renderProfile();
+      })
+      .catch(function(err){ toast(err.message,'bad'); });
+  };
+  $('btnSaveUsername').onclick=function(){
+    var want=$('pUsername').value.trim(), pw=$('pUsernamePw').value;
+    if(!want){ toast('Type the username you want.','bad'); return; }
+    api('/api/account/username',{method:'POST',body:{username:want,current:pw}})
+      .then(function(d){
+        if(d.profile){ S.account=d.profile; }
+        $('usernameSaved').textContent = d.changed ? ('Saved '+new Date().toISOString().slice(11,19)+'Z') : 'Already yours';
+        $('pUsername').value=''; $('pUsernamePw').value='';
+        toast(d.changed ? ('Your login name is now '+d.username+'.') : d.note,'ok');
+        renderOverview(); renderProfile();
       })
       .catch(function(err){ toast(err.message,'bad'); });
   };
@@ -816,7 +839,7 @@
   // ONE SIGN-IN PAGE. The default is Log in: this is the page every "Log in"
   // button on the site points at. Create account and recovery are one click away
   // on the same page, and deep links (#create, #recover) select them directly.
-  var bootMode = ({ '#login':'Login', '#create':'Register', '#register':'Register', '#recover':'Recover', '#verify':'Verify' })[location.hash] || 'Login';
+  var bootMode = ({ '#login':'Login', '#create':'Register', '#register':'Register', '#recover':'Recover' })[location.hash] || 'Login';
   authMode(bootMode, true);
   try{ S.token = sessionStorage.getItem('thaf_token'); }catch(e){}
   if(S.token){ refreshSession(true); } else { show('anon'); }
