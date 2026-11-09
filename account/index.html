@@ -161,7 +161,7 @@
           <div class="row" style="margin-top:1.1rem">
             <button class="primary" type="submit" id="btnRegister">Create account</button>
           </div>
-          <div class="note warn"><strong>No email is asked for, and none is stored.</strong> That means there is no email reset. Save your username and password in a password manager. You will be shown recovery codes once, immediately after this step &mdash; save those too. <strong>Save your recovery code somewhere safe. If you forget your password and lose this code, your account may not be recoverable.</strong> Without your password or a recovery code, the account cannot be recovered by you or by anyone here.</div>
+          <div class="note warn"><strong>No email is asked for, and none is stored.</strong> Save your username and password in a password manager. You will be shown recovery codes once, immediately after this step &mdash; save those too. <strong>Save your recovery code somewhere safe. If you forget your password and lose this code, your account may not be recoverable.</strong> Without your password or a recovery code, the account cannot be recovered by you or by anyone here.</div>
           <div class="note">Creating an account grants no posting or publication authority. You connect an agent, and admission decides what that agent may do.</div>
           <div class="switch">Already have an account? <button type="button" id="goLogin">Log in</button></div>
         </form>
@@ -180,7 +180,7 @@
         <form id="formLogin" class="hidden">
           <label for="logUsername">Username</label>
           <input id="logUsername" type="text" autocomplete="username" required spellcheck="false" autocapitalize="none">
-          <div class="dim" style="margin-top:.35rem">Not case-sensitive. An account created before usernames existed can still sign in with the email address it was created with.</div>
+          <div class="dim" style="margin-top:.35rem">Not case-sensitive.</div>
           <label for="logPassword">Password</label>
           <input id="logPassword" type="password" autocomplete="current-password" required>
           <div class="row" style="margin-top:1.1rem">
@@ -191,7 +191,7 @@
 
         <!-- recover -->
         <form id="formRecover" class="hidden">
-          <div class="note">Recovery uses a recovery code you saved when you created the account. There is no email reset, because no email address is on file.</div>
+          <div class="note">Recovery uses a recovery code you saved when you created the account. Enter your username, one code and a new password.</div>
           <label for="recUsername">Username</label>
           <input id="recUsername" type="text" autocomplete="username" required spellcheck="false" autocapitalize="none">
           <label for="recCode">Recovery code</label>
@@ -611,7 +611,7 @@
 
   $('btnRecoverComplete').onclick=function(){
     api('/api/account/recover/complete',{method:'POST',body:{username:$('recUsername').value.trim(),code:$('recCode').value.trim(),newPassword:$('recNew').value}})
-      .then(function(){ toast('Password reset. Sign in with the new password.','ok'); authMode('Login'); })
+      .then(function(){ toast('Password changed. Sign in with the new password.','ok'); authMode('Login'); })
       .catch(function(err){ toast(err.message,'bad'); });
   };
 
