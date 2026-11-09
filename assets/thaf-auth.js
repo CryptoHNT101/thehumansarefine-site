@@ -1,4 +1,4 @@
-/* SHARED LOGIN (2026-11-08)
+﻿/* SHARED LOGIN (2026-11-08)
  *
  * One control on every page. Signed out it is the "Log in" link the nav already
  * carries. Signed in, it becomes the account menu: the workspace links the
@@ -86,17 +86,19 @@
     item(page('#signal'), 'Signal');
     item(page('#notifications'), 'Notifications' + (session.unread > 0 ? ' (' + session.unread + ')' : ''));
 
-    if (session.commander) {
+    // The console address is NOT in this file. The server sends it to a
+    // Commander and to nobody else, so the public script never advertises it.
+    if (session.commander && session.consolePath) {
       var consoleBtn = el('button', 'thaf-account-console', 'Commander console');
       consoleBtn.type = 'button';
       consoleBtn.setAttribute('role', 'menuitem');
       consoleBtn.addEventListener('click', function () {
         consoleBtn.disabled = true;
         api('/api/account/console-ticket', { method: 'POST' }).then(function (d) {
-          location.href = API + '/admin#t=' + encodeURIComponent(d.ticket);
+          location.href = API + session.consolePath + '#t=' + encodeURIComponent(d.ticket);
         }).catch(function () {
           consoleBtn.disabled = false;
-          location.href = API + '/admin';
+          location.href = API + session.consolePath;
         });
       });
       menu.appendChild(consoleBtn);

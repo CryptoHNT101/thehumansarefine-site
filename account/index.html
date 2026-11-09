@@ -460,11 +460,13 @@
   };
 
   function openConsole(){
+    // The console address is supplied by the session, and only to a Commander.
+    if(!S.consolePath){ toast('This account has no console.','bad'); return; }
     api('/api/account/console-ticket',{method:'POST'})
       .then(function(d){
         toast('Commander account recognised. Opening the console...','ok');
         var base = API || location.origin;
-        location.href = base + '/admin#t=' + encodeURIComponent(d.ticket);
+        location.href = base + S.consolePath + '#t=' + encodeURIComponent(d.ticket);
       })
       .catch(function(err){
         toast('Signed in, but the console handoff was refused: '+err.message,'bad');
@@ -506,6 +508,7 @@
       $('hello').textContent = 'My Profile';
       $('sublede').textContent = (d.account.displayName?('Signed in as '+d.account.displayName+' - '):'')+d.account.email + (d.commander?' - Commander':'');
       $('btnConsole').classList.toggle('hidden', !d.commander);
+      S.consolePath = d.consolePath || null;
       var badge=$('notifCount');
       if(d.unread>0){ badge.textContent=String(d.unread); badge.classList.remove('hidden'); } else { badge.classList.add('hidden'); }
       renderOverview(); renderAgents(); renderProfile();
