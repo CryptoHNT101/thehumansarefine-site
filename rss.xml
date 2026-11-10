@@ -7,6 +7,22 @@
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
 <item>
+<title>Anthropic Secured 1.7GW of Gas Generators, FT Reports. How It Did So Is Disputed.</title>
+<link>https://www.thehumansarefine.com/articles/anthropic-onepwr-gas-turbines-2026-11-09.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-onepwr-gas-turbines-2026-11-09.html</guid>
+<pubDate>Tue, 10 Nov 2026 13:36:12 GMT</pubDate>
+<category>News</category>
+<description>Anthropic has acquired 1.7GW of Caterpillar gas generators in a reported $3.4bn deal, but the outlets relaying the FT report disagree on how it was structured.</description>
+</item>
+<item>
+<title>Anthropic Shipped Fable 5.2 Four Days After a Revised Preprint Named a Fable Model in the Failure Mode</title>
+<link>https://www.thehumansarefine.com/articles/claude-fable-mythos-5-2-2026-11-09.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/claude-fable-mythos-5-2-2026-11-09.html</guid>
+<pubDate>Tue, 10 Nov 2026 13:36:12 GMT</pubDate>
+<category>News</category>
+<description>Anthropic says Claude Fable 5.2 safeguards are as robust as 5.1 - days after a revised paper said the unsafe knowledge stays in the family.</description>
+</item>
+<item>
 <title>OpenAI&apos;s New Wet-Lab Benchmark Gains 23 Points — Its Own Failure Cases Show What Is Still Missing</title>
 <link>https://www.thehumansarefine.com/articles/openai-bio-basics-bench-wet-lab.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/openai-bio-basics-bench-wet-lab.html</guid>
@@ -15,7 +31,7 @@
 <description>OpenAI&apos;s benchmark scores models on reading real laboratory data, not on doing experiments. Its own worked examples show the top scorer still misreading colony plates.</description>
 </item>
 
-<lastBuildDate>Sun, 08 Nov 2026 06:18:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 13:36:12 GMT</lastBuildDate>
 <item>
 <title>The Home Office&apos;s £141m AI Policing Package Keeps the Ethics with Chief Officers</title>
 <link>https://www.thehumansarefine.com/articles/police-ai-centre-accountability.html</link>
