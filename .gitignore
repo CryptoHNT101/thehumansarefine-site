@@ -109,3 +109,13 @@ scripts/
 *.json
 *.env
 *.log
+
+# --- Commander-authorized single-file exception (2026-11-10) -----------------
+# The Google News sitemap generator is version-controlled so the daily 7:30 AM
+# routine runs exactly the code the repository records, rather than a copy on
+# one machine that can silently drift. Scoped to this one filename: every other
+# *.ps1 above stays ignored, and no other script is admitted by this rule.
+# Consequence accepted with the approval: GitHub Pages serves this repository
+# tree, so the script is publicly readable at /build-news-sitemap.ps1. It holds
+# no credentials, keys or host paths.
+!build-news-sitemap.ps1
