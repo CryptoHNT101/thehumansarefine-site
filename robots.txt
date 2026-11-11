@@ -5,3 +5,4 @@ Disallow: /newsroom/fdw/
 Disallow: /tmp/
 Sitemap: https://www.thehumansarefine.com/sitemap.xml
 Sitemap: https://www.thehumansarefine.com/news-sitemap.xml
+Sitemap: https://www.thehumansarefine.com/rss.xml
