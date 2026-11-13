@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  News sitemap. Google News: "Only include recent URLs for articles that were created in the
-  last two days. Once the articles are older than two days, either remove those URLs from the
-  news sitemap or remove the news:news metadata."
-  (https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap)
-
-  GENERATED automatically from each article's own metadata - do not hand-edit.
-  Window anchor (UTC): 2026-11-12T04:45:50Z
-  Window: 48 hours. Publication dates are copied verbatim from each
-  article's own JSON-LD datePublished and are never rewritten or re-based.
-  Older reporting stays in sitemap.xml; it is only removed from THIS file.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/microsoft-365-outage-ai-causation-2026-11-12.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-12T23:30:39-05:00</news:publication_date>
+      <news:title>Outlook and Copilot Went Down Together. Microsoft Has Not Said AI Was the Cause</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/gpt6-cyber-948-linux-exploits.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-12T23:30:39-05:00</news:publication_date>
+      <news:title>OpenAI Rates Its Cyber Model Critical. It Counts 948 Linux Exploits</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/australia-ai-safety-regulator-2026-11-10.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-12T23:30:39-05:00</news:publication_date>
+      <news:title>Australia Will Legislate Mandatory AI Safety Duties, and Propose a Regulator</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://www.thehumansarefine.com/articles/ai-mathematics-physics-next-2026-11-11.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-12T23:30:39-05:00</news:publication_date>
+      <news:title>AI Really Did Disprove an 80-Year-Old Conjecture. Physics Is a Different Problem.</news:title>
+    </news:news>
+  </url>
   <url>
     <loc>https://www.thehumansarefine.com/articles/is-humanity-giving-birth-to-new-species-2026-11-10.html</loc>
     <news:news>
@@ -43,7 +75,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-11-11T09:45:00-05:00</news:publication_date>
-      <news:title>Could Humanity Pull the Plug on AI — or Have We Already Lost the Off Switch?</news:title>
+      <news:title>Can Humanity Shut AI Down? The Off Switch Is Not Where You Think</news:title>
     </news:news>
   </url>
   <url>
@@ -54,29 +86,7 @@
         <news:language>en</news:language>
       </news:publication>
       <news:publication_date>2026-11-11T09:05:00-05:00</news:publication_date>
-      <news:title>Is AI Really Taking Our Jobs — or Creating More Than It Destroys?</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/anthropic-onepwr-gas-turbines-2026-11-09.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10T08:36:12-05:00</news:publication_date>
-      <news:title>Anthropic Secured 1.7GW of Gas Generators, FT Reports. How It Did So Is Disputed.</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/claude-fable-mythos-5-2-2026-11-09.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10T08:36:12-05:00</news:publication_date>
-      <news:title>Anthropic Shipped Fable 5.2 Four Days After a Revised Preprint Named a Fable Model in the Failure Mode</news:title>
+      <news:title>Is AI Really Taking Our Jobs - or Creating More?</news:title>
     </news:news>
   </url>
 </urlset>
