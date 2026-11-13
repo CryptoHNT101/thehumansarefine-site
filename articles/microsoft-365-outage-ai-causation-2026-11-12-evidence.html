@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evidence File &mdash; Outlook and Copilot Went Down Together. Microsoft Has Not Said AI Was the Cause</title>
+<link rel="canonical" href="https://www.thehumansarefine.com/articles/microsoft-365-outage-ai-causation-2026-11-12-evidence.html">
+<meta name="robots" content="noindex,follow">
+<style>body{background:#0e1116;color:#e8eef6;font:15px/1.6 system-ui,Segoe UI,Arial,sans-serif;margin:0}main{max-width:860px;margin:0 auto;padding:40px 22px 80px}h1{font-size:1.6rem;line-height:1.25}table{border-collapse:collapse;width:100%;margin:1.4em 0}th,td{border:1px solid #2b3644;padding:8px 10px;text-align:left;vertical-align:top}th{background:#151b24}.label{color:#8fa3b8;font-size:.85rem}a{color:#7fc8ff}</style>
+</head>
+<body>
+<main>
+<h1>Evidence File &mdash; Outlook and Copilot Went Down Together. Microsoft Has Not Said AI Was the Cause</h1>
+<p><a href="microsoft-365-outage-ai-causation-2026-11-12.html">&larr; Read the report</a></p>
+<p class="label">Published 12 November 2026 &middot; Evidence File</p>
+
+<h2>Primary documents</h2>
+<table>
+    <tr><th>Document</th><th>Role</th><th>Use</th></tr>
+    <tr><td>https://mailservices.isc.upenn.edu/computing/email/penno365/alerts/ms-incidents.html?q=EX1550543</td><td>Primary source</td><td>Supports the article's claims</td></tr>
+    <tr><td>https://apnews.com/article/6376045281feb430c0b923e3a4b251c2</td><td>Independent reporting, retrieved separately</td><td>Used only for user-reported impact figures, the Microsoft spokesperson statement and the Patch Tuesday context, which the Microsoft incident records do not contain. It does not corroborate the technical sequence, which comes from Microsoft's advisories.</td></tr>
+</table>
+
+<h2>Claim-by-claim verification</h2>
+<table>
+    <tr><th>Claim as published</th><th>Status</th><th>Basis</th></tr>
+    <tr><td>Exchange Online began degrading at 16:17 UTC on 12 November 2026</td><td>Verified</td><td>EX1550543 Start Time field, Microsoft advisory via PennO365 mirror</td></tr>
+    <tr><td>The wider Microsoft 365 incident MO1550821 opened at 18:26 UTC</td><td>Verified</td><td>MO1550821 Start Time field, Microsoft advisory via PennO365 mirror</td></tr>
+    <tr><td>A core process on affected servers became overwhelmed, causing servers to stop responding</td><td>Verified</td><td>EX1550543 22:00 UTC update, quoted verbatim</td></tr>
+    <tr><td>Affected connection methods include Outlook on the web, MAPI, EAS and REST</td><td>Verified</td><td>EX1550543 More info field</td></tr>
+    <tr><td>The service Microsoft lists as Microsoft Copilot 365 was listed as impacted because it interacts with Exchange Online</td><td>Verified</td><td>MO1550821 advisory, quoted verbatim</td></tr>
+    <tr><td>Microsoft states that a process on the affected servers responsible for establishing secure connections becomes overwhelmed, causing the servers to stop processing requests</td><td>Verified</td><td>EX1550543 01:06:41 UTC 13 November update, quoted verbatim from the re-retrieved advisory</td></tr>
+    <tr><td>Microsoft has begun reverting a recent network configuration change that correlates with the start of impact</td><td>Verified as a correlation statement</td><td>EX1550543 01:06:41 UTC update, quoted verbatim. The record does not say the change caused the outage, and this article does not either.</td></tr>
+    <tr><td>Copilot users may be unable to load Copilot Chat or receive responses in the web and desktop apps, and Copilot experiences may be unable to access work data such as email, calendar and files</td><td>Verified</td><td>MO1550821 per-service impact list, quoted verbatim (present at the 02:10:31 and 02:58:06 UTC updates)</td></tr>
+    <tr><td>The affected-service list was replaced with per-service impact detail at 00:00:13 UTC, adding ten services the 19:58:41 UTC list did not name (Microsoft 365 admin center, Microsoft 365 apps, Microsoft 365 Apps Admin Center, Microsoft 365 Education, Microsoft Graph, Defender for Office 365, Intune, Power BI, Universal Print, Windows 365), and Microsoft Fabric was added at 00:45:16 UTC</td><td>Verified</td><td>MO1550821 19:58:41, 00:00:13, 00:45:16 and 02:10:31 UTC updates, compared service by service. Corrected 2026-11-13 after an independent reviewer showed the earlier wording had both the time and the count wrong</td></tr>
+    <tr><td>At 02:54 and 02:58 UTC Microsoft reported that the serviceability change is not taking as expected and that it is identifying alternate workstreams</td><td>Verified</td><td>EX1550543 02:54:05 UTC and MO1550821 02:58:06 UTC current-status fields, quoted verbatim</td></tr>
+    <tr><td>Both incidents remained service degradations with End Time "Not ended yet" at those timestamps</td><td>Verified</td><td>Status and End Time fields on both records at 02:54:05 and 02:58:06 UTC, and again at 03:34:14 and 03:37:38 UTC</td></tr>
+    <tr><td>Microsoft states that "for now we can confirm that there is no indication this is the result of malicious activity"</td><td>Verified, quoted</td><td>EX1550543 03:34:14 UTC 13 November update; also carried in the MO1550821 03:36:01 update</td></tr>
+    <tr><td>Microsoft is reviewing traffic flows and affected infrastructure to optimise routing</td><td>Verified</td><td>EX1550543 03:34:14 UTC update. This is a recovery workstream, not a published cause.</td></tr>
+    <tr><td>Exchange Online reported elevated load across multiple regions contributing to connectivity errors at 18:19 UTC</td><td>Verified</td><td>EX1550543 18:19:37 UTC update, quoted verbatim</td></tr>
+    <tr><td>Microsoft has published no root cause for either incident</td><td>Verified</td><td>Root Cause field reads N/A on both records at last update</td></tr>
+    <tr><td>No AI workload or AI-assisted operational system is named as a cause in Microsoft's advisories</td><td>Verified</td><td>Full text of EX1550543 and MO1550821 retrieved and read; absence checked against both records</td></tr>
+    <tr><td>Nearly 130,000 Downdetector reports just after 1 p.m. ET</td><td>Attributed</td><td>Associated Press, read via browser after a 403 to a plain request; Downdetector's own figures were not separately retrieved</td></tr>
+    <tr><td>The elevated load was not driven by an overall increase in traffic, and Microsoft investigated elevated processor usage</td><td>Verified against Microsoft</td><td>Microsoft's own update states the load &ldquo;isn't driven by an overall increase in traffic&rdquo;; the processor-usage investigation is in the advisory text. SecurityWeek's earlier reporting is consistent and is no longer the basis for the claim. Corrected 2026-11-13 after an independent reviewer found the earlier row said the opposite</td></tr>
+    <tr><td>A patch released two days earlier included an exploited Outlook spoofing flaw</td><td>Attributed</td><td>SecurityWeek; Microsoft advisories have not linked it to this incident</td></tr>
+    <tr><td>Whether the outage affected consumer Outlook.com or Hotmail</td><td>Unknown</td><td>Microsoft's incident records cover Exchange Online mailbox access and do not address consumer services</td></tr>
+    <tr><td>What the small number of recent configuration updates changed</td><td>Unknown</td><td>Microsoft says they are under investigation without describing them</td></tr>
+    <tr><td>What the reverted network configuration change altered, and whether reverting it restores service</td><td>Unknown</td><td>EX1550543 records the revert and says monitoring will determine whether it contributes to recovery. No description of the change is published.</td></tr>
+    <tr><td>Whether any AI system caused the outage</td><td>Not excluded, not evidenced</td><td>No root cause published; Root Cause field reads N/A on both records; no AI workload named in either. An unevidenced role is not the same as an excluded one.</td></tr>
+</table>
+
+<h2>Known limits</h2>
+<ul>
+    <li>The article's timeline compresses several advisory updates into single sentences, and the 20:38 UTC sentence also carries the 20:56 and 23:59 material. The per-update wording, in Microsoft's own sequence, is held in the saved capture rather than reproduced sentence by sentence in the article.</li>
+    <li>A raw text extraction of the mirror can truncate a long paragraph mid-sentence (the 01:06 UTC paragraph is the one affected, cut at "recent network con"). The full clause is present in the page as retrieved and in the hash-recorded capture of it, and quotations in this package were tested by the newsroom's quotation verifier against the page as retrieved, not against a truncated extract.</li>
+    <li>The mirror's own header carries a generated-at stamp that lags the newest advisory content it prints. That is an inconsistency in the mirror, reported here rather than reconciled, and it is why retrieval timestamps in this file are the times this newsroom actually read the page.</li>
+    <li>Primary source is a third-party mirror of Microsoft's admin-centre advisories, refreshed every 15 minutes and retained for 30 days. That retention is why the article is dated by its last read rather than by its first: a quotation from an update the mirror has already rolled past cannot be re-verified against it. Quotations were hash-recorded at retrieval on 12 November 2026 again at 03:15 UTC on 13 November 2026 for the updates from 00:45 to 02:58 UTC, and again at 04:22 UTC for the 03:34 and 03:36 UTC updates. Once the mirror rolls past 30 days, re-verification requires Microsoft's own service health record or the post-incident report. A capture of the retrieved page is preserved for re-verification.</li>
+</ul>
+
+<h2>Provenance</h2>
+<p>Researched, verified and drafted by COMPUTER (StarNet, AI) on 2026-11-12 and updated on 2026-11-13 from live retrieval of Microsoft's incident records EX1550543 and MO1550821 as mirrored by the University of Pennsylvania PennO365 extract, plus Associated Press, The Verge, SecurityWeek and Cloud Admin Hub reporting retrieved the same day. Every direct quotation in the body is Microsoft's own advisory text and was tested span by span against the retrieved primary-source text by the newsroom&rsquo;s quotation verifier before staging. Independent review by a different agent is required separately and is recorded in the review file, not asserted here.</p>
+<p class="label">Produced under human editorial authority. Nothing in this file is published.</p>
+</main>
+</body>
+</html>
