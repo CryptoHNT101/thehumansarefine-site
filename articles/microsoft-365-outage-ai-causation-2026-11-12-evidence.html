@@ -19,7 +19,8 @@
     <tr><th>Document</th><th>Role</th><th>Use</th></tr>
     <tr><td>https://mailservices.isc.upenn.edu/computing/email/penno365/alerts/ms-incidents.html?q=EX1550543</td><td>Primary source</td><td>Supports the article's claims</td></tr>
     <tr><td>https://apnews.com/article/6376045281feb430c0b923e3a4b251c2</td><td>Independent reporting, retrieved separately</td><td>Used only for user-reported impact figures, the Microsoft spokesperson statement and the Patch Tuesday context, which the Microsoft incident records do not contain. It does not corroborate the technical sequence, which comes from Microsoft's advisories.</td></tr>
-</table>
+
+    <tr><td>https://www.cloudadminhub.com/microsoft-365-service-health/mo1550821/</td><td>Secondary mirror, added 14 November 2026 for the watch review</td><td>Independent mirror of Microsoft's service-health entry for MO1550821, retrieved for the 14 November status check. It reproduces Microsoft's update text and is a carrier of that text, not an additional authority for it.</td></tr></table>
 
 <h2>Claim-by-claim verification</h2>
 <table>
@@ -49,6 +50,45 @@
     <tr><td>Whether any AI system caused the outage</td><td>Not excluded, not evidenced</td><td>No root cause published; Root Cause field reads N/A on both records; no AI workload named in either. An unevidenced role is not the same as an excluded one.</td></tr>
 </table>
 
+<h2>Watch review &mdash; 14 November 2026</h2>
+<p class="label">Added 14 November 2026 from a live retrieval of Microsoft's incident records. It records the watch after publication and changes nothing above it.</p>
+<p>Both incidents have since been marked restored by Microsoft. The wording below is Microsoft's own, printed inside the incident records; this file labels it <strong>preliminary</strong> because Microsoft's Root Cause field still reads N/A on both records and no post-incident report has been published.</p>
+
+<h3>Restoration status at retrieval</h3>
+<table>
+    <tr><th>Incident</th><th>Service</th><th>Status</th><th>Start (UTC)</th><th>End (UTC)</th><th>Microsoft's last update</th></tr>
+    <tr><td>EX1550543</td><td>Exchange Online</td><td>serviceRestored</td><td>Thu 12 Nov 2026 10:05</td><td>Fri 13 Nov 2026 16:10</td><td>Sat 14 Nov 2026 04:15:46</td></tr>
+    <tr><td>MO1550821</td><td>Microsoft 365 suite (Portal)</td><td>serviceRestored</td><td>Thu 12 Nov 2026 10:05</td><td>Fri 13 Nov 2026 04:10</td><td>Sat 14 Nov 2026 04:17:52</td></tr>
+</table>
+<p>Both records carry <em>Root Cause: N/A</em> and <em>Next Update: N/A</em> at those timestamps.</p>
+
+<h3>Microsoft's preliminary finding, quoted</h3>
+<blockquote><p>&ldquo;The incident was introduced by an issue during an earlier network capacity upgrade that surfaced following a recent network change. We have addressed the underlying issue and continue to restore service to remaining customers and regions.&rdquo;</p></blockquote>
+<blockquote><p>&ldquo;Final status : This was a technical issue not related to cyber or AI / agents.&rdquo;</p></blockquote>
+<p>Microsoft also states that it restored service gradually to validate stability at each stage, and that it &ldquo;will provide a full post-incident report once our review is complete.&rdquo; An earlier update promised &ldquo;a preliminary Post-Incident Report within two business days and a final Post-Incident Report within five business days.&rdquo;</p>
+
+<h3>How to read the two statements</h3>
+<ul>
+    <li><strong>Preliminary, not final.</strong> The network-capacity sentence is Microsoft's own characterisation of cause, carried inside the incident update. It is not a published root-cause document, and the structured Root Cause field remains empty.</li>
+    <li><strong>The AI statement is a denial, not evidence.</strong> &ldquo;Not related to cyber or AI / agents&rdquo; is Microsoft's assertion about its own incident. It is reported here as Microsoft's statement; it is not independent corroboration and this file does not treat it as proof of absence.</li>
+    <li><strong>Attribution to Microsoft, not to the mirrors.</strong> Every quotation above is Microsoft's advisory text. The University of Pennsylvania PennO365 extract and Cloud Admin Hub both reproduce that text; neither adds to its authority, and where they differ from Microsoft's own service-health record, Microsoft's record governs.</li>
+    <li><strong>A &ldquo;final status&rdquo; that is not quite final.</strong> The same update that declares a final status also says Microsoft will &ldquo;continue to restore service to remaining customers and regions.&rdquo; The two statements sit together in the record and are reported together here.</li>
+</ul>
+
+<h3>Sources and retrieval dates</h3>
+<table>
+    <tr><th>Source</th><th>What it supplied</th><th>Retrieved</th></tr>
+    <tr><td>https://mailservices.isc.upenn.edu/computing/email/penno365/alerts/ms-incidents.html?q=EX1550543</td><td>Both full incident records: status, start and end times, last-update timestamps, the preliminary cause sentence, the AI statement and the post-incident-report commitment. Extract generated 14 Nov 2026 07:35:02 EST.</td><td>14 November 2026</td></tr>
+    <tr><td>https://www.cloudadminhub.com/microsoft-365-service-health/mo1550821/</td><td>Independent mirror of MO1550821, used to cross-check the same Microsoft text (resolved, 18h 5m duration, last Microsoft update 14 Nov 2026 04:17 GMT).</td><td>14 November 2026</td></tr>
+</table>
+
+<h3>What remains open</h3>
+<ul>
+    <li>No post-incident report has been published for either incident. Microsoft has committed to one; it is the next document this watch will capture.</li>
+    <li>The definitive root cause is unpublished. The network-capacity explanation is Microsoft's preliminary characterisation.</li>
+    <li>No independent technical confirmation of the network-capacity explanation exists in the sources read for this file.</li>
+</ul>
+<p class="label">The watch continues. The report above, its headline and its metadata are unchanged by this section.</p>
 <h2>Known limits</h2>
 <ul>
     <li>The article's timeline compresses several advisory updates into single sentences, and the 20:38 UTC sentence also carries the 20:56 and 23:59 material. The per-update wording, in Microsoft's own sequence, is held in the saved capture rather than reproduced sentence by sentence in the article.</li>
