@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-      <url>
+        <url>
+    <loc>https://www.thehumansarefine.com/articles/ai-act-fria-template-consultation-2026-11-16.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>THE HUMANS ARE FINE</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-16T20:55:09-05:00</news:publication_date>
+      <news:title>Commission Opens the AI Act's Human-Rights Audit Form for Comment</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://www.thehumansarefine.com/articles/amplitude-wave-openai-product-agent-2026-11-13.html</loc>
     <news:news>
       <news:publication>
@@ -10,105 +21,6 @@
       </news:publication>
       <news:publication_date>2026-11-16T16:46:00-05:00</news:publication_date>
       <news:title>Amplitude Says Its Product Agent Cuts Shipping Time to Two Days. The Evidence Is Its Own.</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.thehumansarefine.com/articles/fed-bowman-ai-debt-800-billion-2026-11-10.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-13T22:51:47-05:00</news:publication_date>
-      <news:title>Fed's Michelle Bowman Says AI-Related Debt Is on Track to Exceed $800 Billion in 2026</news:title>
-    </news:news>
-  </url>
-<url>
-    <loc>https://www.thehumansarefine.com/articles/microsoft-365-outage-ai-causation-2026-11-12.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-12T23:30:39-05:00</news:publication_date>
-      <news:title>Outlook and Copilot Went Down Together. Microsoft Has Not Said AI Was the Cause</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/gpt6-cyber-948-linux-exploits.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-12T23:30:39-05:00</news:publication_date>
-      <news:title>OpenAI Rates Its Cyber Model Critical. It Counts 948 Linux Exploits</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/australia-ai-safety-regulator-2026-11-10.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-12T23:30:39-05:00</news:publication_date>
-      <news:title>Australia Will Legislate Mandatory AI Safety Duties, and Propose a Regulator</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/ai-mathematics-physics-next-2026-11-11.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-12T23:30:39-05:00</news:publication_date>
-      <news:title>AI Really Did Disprove an 80-Year-Old Conjecture. Physics Is a Different Problem.</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/is-humanity-giving-birth-to-new-species-2026-11-10.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T23:45:00-05:00</news:publication_date>
-      <news:title>Is Humanity Giving Birth to a New Species?</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/chatgpt-enterprise-aws-marketplace-2026-11-09.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T23:40:00-05:00</news:publication_date>
-      <news:title>ChatGPT Enterprise Is Now on AWS Marketplace. The Interesting Part Is Which Budget Can Pay for It.</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/ai-off-switch-shutdown-2026-11-10.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T09:45:00-05:00</news:publication_date>
-      <news:title>Can Humanity Shut AI Down? The Off Switch Is Not Where You Think</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/ai-jobs-created-or-destroyed-2026-11-10.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-11T09:05:00-05:00</news:publication_date>
-      <news:title>Is AI Really Taking Our Jobs - or Creating More?</news:title>
     </news:news>
   </url>
 </urlset>
