@@ -6,7 +6,23 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Mon, 16 Nov 2026 21:46:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 17:59:26 GMT</lastBuildDate>
+<item>
+<title>Instagram Will Now Guess How Old You Are. It Can Overrule the Birthday You Typed.</title>
+<link>https://www.thehumansarefine.com/articles/meta-ai-age-estimation-global-2026-11-09.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/meta-ai-age-estimation-global-2026-11-09.html</guid>
+<pubDate>Sat, 21 Nov 2026 17:59:26 GMT</pubDate>
+<category>News</category>
+<description>Meta is expanding AI age estimation globally on Instagram. It once said the signals included height and bone structure; neither the 9 November announcement nor the 5 May post states an error rate.</description>
+</item>
+<item>
+<title>OpenAI Published Its Kill Switch. It Can Take Up to 35 Seconds, and It Has to Watch Its Own Researchers.</title>
+<link>https://www.thehumansarefine.com/articles/openai-control-room-2026-11-09.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/openai-control-room-2026-11-09.html</guid>
+<pubDate>Sat, 21 Nov 2026 17:59:23 GMT</pubDate>
+<category>News</category>
+<description>OpenAI published how Control Room stops its own AI research. The brake sits in inference, fails closed, and can take up to 35 seconds.</description>
+</item>
 <item>
 <title>Commission Opens the AI Act's Human-Rights Audit Form for Comment</title>
 <link>https://www.thehumansarefine.com/articles/ai-act-fria-template-consultation-2026-11-16.html</link>

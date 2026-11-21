@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-        <url>
-    <loc>https://www.thehumansarefine.com/articles/ai-act-fria-template-consultation-2026-11-16.html</loc>
+            <url>
+    <loc>https://www.thehumansarefine.com/articles/meta-ai-age-estimation-global-2026-11-09.html</loc>
     <news:news>
       <news:publication>
         <news:name>THE HUMANS ARE FINE</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-11-16T20:55:09-05:00</news:publication_date>
-      <news:title>Commission Opens the AI Act's Human-Rights Audit Form for Comment</news:title>
+      <news:publication_date>2026-11-21T12:59:26-05:00</news:publication_date>
+      <news:title>Instagram Will Now Guess How Old You Are. It Can Overrule the Birthday You Typed.</news:title>
     </news:news>
   </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/amplitude-wave-openai-product-agent-2026-11-13.html</loc>
+<url>
+    <loc>https://www.thehumansarefine.com/articles/openai-control-room-2026-11-09.html</loc>
     <news:news>
       <news:publication>
         <news:name>THE HUMANS ARE FINE</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>2026-11-16T16:46:00-05:00</news:publication_date>
-      <news:title>Amplitude Says Its Product Agent Cuts Shipping Time to Two Days. The Evidence Is Its Own.</news:title>
+      <news:publication_date>2026-11-21T12:59:23-05:00</news:publication_date>
+      <news:title>OpenAI Published Its Kill Switch. It Can Take Up to 35 Seconds, and It Has to Watch Its Own Researchers.</news:title>
     </news:news>
   </url>
 </urlset>
