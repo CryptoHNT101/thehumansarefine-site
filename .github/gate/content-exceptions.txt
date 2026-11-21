@@ -1,0 +1,30 @@
+# THAF -- PUBLISH CONTENT GATE EXCEPTIONS  (narrow, documented, version-controlled)
+#
+# One line per exception:
+#     <exact repo path> :: <pattern key> :: <reason>
+#
+# RULES, enforced by the gate's own self-test controls E1-E3:
+#   * exact paths only -- no globs, no prefixes, no directories
+#   * one pattern key per line, so an exception cannot excuse a file wholesale
+#   * a second file carrying the same text is still refused
+#
+# This is the ONLY escape hatch. It is a text file rather than JSON because a
+# .json anywhere in the published tree is refused by the path gate, and an
+# escape hatch that changes how the guard behaves must not be able to hide.
+#
+# WHAT QUALIFIES
+#   A page that is deliberately public technical instruction and has to name an
+#   internal artefact to be intelligible -- for example a standards page that
+#   documents this publication process and therefore has to describe the gate.
+#   The exception must name the single page and the single pattern class.
+#
+# WHAT DOES NOT QUALIFY
+#   Generator stamps left behind by a build script. Slack. "It is easier."
+#   A page that mentions an internal tool because nobody removed the sentence.
+#
+# CURRENTLY ACTIVE: none.
+#
+# The gate is documented in the public standards page by DESCRIPTION, not by
+# filename, so no exception is needed today. If one ever is added, the reason
+# field is mandatory and is committed in the same public repository, i.e. visible
+# to the reader it affects.
