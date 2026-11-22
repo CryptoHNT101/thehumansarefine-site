@@ -6,7 +6,15 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Sun, 22 Nov 2026 22:28:54 GMT</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 22:35:23 GMT</lastBuildDate>
+<item>
+<title>Signal Is Blocking Screen Capture by Operating-System AI Agents, and Says the Fix Is Partial</title>
+<link>https://www.thehumansarefine.com/articles/signal-blocking-os-ai-screen-capture-2026-11-21.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/signal-blocking-os-ai-screen-capture-2026-11-21.html</guid>
+<pubDate>Sun, 22 Nov 2026 22:35:23 GMT</pubDate>
+<category>News</category>
+<description>Signal says it is blocking screen capture of its app by AI agents built into iOS 27 and Android, and concedes the block does not stop filesystem access.</description>
+</item>
 <item>
 <title>SpaceX's $40 Billion Chip Lease Now Has $44 Billion of Notes Behind It</title>
 <link>https://www.thehumansarefine.com/articles/spacex-gpu-lease-44bn-notes-2026-11-22.html</link>
