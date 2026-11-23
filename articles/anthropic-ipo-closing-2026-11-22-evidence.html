@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evidence File - The 1,127,000,000 Figure in Anthropic's IPO</title>
+<meta name="robots" content="noindex,follow">
+<style>
+body{font-family:Georgia,serif;max-width:50rem;margin:2rem auto;padding:0 1rem;line-height:1.55}
+h1{font-size:1.6rem}h2{font-size:1.2rem;margin-top:2rem}
+table{border-collapse:collapse;width:100%;font-size:.88rem;margin:1rem 0}
+th,td{border:1px solid #ccc;padding:.35rem .45rem;vertical-align:top;text-align:left}
+.s{color:#1a5c1a;font-weight:bold}.u{color:#7a1a1a;font-weight:bold}.x{color:#5a1a7a;font-weight:bold}
+pre{background:#f6f6f6;padding:.6rem;font-size:.82rem;overflow-x:auto}
+</style>
+</head>
+<body>
+<p class="label"><a href="anthropic-ipo-closing-2026-11-22.html">&larr; Read the report</a></p>
+<h1>Evidence File</h1>
+<p><strong>Article:</strong> The 1,127,000,000 Figure in Anthropic's IPO Appears Nowhere in the Filing<br>
+<strong>Slug:</strong> anthropic-ipo-closing-2026-11-22<br>
+<strong>Revision:</strong> r4 (supersedes r3)<br>
+<strong>Status:</strong> PUBLISHED NOVEMBER 23, 2026. Publication approved by the Commander; this record is published with the article it supports.<br>
+<strong>Evidence cutoff:</strong> 2026-11-22, America/Toronto.<br>
+<strong>Article SHA-256:</strong> 3425FDEBB4F6AA1613F0AA754778945D2473FE0D99B5701A5F5860C82A873D12</p>
+
+<h2>Changes in r4</h2>
+<ul>
+<li><strong>L1 applied.</strong> The approximate "94 megabytes" figure for the accession including exhibits
+and artwork had no source and no ledger row. It is deleted rather than given a row it cannot support; the
+document size stated is the 14.4 megabyte figure that Evidence S1 actually measures.</li>
+<li><strong>L3 applied.</strong> The untraceable "126 megabytes" free-writing-prospectus figure is deleted,
+and ledger rows 41-43 are added for three assertions that previously carried none: the 32-filing list, the
+statement that the company receives no proceeds from the selling stockholders, and the explanation for why
+the two post-offering share counts differ.</li>
+<li><strong>L4 applied.</strong> The closing paragraph no longer claims the coverage dropped the
+concurrent placement. The article's own cited source mentions it; what disappeared was its scale.</li>
+<li><strong>L2 applied.</strong> The two superseded pairs are labelled distinctly in HASHES.txt: the pair
+the round-2 reviewer read is not the pair the r2 receipts carried.</li>
+<li><strong>Ledger counts restated</strong> for the three appended rows: 43 evaluated, 40 SUPPORT, 2
+UNVERIFIED, 1 REFUTED.</li>
+</ul>
+
+<h2>Changes in r3</h2>
+<ul>
+<li><strong>Claim 10 corrected.</strong> The r2 ledger stated that $80,790,004,400 plus $550,000,000 equals
+$81,340,000,000 and that the arithmetic "closes exactly". It does not close: the sum is
+$81,340,004,400, which is $4,400 more than the stated gross.</li>
+<li><strong>F4 resolved from primary source.</strong> The concurrent private placement is now in the article
+with verbatim filing language: $26.0 billion of Class N at the offering price, 313,253,007 shares.</li>
+<li><strong>F3 resolved by performing the check.</strong> The capitalization table and the cover's
+post-offering share count were read, and the implied equity value was computed. The r2 sentence claiming
+the filing states no post-offering share count was false and has been removed.</li>
+<li><strong>Headline substantiated.</strong> The absence claim now rests on a complete-document search,
+including a digit-normalised stream, not only on an EDGAR full-text query.</li>
+<li><strong>Internal contradiction removed.</strong> r2 stated that no retrieved document records the option
+exercise while quoting a roundup that asserts it. The article now separates "no primary filing records
+it" from "a secondary account asserts it".</li>
+<li><strong>Both aggregator quotations re-retrieved and matched verbatim</strong> on 22 November 2026.</li>
+<li><strong>Round-2 independent review</strong> (reviews/REVIEW-independent-anthropic-r2-2026-11-22.json)
+re-tested all six round-1 findings, closed each on its own retrieved evidence, and raised four minor
+precision items - a byte count, the word "exactly", the rounding mechanism, and the description of the
+filing list - plus one receipt item. All five are applied in this revision.</li>
+</ul>
+
+<h2>Retrieved sources</h2>
+<table>
+<tr><th>ID</th><th>Source</th><th>What was actually retrieved</th></tr>
+<tr><td>S1</td><td>SEC Form 424B4, Anthropic, PBC, filed 2026-11-19, accession 0001628280-26-074944</td><td>EDGAR's directory index declares the document as 14,400,425 bytes; the saved local copy measures 14,400,533 bytes, 108 bytes more. The direction matters: a larger local copy excludes truncation as the reason the absence search returned zero. Reduced to 1,611,645 characters of text. Cover page, offering table, capitalisation table, concurrent private placement description and governance summary read.</td></tr>
+<tr><td>S2</td><td>EDGAR company filing list, CIK 0002130357</td><td>Read. 32 filings. Newest is the 424B4 of 2026-11-19. No filing after that date.</td></tr>
+<tr><td>S3</td><td>EDGAR full-text search, phrase "1,127,000,000", CIK filter</td><td>Query executed 2026-11-22: <em>total hits = 0</em>.</td></tr>
+<tr><td>S4</td><td>EDGAR full-text search, positive control, "Anthropic, PBC", form 424B4</td><td>Query executed: <em>total hits = 5</em>, first result accession 0001628280-26-074944:anthropicpbc-424b4.htm. Confirms the index covers the document, which makes S3's zero meaningful.</td></tr>
+<tr><td>S5</td><td>dailyai.report archive, 22 November 2026</td><td>Page retrieved. Lead item, quoted verbatim: "Anthropic reached a valuation of nearly $1.8 trillion on the Nasdaq."</td></tr>
+<tr><td>S6</td><td>AIToolsRecap roundup, 22 November 2026</td><td>Page retrieved. States the offering closed with the option fully exercised; gives "1,127,000,000 Class A shares at $83.00"; refers to a concurrent private placement.</td></tr>
+<tr><td>S7</td><td>Derivative text scan of S1 (this package)</td><td>Complete text searched for the headline figure in every formatting variant, and again against a digit-only stream. Controls counted in the same stream.</td></tr>
+</table>
+
+<h2>Computation receipt</h2>
+<pre>
+shares*price            = 81,340,000,000    stated gross   = 81,340,000,000
+shares*discount/share   =    549,995,600    stated discount=    550,000,000
+discount residue        =          4,400
+shares*net/share        = 80,790,004,400
+stated proceeds sum     = 80,790,004,400
+956,351,354*net/share   = 78,840,438,875.11  stated = 78,840,438,875
+23,648,646*net/share    =  1,949,565,524.89  stated =  1,949,565,525
+proceeds + stated disc  = 81,340,004,400
+GAP vs stated gross     =          4,400
+exact disc quotient     = 0.561224489796
+net+disc per share      = 83.00000
+
+13,219,642,276 x 83     = 1,097,230,308,908   (~$1.10 trillion)
+15,351,752,765 x 83     = 1,274,195,479,495   (~$1.27 trillion)
+1,800,000,000,000 / 83  =    21,686,746,988 shares
+1,800,000,000,000 / 13,219,642,276 = ~136.17 per share
+313,253,007 x 83        =    25,999,999,581   (stated $26.0 billion)
+</pre>
+<p>The $4,400 gap is exactly the difference between the stated discount total ($550,000,000) and the
+discount priced per share ($0.56122 x 980,000,000 = $549,995,600). The two discount figures agree only
+to five decimal places: $550,000,000 / 980,000,000 = $0.561224489796, printed on the cover as
+$0.56122, and $83.00 - $0.56122 = $82.43878 exactly. The residue is therefore capable of two readings
+- the discount total as $549,995,600 rounded to the nearest million, or the per-share discount as the
+exact quotient carried to five decimals - and the filing does not say which figure it treats as
+authoritative. The article presents both and adopts neither. The two proceeds totals reproduce from
+the per-share figure to the dollar ($78,840,438,875.11 and $1,949,565,524.89, whose roundings cancel),
+which is a weaker claim than exact reproduction and is stated as such.</p>
+
+<h2>Claims ledger</h2>
+<p><span class="s">SUPPORT</span> = read from a retrieved primary source, or arithmetic on such figures
+computed here and labelled in the article. <span class="u">UNVERIFIED</span> = asserted only by a
+secondary source; the article does not assert it. <span class="x">REFUTED</span> = a proposition that
+was tested and failed; the article asserts its negation.</p>
+
+<table>
+<tr><th>#</th><th>Claim</th><th>Value</th><th>Source / note</th></tr>
+<tr><td>1</td><td>Filed with the SEC on 19 November 2026</td><td class="s">SUPPORT</td><td>S1 cover; S2</td></tr>
+<tr><td>2</td><td>980,000,000 Class A shares offered</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>3</td><td>Company selling 956,351,354</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>4</td><td>Selling stockholders selling 23,648,646</td><td class="s">SUPPORT</td><td>S1 cover; 956,351,354 + 23,648,646 = 980,000,000</td></tr>
+<tr><td>5</td><td>IPO price $83.00 per share</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>6</td><td>Gross $81,340,000,000</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>7</td><td>Discount $0.56122 per share, $550,000,000 total</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>8</td><td>Proceeds to Anthropic $78,840,438,875</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>9</td><td>Proceeds to selling stockholders $1,949,565,525</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>10</td><td>The two proceeds lines sum to $80,790,004,400; plus the stated $550,000,000 comes to $81,340,004,400, which is $4,400 more than the stated gross</td><td class="s">SUPPORT</td><td>Arithmetic on S1; recomputed. <strong>Corrected from r2, which asserted a sum of $81,340,000,000 that "closes exactly".</strong></td></tr>
+<tr><td>11</td><td>The $4,400 is the residue between the stated discount total and $0.56122 x 980,000,000 = $549,995,600, and is consistent with either column being the rounded one</td><td class="s">SUPPORT</td><td>Arithmetic on S1; exact quotient $550,000,000 / 980,000,000 = 0.561224489796. The article presents both readings and adopts neither</td></tr>
+<tr><td>12</td><td>Option for up to 147,000,000 additional shares at the offering price</td><td class="s">SUPPORT</td><td>S1 cover footnote</td></tr>
+<tr><td>13</td><td>No discount or commission on option shares</td><td class="s">SUPPORT</td><td>S1 cover footnote (1)</td></tr>
+<tr><td>14</td><td>980,000,000 + 147,000,000 = 1,127,000,000</td><td class="s">SUPPORT</td><td>Author's arithmetic; labelled as such in the article</td></tr>
+<tr><td>15</td><td>"1,127,000,000" appears nowhere in the complete 424B4, in any formatting including a digit-only stream</td><td class="s">SUPPORT</td><td>S7: 0 hits; controls 147,000,000 x6, 980,000,000 x5, 313,253,007 x11</td></tr>
+<tr><td>16</td><td>EDGAR full-text search returns 0 hits for the phrase on this issuer</td><td class="s">SUPPORT</td><td>S3</td></tr>
+<tr><td>17</td><td>Positive control returns 5 Form 424B4 filings including this one</td><td class="s">SUPPORT</td><td>S4</td></tr>
+<tr><td>18</td><td>Delivery against payment expected on or about 20 November 2026</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>19</td><td>Nasdaq Global Select Market, symbol ANT</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>20</td><td>Delaware public benefit corporation with the stated balancing duty</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>21</td><td>LTBT holds Class T; elects and removes Class T directors constituting a board majority; no economic or general voting rights</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>22</td><td>Single Class F share will be issued to Founder LLC, carrying 50.1% of total voting power; no economic rights</td><td class="s">SUPPORT</td><td>S1 cover, prospective tense</td></tr>
+<tr><td>23</td><td>Class E will be issued to employees, votes on limited matters, no economic rights</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>24</td><td>Class N has no voting rights except as required by law and generally converts to Class A on transfer to an unaffiliated third party</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>25</td><td>Company is a "controlled company" under Nasdaq rules</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>26</td><td>Seven named investors agreed, severally and not jointly, to buy an aggregate $26.0 billion of Class N at the offering price</td><td class="s">SUPPORT</td><td>S1 cover: AMD, Broadcom, Google LLC, Micron, Microsoft, NVIDIA, TSMC Partners</td></tr>
+<tr><td>27</td><td>The placement is 313,253,007 Class N shares at $83.00</td><td class="s">SUPPORT</td><td>S1 capitalisation table assumption and pro forma note; 313,253,007 x 83 = $25,999,999,581</td></tr>
+<tr><td>28</td><td>Placement is contingent upon, and scheduled to close immediately subsequent to, completion of the offering</td><td class="s">SUPPORT</td><td>S1 cover, verbatim</td></tr>
+<tr><td>29</td><td>Placement shares carry no underwriting discount or commission, are unregistered, restricted, and not subject to lock-up</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>30</td><td>Class A, N, T, E and F outstanding after offering and placement: 13,219,642,276 (13,366,642,276 with option in full)</td><td class="s">SUPPORT</td><td>S1 cover; components 7,583,103,996 / 5,636,538,278 / 1 / 0 / 1</td></tr>
+<tr><td>31</td><td>Net proceeds from offering and placement approximately $104.8 billion (approximately $117.0 billion with option in full)</td><td class="s">SUPPORT</td><td>S1 cover, Use of proceeds</td></tr>
+<tr><td>32</td><td>Capitalisation table as-adjusted Class A 7,585,256,149 and Class N 7,766,496,616</td><td class="s">SUPPORT</td><td>S1 capitalisation table, second total row</td></tr>
+<tr><td>33</td><td>13,219,642,276 shares at $83.00 implies about $1.10 trillion</td><td class="s">SUPPORT</td><td>Author's arithmetic on S1</td></tr>
+<tr><td>34</td><td>15,351,752,765 shares at $83.00 implies about $1.27 trillion</td><td class="s">SUPPORT</td><td>Author's arithmetic on S1</td></tr>
+<tr><td>35</td><td>$1.8 trillion would need about $136 a share or about 21.7 billion shares</td><td class="s">SUPPORT</td><td>Author's arithmetic on S1</td></tr>
+<tr><td>36</td><td>The "nearly $1.8 trillion" valuation figure is in circulation</td><td class="s">SUPPORT</td><td>S5, quoted verbatim</td></tr>
+<tr><td>37</td><td>The $1.8 trillion figure reconciles to the filing's own numbers at the offering price</td><td class="x">REFUTED</td><td>Tested at claims 33-35. The article asserts the negation, not this proposition</td></tr>
+<tr><td>38</td><td>Certain directors indicated interest in up to $305 million of Class A; not binding</td><td class="s">SUPPORT</td><td>S1 cover</td></tr>
+<tr><td>39</td><td>Underwriters exercised the 147,000,000 option in full</td><td class="u">UNVERIFIED</td><td>S6 asserts it. No primary filing after 2026-11-19 exists (S2). The article reports the assertion as secondary and does not adopt it</td></tr>
+<tr><td>40</td><td>The offering has closed</td><td class="u">UNVERIFIED</td><td>S6 asserts it. S1 records expected delivery only. The article does not assert completion</td></tr>
+<tr><td>41</td><td>The issuer's EDGAR filing list runs to 32 filings, the newest dated 2026-11-19</td><td class="s">SUPPORT</td><td>S2, the company filing list itself</td></tr>
+<tr><td>42</td><td>Anthropic, PBC will receive no proceeds from the shares sold by the selling stockholders</td><td class="s">SUPPORT</td><td>S1 cover: the company states it will not receive any proceeds from the sale of shares by any of the selling stockholders</td></tr>
+<tr><td>43</td><td>The two post-offering share counts differ because the capitalisation table's as-adjusted column rolls in later adjustments such as rollover notes and donation-matching obligations</td><td class="s">SUPPORT</td><td>S1 capitalisation table, as-adjusted adjustment rows</td></tr>
+</table>
+
+<h2>Claim valuation summary</h2>
+<table>
+<tr><th>Value</th><th>Count</th></tr>
+<tr><td class="s">SUPPORT</td><td>40</td></tr>
+<tr><td class="u">UNVERIFIED (secondary only; not asserted by the article)</td><td>2</td></tr>
+<tr><td class="x">REFUTED (tested; article asserts the negation)</td><td>1</td></tr>
+<tr><td>Total evaluated</td><td>43</td></tr>
+</table>
+<p>Of the 40 supported claims, 8 are arithmetic performed here on the filing's stated figures (claims 10,
+11, 14, 33, 34, 35, and the 956,351,354 / 23,648,646 split checks) and are labelled as the author's
+arithmetic in both the article and this ledger. The three rows added in r4 (41-43) are source readings,
+not arithmetic. Asserted claims supported: 40 of 40 = <strong>1.000</strong>.
+The two unverified items are excluded from the denominator rather than scored as failure, and the
+refuted proposition is not asserted anywhere in the article.</p>
+
+<h2>What this Evidence File does not establish</h2>
+<ul>
+<li>It does not establish that the option was exercised. The only source saying so is secondary.</li>
+<li>It does not establish that the offering closed, only that delivery was expected on or about 20 November.</li>
+<li>It does not establish a market capitalisation or a post-offering market value. Claims 33-35 are
+arithmetic at the offer price, not a statement that the company is worth that amount on any given day.</li>
+<li>It does not establish the contents of the free-writing prospectuses, which were not individually read.
+The full-text index covers them and returns no hit for the headline figure.</li>
+<li>It does not establish how many shares were actually allocated, as distinct from registered and offered.</li>
+</ul>
+
+<p><strong>Correction policy:</strong> a primary filing recording the option exercise or the closing will
+move claims 39 and 40 from UNVERIFIED to SUPPORT, and this file is where that correction is recorded.
+Any later revision of the article must carry its own hashes and its own review.</p>
+</body>
+</html>

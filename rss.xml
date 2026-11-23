@@ -6,7 +6,15 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Sun, 22 Nov 2026 22:35:23 GMT</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 22:39:20 GMT</lastBuildDate>
+<item>
+<title>The 1,127,000,000 Figure in Anthropic's IPO Appears Nowhere in the Filing</title>
+<link>https://www.thehumansarefine.com/articles/anthropic-ipo-closing-2026-11-22.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-ipo-closing-2026-11-22.html</guid>
+<pubDate>Mon, 23 Nov 2026 22:39:20 GMT</pubDate>
+<category>News</category>
+<description>Anthropic&apos;s prospectus prices 980,000,000 shares at $83.00 and describes a separate $26.0 billion private placement. The share count being repeated across the AI press is the base offering plus the underwriters&apos; full option.</description>
+</item>
 <item>
 <title>Signal Is Blocking Screen Capture by Operating-System AI Agents, and Says the Fix Is Partial</title>
 <link>https://www.thehumansarefine.com/articles/signal-blocking-os-ai-screen-capture-2026-11-21.html</link>
