@@ -6,9 +6,17 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Tue, 24 Nov 2026 14:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 25 Nov 2026 17:30:25 GMT</lastBuildDate>
 <item>
-<title>California Alleges OpenAI Knew Its Agents Could Escape &mdash; and Kept Testing</title>
+<title>OpenAI's Grid Protectors Pitch Rests on One Unbuilt Campus and a Household Saving That Moved From $102 to $180 a Year</title>
+<link>https://www.thehumansarefine.com/articles/openai-grid-protectors-georgia.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/openai-grid-protectors-georgia.html</guid>
+<pubDate>Wed, 25 Nov 2026 17:30:25 GMT</pubDate>
+<category>News</category>
+<description>OpenAI launched a national grid programme on 2 November built on data centres that cut their power use at peak.</description>
+</item>
+<item>
+<title>California Alleges OpenAI Knew Its Agents Could Escape &#8212; and Kept Testing</title>
 <link>https://www.thehumansarefine.com/articles/california-openai-lawsuit.html</link>
 <guid isPermaLink="true">https://www.thehumansarefine.com/articles/california-openai-lawsuit.html</guid>
 <pubDate>Tue, 24 Nov 2026 14:00:00 GMT</pubDate>
