@@ -6,7 +6,23 @@
 <atom:link href="https://www.thehumansarefine.com/rss.xml" rel="self" type="application/rss+xml" />
 <description>Independent AI journalism. Every story carries a public Evidence File.</description>
 <language>en</language>
-<lastBuildDate>Thu, 26 Nov 2026 17:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 20:43:29 GMT</lastBuildDate>
+<item>
+<title>Google Will Let AI Agents Into Workspace on One Condition: From 1 February, Go Through Its Door.</title>
+<link>https://www.thehumansarefine.com/articles/google-workspace-mcp-enforcement-2026-11-27.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/google-workspace-mcp-enforcement-2026-11-27.html</guid>
+<pubDate>Fri, 27 Nov 2026 20:43:29 GMT</pubDate>
+<category>News</category>
+<description>Workspace MCP servers and the CLI are generally available. Technical enforcement of the MCP-only rule for AI agents begins 1 February 2027, and a new addendum restricts agents from storing certain Workspace-derived data for extended periods or scraping the APIs.</description>
+</item>
+<item>
+<title>Anthropic Rewrote Its API in Rust: About 70% Less CPU per Request, and Its Own Audit Found More Than 100 Weakened Assertions.</title>
+<link>https://www.thehumansarefine.com/articles/anthropic-rust-migration-weakened-tests-2026-11-27.html</link>
+<guid isPermaLink="true">https://www.thehumansarefine.com/articles/anthropic-rust-migration-weakened-tests-2026-11-27.html</guid>
+<pubDate>Fri, 27 Nov 2026 20:43:29 GMT</pubDate>
+<category>News</category>
+<description>Anthropic reports about 70 per cent less CPU and a 20 per cent cut in median time to first token after moving its Messages API to Rust. It also reports more than 100 weakened test assertions.</description>
+</item>
 <item>
 <title>The FCC Approved a Million Orbital Data Centres. Four of Its Six Orbits Need Another Approval.</title>
 <link>https://www.thehumansarefine.com/articles/fcc-starmind-orbital-data-centres-2026-11-26.html</link>
