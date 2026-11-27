@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  News sitemap. Google News: "Only include recent URLs for articles that were created in the
+  last two days. Once the articles are older than two days, either remove those URLs from the
+  news sitemap or remove the news:news metadata."
+  (https://developers.google.com/search/docs/crawling-indexing/sitemaps/news-sitemap)
+
+  GENERATED - do not hand-edit.
+  Window anchor (UTC): 2026-11-27T22:23:45Z
+  Window: 48 hours. Publication dates are copied verbatim from each
+  article's own JSON-LD datePublished and are never rewritten or re-based.
+  Older reporting stays in sitemap.xml; it is only removed from THIS file.
+-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
@@ -43,17 +55,6 @@
       </news:publication>
       <news:publication_date>2026-11-26T12:00:00-05:00</news:publication_date>
       <news:title>The FCC Approved a Million Orbital Data Centres. Four of Its Six Orbits Need Another Approval.</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://www.thehumansarefine.com/articles/openai-grid-protectors-georgia.html</loc>
-    <news:news>
-      <news:publication>
-        <news:name>THE HUMANS ARE FINE</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25T12:30:25-05:00</news:publication_date>
-      <news:title>OpenAI&apos;s Grid Protectors Pitch Rests on One Unbuilt Campus and a Household Saving That Moved From $102 to $180 a Year</news:title>
     </news:news>
   </url>
 </urlset>
